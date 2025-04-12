@@ -1,0 +1,56 @@
+.blue {
+    color: blue;
+}
+
+
+h1 {
+    color: rgb(235, 181, 111);
+    font-weight: bold;
+    font-size: 52px;
+    -webkit-text-stroke: 1px black;
+}
+
+body {
+  font-family: "VT323", monospace;
+  font-size: 30px;
+
+  background-color: gainsboro;
+
+}
+
+.unstyled-button {
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+.transparent-background {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  #main-page {
+    display: flex;
+    flex-direction: column;
+  
+    width: 100wh;
+    height: 100vh;
+  }
+  
+  #site-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: gainsboro;
+  }
+  
+  #header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    width: 1000px;
+  
+    border-bottom: 4px solid gray;
+  }
