@@ -70,8 +70,8 @@ A new burgerdle is available every day!
 ## Roadmap
 
 - [x] Initial README
-- [ ] Develop burgerdle database
-- [ ] Basic site layout, CSS & HTML
+- [x] Develop burgerdle database
+- [x] Basic site layout
 - [ ] Implement search feature
 - [ ] Statistic tracking, site info
 - [ ] Launch
