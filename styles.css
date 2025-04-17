@@ -92,7 +92,7 @@ body {
   background-color: gainsboro;
   align-content: center;
   gap: 6px;
-  
+  position: relative;
 }
 
 /* Style the links inside the navigation bar */
@@ -141,4 +141,26 @@ body {
   .topnav input[type=text] {
     border: 1px solid #ccc;
   }
+}
+
+.search-wrapper {
+  position: relative; /* this anchors the dropdown to the input */
+  width: 200px; /* or however wide your input is */
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%; /* just below the input */
+  width: 100%; /* same width as the input */
+  background-color: #fff;
+  z-index: 1000;
+  font-size: 16px;
+}
+
+.dropdown-content div {
+  padding: 8px;
+  cursor: pointer;
+}
+.dropdown-content div:hover {
+  background-color: #f0f0f0;
 }

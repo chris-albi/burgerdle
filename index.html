@@ -1,6 +1,10 @@
 <!DOCTYPE html> 
-<html>
+
+
+
+<html lang="en">
     <head>
+      <script src="main.js"></script>
         <title>Burgerdle</title>
         <link rel="stylesheet" href="styles.css">
         </head>
@@ -32,8 +36,11 @@
                 </header>
             <main id="gameplay section">
               <div class="topnav">
-              <input type="text" placeholder="Input fast food item here">
-              <button class="submit" type="button">Submit</button>
+                <div class="search-wrapper">
+                  <input type="text" id="searchInput" placeholder="Input fast food item here" oninput="filterItems()">
+                  <div id="dropdown" class="dropdown-content" style="margin-left: 0%;margin-top: 5%"></div>
+                </div>
+                <button class="submit" type="button">Submit</button>
               </div>
             </main>
             <footer id="site-footer">
