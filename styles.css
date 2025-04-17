@@ -144,14 +144,14 @@ body {
 }
 
 .search-wrapper {
-  position: relative; /* this anchors the dropdown to the input */
-  width: 200px; /* or however wide your input is */
+  position: relative;
+  width: 200px; 
 }
 
 .dropdown-content {
   position: absolute;
-  top: 100%; /* just below the input */
-  width: 100%; /* same width as the input */
+  top: 100%; 
+  width: 100%;
   background-color: #fff;
   z-index: 1000;
   font-size: 16px;
