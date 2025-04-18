@@ -23,4 +23,18 @@ function filterItems() {
     };
     dropdown.appendChild(option);
   });
+
+  const button = document.getElementById('popupButton');
+  const menu = document.getElementById('popupMenu');
+  
+  button.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+  
+  // Optional: hide menu when clicking outside
+  document.addEventListener('click', (event) => {
+    if (!menu.contains(event.target) && !button.contains(event.target)) {
+      menu.classList.add('hidden');
+    }
+  });
 }

@@ -13,7 +13,7 @@
             <header id="site-header">
               <div id="header-container">
                 <div class="box">
-                  <button class="unstyled-button" data-overlay="info-overlay" type="button">
+                  <button class="unstyled-button" id="popupButton" onclick="myFunction()" type="button">
                       <img
                       src="./assets/info.png"
                       style="height: 30%; width: 30%"
@@ -38,9 +38,134 @@
               <div class="topnav">
                 <div class="search-wrapper">
                   <input type="text" id="searchInput" placeholder="Input fast food item here" oninput="filterItems()">
-                  <div id="dropdown" class="dropdown-content" style="margin-left: 0%;margin-top: 5%"></div>
+                  <div id="dropdown" class="dropdown-content" style="margin-left: 0%;margin-top: 2%"></div>
                 </div>
                 <button class="submit" type="button">Submit</button>
+              </div>
+              <div id="info-overlay" class="overlay" style="display: none">
+                <div id="info-body" class="overlay-body">
+                  <div class="info-section">
+                    <h3><u>The game</u></h3>
+                    <p>
+                      Guess the <span class="costco-red">COSTCO</span
+                      ><span class="costco-blue">DLE</span> in 6 tries.
+                    </p>
+                    <br />
+                    <ul style="list-style-type: square">
+                      <li>Each guess must be a valid price.</li>
+                      <li>
+                        Incorrect guesses will help guide you to the target price.
+                      </li>
+                    </ul>
+                    <br />
+                    <p>If you guess within 5% of the target price, you win!</p>
+                    <br />
+                    <p>
+                      A new <span class="costco-red">COSTCO</span
+                      ><span class="costco-blue">DLE</span> is available every day!
+                    </p>
+                  </div>
+                  <div class="info-section">
+                    <h3><u>Examples</u></h3>
+                    <div class="guess-container transparent-background">
+                      <div class="guess-value-container animate__flipInX">$10.00</div>
+                      <div
+                        class="guess-direction-container animate__flipInX guess-far"
+                      >
+                        &uarr;
+                      </div>
+                    </div>
+                    <p>
+                      First guess of $10.00 is low by more than 25% of the target
+                      price.
+                    </p>
+                    <br />
+                    <div class="guess-container transparent-background">
+                      <div class="guess-value-container animate__flipInX">$18.00</div>
+                      <div
+                        class="guess-direction-container animate__flipInX guess-near"
+                      >
+                        &darr;
+                      </div>
+                    </div>
+                    <p>
+                      Next guess of $18.00 is too high but within 25% of the target
+                      price.
+                    </p>
+                    <br />
+                    <div class="guess-container transparent-background">
+                      <div class="guess-value-container animate__flipInX">$16.00</div>
+                      <div
+                        class="guess-direction-container animate__flipInX guess-win"
+                      >
+                        &check;
+                      </div>
+                    </div>
+                    <p>
+                      The guess of $16.00 was within 5% of the target price! You win!
+                    </p>
+                  </div>
+                  <div class="info-section">
+                    <p>
+                      If you would like to support my work, you can
+                      <a
+                        href="https://www.buymeacoffee.com/kerm"
+                        target="_blank"
+                        noreferrer="noopener noreferrer"
+                        >buy me a coffee!<span style="font-size: 14px">☕</span></a
+                      >
+                    </p>
+                  </div>
+                  <div class="info-section">
+                    <p>
+                      Source code available on my
+                      <a
+                        href="https://github.com/KermWasTaken"
+                        target="_blank"
+                        noreferrer="noopener noreferrer"
+                        >GitHub</a
+                      >!
+                    </p>
+                    <p>
+                      Suggestions? Find a bug?
+                      <a href="mailto: costcodle@gmail.com">Let me know!</a>
+                    </p>
+                  </div>
+                  <div class="info-section">
+                    <p>
+                      Special thanks to
+                      <a
+                        href="https://oec.world/en/tradle/"
+                        target="_blank"
+                        noreferrer="noopener noreferrer"
+                      >
+                        <span style="color: rgb(255, 166, 63)">TRAD</span>LE</a
+                      >
+                      and
+                      <a
+                        href="https://www.nytimes.com/games/wordle/index.html"
+                        target="_blank"
+                        noreferrer="noopener noreferrer"
+                        >Wordle</a
+                      >
+                      for inspiring <span class="costco-red">COSTCO</span
+                      ><span class="costco-blue">DLE</span>!
+                    </p>
+                    <br />
+                    <p>And thank you for checking out my game!</p>
+                  </div>
+                  <div style="margin-top: 8px">
+                    <p>
+                      Created by
+                      <a
+                        href="https://github.com/KermWasTaken"
+                        target="_blank"
+                        noreferrer="noopener noreferrer"
+                        >@Kerm</a
+                      >
+                    </p>
+                  </div>
+                </div>
               </div>
             </main>
             <footer id="site-footer">
