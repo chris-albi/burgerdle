@@ -16,25 +16,19 @@ function filterItems() {
   
   filtered.slice(0, 5).forEach(item => {
     const option = document.createElement('div');
+    option.className = 'dropdown-item';
+
+    const icon = document.createElement('img');
+    icon.src = item.icon;
+    icon.className = 'dropdown-icon';
+    const label = document.createElement('span');
     option.textContent = item.name;
     option.onclick = () => {
       document.getElementById('searchInput').value = item.name;
       dropdown.innerHTML = '';
     };
+    option.appendChild(icon);
+    option.appendChild(label);
     dropdown.appendChild(option);
-  });
-
-  const button = document.getElementById('popupButton');
-  const menu = document.getElementById('popupMenu');
-  
-  button.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
-  
-  // Optional: hide menu when clicking outside
-  document.addEventListener('click', (event) => {
-    if (!menu.contains(event.target) && !button.contains(event.target)) {
-      menu.classList.add('hidden');
-    }
   });
 }
