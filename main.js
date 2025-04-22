@@ -1,4 +1,5 @@
 let items = [];
+var maxheight = 400;
 
 window.onload = async function () {
   const response = await fetch('items.json');
@@ -14,7 +15,7 @@ function filterItems() {
 
   const filtered = items.filter(item => item.name.toLowerCase().includes(input));
   
-  filtered.slice(0, 5).forEach(item => {
+  filtered.slice(0, 100).forEach(item => {
     const option = document.createElement('div');
     option.className = 'dropdown-item';
 

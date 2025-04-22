@@ -151,15 +151,14 @@ body {
 .dropdown-content {
   display: flex;
   position: absolute;
-  top: 100%; 
-  width: 100%;
+  top: auto; 
+  width: auto;
   background-color: #fff;
   font-size: 16px;
-  padding: 4px 4px;
   flex-direction: column;
-  border: 1px solid gray;
-  border-bottom: 1px solid gray;
   direction: ltr;
+  height: 250px;
+  overflow: auto;
 }
 
 
@@ -174,7 +173,6 @@ body {
   padding: 4px 4px;
   cursor: pointer;
   border-bottom: 1px solid gray;
-
 }
 .dropdown-item span {
   font-family: monospace;
