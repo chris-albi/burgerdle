@@ -72,7 +72,8 @@ A new burgerdle is available every day!
 - [x] Initial README
 - [x] Develop burgerdle database
 - [x] Basic site layout
-- [ ] Implement search feature
+- [x] Implement search feature
+- [ ] Gameplay loop
 - [ ] Statistic tracking, site info
 - [ ] Launch
 
