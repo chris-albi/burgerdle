@@ -20,6 +20,23 @@ window.onload = async function () {
 const startDate = new Date("01/16/2025");
 const gameNumber = getGameNumber();
 
+//User stats object
+const userStats = JSON.parse(localStorage.getItem("stats")) || {
+  numGames: 0,
+  numWins: 0,
+  winsInNum: [0, 0, 0, 0, 0, 0, 0, 0],
+  currentStreak: 0,
+  maxStreak: 0,
+};
+
+//User game state
+const gameState = JSON.parse(localStorage.getItem("state")) || {
+  gameNumber: -1,
+  guesses: [],
+  hasWon: false,
+};
+
+
   // New game functionality
   function getGameNumber() {
     const currDate = new Date();
@@ -44,21 +61,68 @@ function fetchGameData(gameNumber) {
       
       // Loop through each matched item and log the values
       filteredItems.forEach(item => {
-        console.log("Name:", item.name);
-        console.log("Restaurant:", item.restaurant);
-        console.log("Calories:", item.calories);
-        console.log("Type:", item.type);
-        console.log("Vegan:", item.vegan);
-        console.log("Gluten Free:", item.glutenFree);
-        console.log("Year of Release:", item.yearOfRelease);
-        console.log("Ingredients:", item.ingredients.join(", "));
-        console.log("Icon:", item.icon);
-        console.log("--------------------------");
+        productName = item.name;
+        productRestaurant = item.restaurant;
+        productCalories = item.calories;
+        productType = item.type;
+        productVegan = item.vegan;
+        productGF = item.glutenFree;
+        productRelease = item.yearOfRelease;
+        productIngredients = item.ingredients;
+        initializeGame();
       });
     })
     .catch((error) => {
       console.error("Error fetching or parsing data:", error);
     });
+
+  
+function initializeGame() {
+  // Reset game state and track new game if user last played on a different day
+  if (gameState.gameNumber !== gameNumber) {
+    if (gameState.hasWon === false) {
+      userStats.currentStreak = 0;
+    }
+    gameState.gameNumber = gameNumber;
+    gameState.guesses = [];
+    gameState.hasWon = false;
+    userStats.numGames++;
+
+    localStorage.setItem("stats", JSON.stringify(userStats));
+    localStorage.setItem("state", JSON.stringify(gameState));
+  }
+}
+
+document.getElementById("submitButton").addEventListener("click", checkUserSelection);
+
+function checkUserSelection() {
+  const selectedName = document.getElementById("searchInput").value;
+  
+  fetch("./items.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const matchedItem = data.find(item => item.name === selectedName);
+      
+      if (matchedItem) {
+        console.log("You selected:", matchedItem.name);
+        console.log("Details:");
+        console.log("Restaurant:", matchedItem.restaurant);
+        console.log("Calories:", matchedItem.calories);
+        console.log("Type:", matchedItem.type);
+        console.log("Vegan:", matchedItem.vegan);
+        console.log("Gluten Free:", matchedItem.glutenFree);
+        console.log("Year of Release:", matchedItem.yearOfRelease);
+        console.log("Ingredients:", matchedItem.ingredients.join(", "));
+        console.log("Icon:", matchedItem.icon);
+      } else {
+        console.log("No matching item found.");
+      }
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+}
+
 }
 
 

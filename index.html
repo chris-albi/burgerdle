@@ -4,7 +4,6 @@
 
 <html lang="en">
     <head>
-      <script src="main.js"></script>
         <title>Burgerdle</title>
         <link rel="stylesheet" href="styles.css">
         </head>
@@ -40,7 +39,7 @@
                   <input type="text" id="searchInput" placeholder="Input fast food item here" oninput="filterItems()">
                   <div id="dropdown" class="dropdown-content" style="margin-left: 0%;margin-top: 2%"></div>
                 </div>
-                <button class="submit" type="button">Submit</button>
+                <button class="submit" id="submitButton" oninput="checkUserSelection();" type="button">Submit</button>
               </div>
             </main>
             <footer id="site-footer">
@@ -54,6 +53,6 @@
               </div>
               <div id="dev-name">albi</div>
             </footer>
-          
+          <script src="main.js"></script>
           </body>
 </html>
