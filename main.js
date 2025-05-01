@@ -75,6 +75,7 @@ function fetchGameData(gameNumber) {
     .catch((error) => {
       console.error("Error fetching or parsing data:", error);
     });
+  }
 
   
 function initializeGame() {
@@ -101,30 +102,45 @@ function checkUserSelection() {
   fetch("./items.json")
     .then((response) => response.json())
     .then((data) => {
-      const matchedItem = data.find(item => item.name === selectedName);
+      const userItem = data.find(item => item.name === selectedName);
       
-      if (matchedItem) {
-        console.log("You selected:", matchedItem.name);
-        console.log("Details:");
-        console.log("Restaurant:", matchedItem.restaurant);
-        console.log("Calories:", matchedItem.calories);
-        console.log("Type:", matchedItem.type);
-        console.log("Vegan:", matchedItem.vegan);
-        console.log("Gluten Free:", matchedItem.glutenFree);
-        console.log("Year of Release:", matchedItem.yearOfRelease);
-        console.log("Ingredients:", matchedItem.ingredients.join(", "));
-        console.log("Icon:", matchedItem.icon);
-      } else {
-        console.log("No matching item found.");
+      if (userItem && productName) {
+        displayComparison(userItem, productName)
+      }
+      else {
+        console.log("Item not found or mystery item not initialized.");
       }
     })
     .catch((error) => {
       console.error("Error:", error);
     });
-}
+    }
 
+function displayComparison(userItem, productName) {
+  const container = document.getElementById("comparisonArea");
+  container.innerHTML = `
+    <div class="comparison-card">
+      <h2>Your Pick</h2>
+      <p><strong>${userItem.name}</strong></p>
+      <p>Restaurant: ${userItem.restaurant}</p>
+      <p>Calories: ${userItem.calories}</p>
+      <p>Vegan: ${userItem.vegan}</p>
+      <p>Gluten Free: ${userItem.glutenFree}</p>
+      <p>Date of release: ${userItem.yearOfRelease}</p>
+      <p>Ingredients: ${userItem.ingredients.join(", ")}</p>
+    </div>
+    <div class="comparison-card">
+      <h2>Mystery Item</h2>
+      <p><strong>${productName}</strong></p>
+      <p>Restaurant: ${productRestaurant}</p>
+      <p>Calories: ${productCalories}</p>
+      <p>Vegan: ${productVegan}</p>
+      <p>Gluten Free: ${productGF}</p>
+      <p>Date of release: ${productRelease}</p>
+      <p>Ingredients: ${productIngredients.join(", ")}</p>
+    </div>
+  `;
 }
-
 
 
 
