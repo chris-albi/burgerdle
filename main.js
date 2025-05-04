@@ -129,16 +129,6 @@ function displayComparison(userItem, productName) {
       <p>Date of release: ${userItem.yearOfRelease}</p>
       <p>Ingredients: ${userItem.ingredients.join(", ")}</p>
     </div>
-    <div class="comparison-card">
-      <h2>Mystery Item</h2>
-      <p><strong>${productName}</strong></p>
-      <p>Restaurant: ${productRestaurant}</p>
-      <p>Calories: ${productCalories}</p>
-      <p>Vegan: ${productVegan}</p>
-      <p>Gluten Free: ${productGF}</p>
-      <p>Date of release: ${productRelease}</p>
-      <p>Ingredients: ${productIngredients.join(", ")}</p>
-    </div>
   `;
 }
 
