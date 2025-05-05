@@ -17,7 +17,7 @@ window.onload = async function () {
   items = await response.json();
 };
 
-const startDate = new Date("01/16/2025");
+const startDate = new Date("01/17/2025");
 const gameNumber = getGameNumber();
 
 //User stats object
@@ -58,7 +58,7 @@ function fetchGameData(gameNumber) {
     .then((data) => {
       // Filter items by game number
       const filteredItems = data.filter(item => item.game === gameNumber);
-      
+      console.log(gameNumber);
       // Loop through each matched item and log the values
       filteredItems.forEach(item => {
         productName = item.name;
@@ -69,6 +69,8 @@ function fetchGameData(gameNumber) {
         productGF = item.glutenFree;
         productRelease = item.yearOfRelease;
         productIngredients = item.ingredients;
+        console.log(item.restaurant);
+        console.log(productRestaurant);
         initializeGame();
       });
     })
@@ -116,21 +118,61 @@ function checkUserSelection() {
     });
     }
 
-function displayComparison(userItem, productName) {
-  const container = document.getElementById("comparisonArea");
-  container.innerHTML = `
-    <div class="comparison-card">
-      <h2>Your Pick</h2>
-      <p><strong>${userItem.name}</strong></p>
-      <p>Restaurant: ${userItem.restaurant}</p>
-      <p>Calories: ${userItem.calories}</p>
-      <p>Vegan: ${userItem.vegan}</p>
-      <p>Gluten Free: ${userItem.glutenFree}</p>
-      <p>Date of release: ${userItem.yearOfRelease}</p>
-      <p>Ingredients: ${userItem.ingredients.join(", ")}</p>
-    </div>
-  `;
-}
+    function displayComparison(userItem, mysteryItem) {
+      const container = document.getElementById("comparisonArea");
+    
+      // Create comparison feedback
+      function compare(val1, val2) {
+        return val1 === val2 ? "✅" : "❌";
+      }
+
+      function compareInt(val1, val2) {
+        if (val1 < val2) {
+          return "↑";
+        }
+        else if (val1 > val2) {
+          return "↓";
+        }
+        else {
+          return "✅";
+        }
+      }
+
+      function getIngredientMatch(userIngredients, mysteryIngredients) {
+        if (!Array.isArray(userIngredients) || !Array.isArray(mysteryIngredients)) {
+          return [];
+        }
+        return userIngredients.filter(i => mysteryIngredients.includes(i));
+      }
+      
+      const matchingIngredients = getIngredientMatch(userItem.ingredients, productIngredients);
+      
+      
+      container.innerHTML = `
+       <div class="comparison-header">
+        <p>Name</p>
+        <p>Restaurant</p>
+        <p>Calories</p>
+        <p>Type</p>
+        <p>Vegan</p>
+        <p>Gluten-Free</p>
+        <p>Year</p>
+        <p>Ingredients</p>
+     </div>
+      <div class="comparison-card">
+        <div class="bubble">${userItem.name}</div>
+        <div class="bubble">${userItem.restaurant} ${compare(userItem.restaurant, productRestaurant)}</div>
+        <div class="bubble">${userItem.calories} ${compareInt(userItem.calories, productCalories)}</div>
+        <div class="bubble">${userItem.type} ${compare(userItem.type, productType)}</div>
+        <div class="bubble">${userItem.vegan ? "Yes" : "No"} ${compare(userItem.vegan, productVegan)}</div>
+        <div class="bubble">${userItem.glutenFree ? "Yes" : "No"} ${compare(userItem.glutenFree, productGF)}</div>
+        <div class="bubble">${userItem.yearOfRelease} ${compare(userItem.yearOfRelease, productRelease)}</div>
+        <div class="bubble"> ${userItem.ingredients.join(", ")}<br>
+          <small> ${matchingIngredients.join(", ") || "None"}</small>
+        </div>
+      </div>
+`;
+    }
 
 
 

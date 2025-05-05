@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="styles.css">
         </head>
         <body>
-          <div id="main page">
+          <div id="main-page">
             <header id="site-header">
               <div id="header-container">
                 <div class="box">
@@ -33,7 +33,7 @@
                     </button>
                   </div>
                 </header>
-            <main id="gameplay section">
+            <main>
               <div class="topnav">
                 <div class="search-wrapper">
                   <input type="text" id="searchInput" placeholder="Input fast food item here" oninput="filterItems()">
@@ -42,7 +42,10 @@
                 <button class="submit" id="submitButton" oninput="checkUserSelection();" type="button">Submit</button>
               </div>
             </main>
-            <div id="comparisonArea" class="comparison-container"></div>
+            <div id="gameplay-section">
+              <div id="comparison-header" class="top-label"></div>
+              <div id="comparisonArea" class="comparison-container"></div>
+            </div>
             <footer id="site-footer">
               <div id="link">
                 <a

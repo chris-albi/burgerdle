@@ -16,7 +16,8 @@ body {
 
 
 #gameplay-section {
-  display: flex;
+  display: row;
+  flex-direction: column;
   background-color: gainsboro;
   gap: 0px;
   height: 1000px;
@@ -37,13 +38,6 @@ body {
   border-radius: 8px;
 }
 
-  #main-page {
-    display: flex;
-    flex-direction: column;
-  
-    width: 100wh;
-    height: 100vh;
-  }
   
   #site-header {
     display: flex;
@@ -60,13 +54,15 @@ body {
     width: 1000px;
     border-bottom: 4px solid gray;
     margin-bottom: 40px;
+    width: 100%;
   }
+
 
   #footer {
     position: fixed;
     bottom: 0px;
     width: 100%;
-    diplay: flex;
+    display: flex;
 
   }
 
@@ -84,6 +80,7 @@ body {
   h2{
     color: rgb(235, 181, 111);
   }
+
 /* search bar CSS */
 /* Add a black background color to the top navigation bar */
 .topnav {
@@ -196,13 +193,46 @@ body {
 }
 
 .comparison-card {
-  border: 1px solid #ccc;
-  padding: 15px;
+  display: flex;
+  padding: 10px;
   border-radius: 10px;
-  width: 45%;
-  background-color: #f9f9f9;
+  width: 95%;
+
 }
 
-.comparison-card h2 {
-  margin-top: 0;
+
+.comparison-header{
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  width: 95%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  margin: 0 10px;
+  flex: 1;
 }
+
+#top-label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#comparisonArea {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.bubble {
+  display: inline-block; 
+  padding: 8px 15px;
+  background-color: #fff;
+  border-radius: 25px;
+  font-size: 28px;
+  margin: 0 5px;
+  text-align: center;
+}
+
