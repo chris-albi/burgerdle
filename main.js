@@ -136,8 +136,8 @@ function displayComparisonOne(userItem, mysteryItem) {
    <div class="comparison-header">
     <p>Name</p>
     <p>Restaurant</p>
-    <p>Calories</p>
     <p>Type</p>
+    <p>Cal.</p>
     <p>Vegan</p>
     <p>Gluten-Free</p>
     <p>Year</p>
@@ -146,8 +146,8 @@ function displayComparisonOne(userItem, mysteryItem) {
   <div class="comparison-card">
     <div class="bubble">${userItem.name}</div>
     <div class="bubble">${userItem.restaurant} ${compare(userItem.restaurant, productRestaurant)}</div>
-    <div class="bubble">${userItem.calories} ${compareInt(userItem.calories, productCalories)}</div>
     <div class="bubble">${userItem.type} ${compare(userItem.type, productType)}</div>
+    <div class="bubble">${userItem.calories} ${compareInt(userItem.calories, productCalories)}</div>
     <div class="bubble">${userItem.vegan ? "Yes" : "No"} ${compare(userItem.vegan, productVegan)}</div>
     <div class="bubble">${userItem.glutenFree ? "Yes" : "No"} ${compare(userItem.glutenFree, productGF)}</div>
     <div class="bubble">${userItem.yearOfRelease} ${compare(userItem.yearOfRelease, productRelease)}</div>
@@ -186,8 +186,8 @@ function displayComparisonTwo(userItem, mysteryItem) {
   <div class="comparison-card">
     <div class="bubble">${userItem.name}</div>
     <div class="bubble">${userItem.restaurant} ${compare(userItem.restaurant, productRestaurant)}</div>
-    <div class="bubble">${userItem.calories} ${compareInt(userItem.calories, productCalories)}</div>
     <div class="bubble">${userItem.type} ${compare(userItem.type, productType)}</div>
+    <div class="bubble">${userItem.calories} ${compareInt(userItem.calories, productCalories)}</div>
     <div class="bubble">${userItem.vegan ? "Yes" : "No"} ${compare(userItem.vegan, productVegan)}</div>
     <div class="bubble">${userItem.glutenFree ? "Yes" : "No"} ${compare(userItem.glutenFree, productGF)}</div>
     <div class="bubble">${userItem.yearOfRelease} ${compare(userItem.yearOfRelease, productRelease)}</div>
@@ -198,7 +198,166 @@ function displayComparisonTwo(userItem, mysteryItem) {
 `;
 }
 
-// guess containers end
+function displayComparisonThree(userItem, mysteryItem) {
+  const container = document.getElementById("comparison-3");
+
+  // Create comparison feedback
+  function compare(val1, val2) {
+    return val1 === val2 ? "✅" : "❌";
+  }
+
+  function compareInt(val1, val2) {
+    if (val1 < val2) {
+      return "↑";
+    }
+    else if (val1 > val2) {
+      return "↓";
+    }
+    else {
+      return "✅";
+    }
+  }
+
+  
+  const matchingIngredients = getIngredientMatch(userItem.ingredients, productIngredients);
+  
+  
+  container.innerHTML = `
+  <div class="comparison-card">
+    <div class="bubble">${userItem.name}</div>
+    <div class="bubble">${userItem.restaurant} ${compare(userItem.restaurant, productRestaurant)}</div>
+    <div class="bubble">${userItem.type} ${compare(userItem.type, productType)}</div>
+    <div class="bubble">${userItem.calories} ${compareInt(userItem.calories, productCalories)}</div>
+    <div class="bubble">${userItem.vegan ? "Yes" : "No"} ${compare(userItem.vegan, productVegan)}</div>
+    <div class="bubble">${userItem.glutenFree ? "Yes" : "No"} ${compare(userItem.glutenFree, productGF)}</div>
+    <div class="bubble">${userItem.yearOfRelease} ${compare(userItem.yearOfRelease, productRelease)}</div>
+    <div class="bubble"> ${userItem.ingredients.join(", ")}<br>
+      <small> ${matchingIngredients.join(", ") || "None"}</small>
+    </div>
+  </div>
+`;
+}
+
+function displayComparisonFour(userItem, mysteryItem) {
+  const container = document.getElementById("comparison-4");
+
+  // Create comparison feedback
+  function compare(val1, val2) {
+    return val1 === val2 ? "✅" : "❌";
+  }
+
+  function compareInt(val1, val2) {
+    if (val1 < val2) {
+      return "↑";
+    }
+    else if (val1 > val2) {
+      return "↓";
+    }
+    else {
+      return "✅";
+    }
+  }
+
+  
+  const matchingIngredients = getIngredientMatch(userItem.ingredients, productIngredients);
+  
+  
+  container.innerHTML = `
+  <div class="comparison-card">
+    <div class="bubble">${userItem.name}</div>
+    <div class="bubble">${userItem.restaurant} ${compare(userItem.restaurant, productRestaurant)}</div>
+    <div class="bubble">${userItem.type} ${compare(userItem.type, productType)}</div>
+    <div class="bubble">${userItem.calories} ${compareInt(userItem.calories, productCalories)}</div>
+    <div class="bubble">${userItem.vegan ? "Yes" : "No"} ${compare(userItem.vegan, productVegan)}</div>
+    <div class="bubble">${userItem.glutenFree ? "Yes" : "No"} ${compare(userItem.glutenFree, productGF)}</div>
+    <div class="bubble">${userItem.yearOfRelease} ${compare(userItem.yearOfRelease, productRelease)}</div>
+    <div class="bubble"> ${userItem.ingredients.join(", ")}<br>
+      <small> ${matchingIngredients.join(", ") || "None"}</small>
+    </div>
+  </div>
+`;
+}
+
+function displayComparisonFive(userItem, mysteryItem) {
+  const container = document.getElementById("comparison-5");
+
+  // Create comparison feedback
+  function compare(val1, val2) {
+    return val1 === val2 ? "✅" : "❌";
+  }
+
+  function compareInt(val1, val2) {
+    if (val1 < val2) {
+      return "↑";
+    }
+    else if (val1 > val2) {
+      return "↓";
+    }
+    else {
+      return "✅";
+    }
+  }
+
+  
+  const matchingIngredients = getIngredientMatch(userItem.ingredients, productIngredients);
+  
+  
+  container.innerHTML = `
+  <div class="comparison-card">
+    <div class="bubble">${userItem.name} ${compare(userItem.name, productName)}</div>
+    <div class="bubble">${userItem.restaurant} ${compare(userItem.restaurant, productRestaurant)}</div>
+    <div class="bubble">${userItem.type} ${compare(userItem.type, productType)}</div>
+    <div class="bubble">${userItem.calories} ${compareInt(userItem.calories, productCalories)}</div>
+    <div class="bubble">${userItem.vegan ? "Yes" : "No"} ${compare(userItem.vegan, productVegan)}</div>
+    <div class="bubble">${userItem.glutenFree ? "Yes" : "No"} ${compare(userItem.glutenFree, productGF)}</div>
+    <div class="bubble">${userItem.yearOfRelease} ${compare(userItem.yearOfRelease, productRelease)}</div>
+    <div class="bubble"> ${userItem.ingredients.join(", ")}<br>
+      <small> ${matchingIngredients.join(", ") || "None"}</small>
+    </div>
+  </div>
+`;
+}
+
+function displayComparisonSix(userItem, mysteryItem) {
+  const container = document.getElementById("comparison-6");
+
+  // Create comparison feedback
+  function compare(val1, val2) {
+    return val1 === val2 ? "✅" : "❌";
+  }
+
+  function compareInt(val1, val2) {
+    if (val1 < val2) {
+      return "↑";
+    }
+    else if (val1 > val2) {
+      return "↓";
+    }
+    else {
+      return "✅";
+    }
+  }
+
+  
+  const matchingIngredients = getIngredientMatch(userItem.ingredients, productIngredients);
+  
+  
+  container.innerHTML = `
+  <div class="comparison-card">
+    <div class="bubble">${userItem.name}</div>
+    <div class="bubble">${userItem.restaurant} ${compare(userItem.restaurant, productRestaurant)}</div>
+    <div class="bubble">${userItem.type} ${compare(userItem.type, productType)}</div>
+    <div class="bubble">${userItem.calories} ${compareInt(userItem.calories, productCalories)}</div>
+    <div class="bubble">${userItem.vegan ? "Yes" : "No"} ${compare(userItem.vegan, productVegan)}</div>
+    <div class="bubble">${userItem.glutenFree ? "Yes" : "No"} ${compare(userItem.glutenFree, productGF)}</div>
+    <div class="bubble">${userItem.yearOfRelease} ${compare(userItem.yearOfRelease, productRelease)}</div>
+    <div class="bubble"> ${userItem.ingredients.join(", ")}<br>
+      <small> ${matchingIngredients.join(", ") || "None"}</small>
+    </div>
+  </div>
+`;
+}
+// guess containers end please forgive me...
 
 
 function checkUserSelection() {
@@ -216,9 +375,32 @@ function checkUserSelection() {
         }
         else if (guessNumber == 1) {
           displayComparisonTwo(userItem, productName)
-          guessnumber += 1;
+          guessNumber += 1;
         }
-        console.log(guessNumber)
+        else if (guessNumber == 2) {
+          displayComparisonThree(userItem, productName)
+          guessNumber += 1;
+        }
+        else if (guessNumber == 3) {
+          displayComparisonFour(userItem, productName)
+          guessNumber += 1;
+        }
+        else if (guessNumber == 4) {
+          displayComparisonFive(userItem, productName)
+          guessNumber += 1;
+        }
+        else if (guessNumber == 5) {
+          displayComparisonSix(userItem, productName)
+          guessNumber += 1;
+        }
+        else if (guessNumber == 6) {
+          console.log("You lose!")
+          // add loss logic here
+        }
+        else {
+          console.log("You broke the game!")
+        }
+        console.log(guessNumber);
       }
       else {
         console.log("Item not found or mystery item not initialized.");
