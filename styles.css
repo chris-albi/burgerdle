@@ -220,7 +220,7 @@ body {
   position: relative;
 }
 
-#comparisonArea {
+#comparison-1 {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -236,3 +236,11 @@ body {
   text-align: center;
 }
 
+.col {
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  overflow-wrap: break-word;
+}
