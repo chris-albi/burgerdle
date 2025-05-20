@@ -47,7 +47,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Guess the burgerdle in 5 tries.
+Guess the burgerdle in 6 tries.
 
 * A list of items will be provided when you start typing.
 * Incorrect guesses will provide information on the mystery item.
@@ -100,7 +100,7 @@ Project Link: [https://github.com/chris-albi/costcodle](https://github.com/chris
 
 This project would not have been possible without the following resources:
 
-* [Zachary's Kermitz's COSTCODLE](https://github.com/KermWasTaken/costcodle/)
+* [Zachary's Kermitz's COSTCODLE](https://github.com/KermWasTaken/costcodle/) I stole their whole site vibe because I liked it. thank you costcodle
 * [Wordle](https://www.nytimes.com/games/wordle/index.html)
 * [Tradle](https://oec.world/en/tradle/)
 * [Best-README-Template](https://github.com/othneildrew/Best-README-Template/)

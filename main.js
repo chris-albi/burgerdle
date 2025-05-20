@@ -371,31 +371,55 @@ function checkUserSelection() {
       if (userItem && productName) {
         if ( guessNumber == 0 ) {
           displayComparisonOne(userItem, productName)
+          if (userItem.name == productName) {
+            console.log("You win!") 
+            openPopup();
+          }
           guessNumber += 1;
         }
         else if (guessNumber == 1) {
           displayComparisonTwo(userItem, productName)
           guessNumber += 1;
+          if (userItem.name == productName) {
+            console.log("You win!") 
+            openPopup();
+          }
         }
         else if (guessNumber == 2) {
           displayComparisonThree(userItem, productName)
           guessNumber += 1;
+          if (userItem.name == productName) {
+            console.log("You win!") 
+            openPopup();
+          }
         }
         else if (guessNumber == 3) {
           displayComparisonFour(userItem, productName)
           guessNumber += 1;
+          if (userItem.name == productName) {
+            console.log("You win!") 
+            openPopup();
+          }
         }
         else if (guessNumber == 4) {
           displayComparisonFive(userItem, productName)
           guessNumber += 1;
+          if (userItem.name == productName) {
+            console.log("You win!") 
+            openPopup();
+          }
         }
         else if (guessNumber == 5) {
           displayComparisonSix(userItem, productName)
           guessNumber += 1;
+          if (userItem.name == productName) {
+            console.log("You win!") 
+            openPopup();
+          }
         }
         else if (guessNumber == 6) {
           console.log("You lose!")
-          // add loss logic here
+          // add loss logic here (well actually 3 lines above here)
         }
         else {
           console.log("You broke the game!")
@@ -418,7 +442,13 @@ function checkUserSelection() {
 
 
 
+function openPopup() {
+  popup.classList.add("open-popup");
+}
 
+function closePopup () {
+  popup.classList.remove("open-popup");
+}
 
 
 // Search bar functionality

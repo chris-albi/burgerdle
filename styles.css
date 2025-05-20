@@ -180,6 +180,18 @@ body {
   border: none;
 }
 
+.dropdown-icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+
+.comparison-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
 
 .comparison-card {
   display: flex;
@@ -232,4 +244,30 @@ body {
   box-sizing: border-box;
   text-align: center;
   overflow-wrap: break-word;
+}
+
+
+.popup{
+  width: 1200px;
+  height: 1000px;
+  background: #aba9a9;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 20%) scale(1);
+  text-align: center;
+  padding: 0 30px 30px;
+  visibility: hidden;
+}
+
+.open-popup{
+  visibility: visible;
+}
+
+.popup h2{
+  color: 333;
+  font-weight: bold;
+  -webkit-text-stroke: 2px black;
+  font-size: 64px;
 }
