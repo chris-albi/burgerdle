@@ -57,10 +57,8 @@ function fetchGameData(gameNumber) {
   fetch("./items.json")
     .then((response) => response.json())
     .then((data) => {
-      // Filter items by game number
       const filteredItems = data.filter(item => item.game === gameNumber);
       console.log(gameNumber);
-      // Loop through each matched item and log the values
       filteredItems.forEach(item => {
         productName = item.name;
         productRestaurant = item.restaurant;
@@ -483,15 +481,17 @@ function checkUserSelection() {
         }
         else if (guessNumber == 5) {
           displayComparisonSix(userItem, productName)
-          guessNumber += 1;
           if (userItem.name == productName) {
             console.log("You win!") 
             openPopup();
           }
-        }
-        else if (guessNumber == 6) {
-          console.log("You lose!")
-          // add loss logic here (well actually 3 lines above here)
+          else {
+            guessNumber += 1;
+            console.log("You lose!")
+            const victoryHeading = document.querySelector(".victory-screen h2");
+            victoryHeading.textContent = "you are loser :(";
+            openPopup();
+          }   
         }
         else {
           console.log("You broke the game!")
@@ -528,7 +528,7 @@ function closePopup () {
 function filterItems() {
   const input = document.getElementById('searchInput').value.toLowerCase();
   const dropdown = document.getElementById('dropdown');
-  dropdown.innerHTML = ''; // clear dropdown
+  dropdown.innerHTML = '';  
 
   if (!input) return;
 
