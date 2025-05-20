@@ -112,22 +112,34 @@ function displayComparisonOne(userItem, mysteryItem) {
   const container = document.getElementById("comparison-1");
 
   // Create comparison feedback
-  function compare(val1, val2) {
-    return val1 === val2 ? "✅" : "❌";
-  }
+function compareClass(val1, val2) {
+  return val1 == val2 ? "match" : "no-match";
+}
 
-  function compareInt(val1, val2) {
-    if (val1 < val2) {
-      return "↑";
-    }
-    else if (val1 > val2) {
-      return "↓";
-    }
-    else {
-      return "✅";
-    }
+function compareIntClass(val1, val2) {
+  if (val1 < val2) {
+    return "calorie-lower"; 
+  } else if (val1 > val2) {
+    return "calorie-higher"; 
+  } else {
+    return "calorie-same";
   }
+}
 
+function compareIngredientsClass(userIngredients, productIngredients) {
+  const userSet = new Set(userIngredients.map(i => i.toLowerCase()));
+  const productSet = new Set(productIngredients.map(i => i.toLowerCase()));
+
+  const matching = [...userSet].filter(ingredient => productSet.has(ingredient));
+
+  if (matching.length === 0) {
+    return "ingredients-none";
+  } else if (matching.length === userSet.size) {
+    return "ingredients-all";
+  } else {
+    return "ingredients-some";
+  }
+}
   
   const matchingIngredients = getIngredientMatch(userItem.ingredients, productIngredients);
   
@@ -144,17 +156,18 @@ function displayComparisonOne(userItem, mysteryItem) {
     <p>Ingredients</p>
  </div>
   <div class="comparison-card">
-    <div class="bubble">${userItem.name}</div>
-    <div class="bubble">${userItem.restaurant} ${compare(userItem.restaurant, productRestaurant)}</div>
-    <div class="bubble">${userItem.type} ${compare(userItem.type, productType)}</div>
-    <div class="bubble">${userItem.calories} ${compareInt(userItem.calories, productCalories)}</div>
-    <div class="bubble">${userItem.vegan ? "Yes" : "No"} ${compare(userItem.vegan, productVegan)}</div>
-    <div class="bubble">${userItem.glutenFree ? "Yes" : "No"} ${compare(userItem.glutenFree, productGF)}</div>
-    <div class="bubble">${userItem.yearOfRelease} ${compare(userItem.yearOfRelease, productRelease)}</div>
-    <div class="bubble"> ${userItem.ingredients.join(", ")}<br>
-      <small> ${matchingIngredients.join(", ") || "None"}</small>
+    <div class="bubble ${compareClass(userItem.name, productName)}">${userItem.name}</div>
+    <div class="bubble ${compareClass(userItem.restaurant, productRestaurant)}">${userItem.restaurant}</div>
+    <div class="bubble ${compareClass(userItem.type, productType)}">${userItem.type}</div>
+    <div class="bubble ${compareIntClass(userItem.calories, productCalories)}">${userItem.calories}</div>
+    <div class="bubble ${compareClass(userItem.vegan, productVegan)}">${userItem.vegan ? "Yes" : "No"}</div>
+    <div class="bubble ${compareClass(userItem.glutenFree, productGF)}">${userItem.glutenFree ? "Yes" : "No"}</div>
+    <div class="bubble ${compareClass(userItem.yearOfRelease, productRelease)}">${userItem.yearOfRelease}</div>
+    <div class="bubble ${compareIngredientsClass(userItem.ingredients, productIngredients)}">
+      ${userItem.ingredients.join(", ")}<br>
+      <small>${matchingIngredients.join(", ") || "None"}</small>
     </div>
-  </div>
+</div>
 `;
 }
 

@@ -237,6 +237,54 @@ body {
   text-align: center;
 }
 
+.bubble.match {
+  background-color: #d4edda; 
+  color: #155724;
+}
+
+.bubble.no-match {
+  background-color: #f8d7da; 
+  color: #721c24;
+}
+
+.bubble.calorie-lower {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.bubble.calorie-lower::after {
+  content: " ↑";
+}
+
+.bubble.calorie-higher {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.bubble.calorie-higher::after {
+  content: " ↓";
+}
+
+.bubble.calorie-same {
+  background-color: #d4edda; 
+  color: #155724;
+}
+
+.bubble.ingredients-none {
+  background-color: #f8d7da; /* red */
+  color: #721c24;
+}
+
+.bubble.ingredients-some {
+  background-color: #fff3cd; /* yellow */
+  color: #856404;
+}
+
+.bubble.ingredients-all {
+  background-color: #d4edda; /* green */
+  color: #155724;
+}
+
 .col {
   display: flex;
   flex: 1;
