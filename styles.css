@@ -14,6 +14,10 @@ body {
 
 }
 
+.search-bar
+{
+  visibility: visible;
+}
 
 #gameplay-section {
   display: row;
@@ -27,6 +31,8 @@ body {
     border: none;
     padding: 0;
     background: none;
+    cursor: pointer;
+
 }
 
 .submit {
@@ -81,8 +87,37 @@ body {
     color: rgb(235, 181, 111);
   }
 
+
+  .info {
+  width: 1200px;
+  height: 1000px;
+  background: #aba9a9;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 20%) scale(1);
+  text-align: center;
+  padding: 0 30px 30px;
+  visibility: hidden;
+}
+
+
+  .stats {
+  width: 1200px;
+  height: 1000px;
+  background: #aba9a9;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 20%) scale(1);
+  text-align: center;
+  padding: 0 30px 30px;
+  visibility: hidden;
+}
+
 /* search bar CSS */
-/* Add a black background color to the top navigation bar */
 .topnav {
   display: flex;
   justify-content: center;
@@ -92,7 +127,7 @@ body {
   position: relative;
 }
 
-/* Style the links inside the navigation bar */
+
 .topnav a {
   float: left;
   display: block;
@@ -104,19 +139,18 @@ body {
   
 }
 
-/* Change the color of links on hover */
+
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Style the "active" element to highlight the current page */
+
 .topnav a.active {
   background-color: #2196F3;
   color: white;
 }
 
-/* Style the search box inside the navigation bar */
 .topnav input[type=text] {
   padding: 6px;
   border: none;
@@ -125,7 +159,7 @@ body {
   border-radius: 8px;
 }
 
-/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+
 @media screen and (max-width: 600px) {
   .topnav a, .topnav input[type=text] {
     float: none;
@@ -294,6 +328,8 @@ body {
   overflow-wrap: break-word;
 }
 
+.victory-screen{
+}
 
 .popup{
   width: 1200px;
@@ -309,7 +345,7 @@ body {
   visibility: hidden;
 }
 
-.open-popup{
+.visible{
   visibility: visible;
 }
 

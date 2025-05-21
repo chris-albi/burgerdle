@@ -515,13 +515,28 @@ function checkUserSelection() {
 
 
 function openPopup() {
-  popup.classList.add("open-popup");
+  popup.classList.add("visible");
 }
 
 function closePopup () {
-  popup.classList.remove("open-popup");
+  popup.classList.remove("visible");
 }
 
+function openInfo() {
+  info.classList.add("visible");
+}
+
+function closeInfo () {
+  info.classList.remove("visible");
+}
+
+function openStats() {
+  stats.classList.add("visible");
+}
+
+function closeStats() {
+  stats.classList.remove("visible");
+}
 
 // Search bar functionality
 
