@@ -9,7 +9,7 @@ h1 {
 body {
   font-family: "VT323", monospace;
   font-size: 30px;
-
+  overflow: hidden;
   background-color: gainsboro;
 
 }
@@ -342,20 +342,11 @@ body {
 
 .comparison-card {
   display: flex;
-  padding: 10px;
-  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
   width: 95%;
-
 }
 
-.comparisonbubble {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: inline;
-  align-items: center;
-
-}
 
 .comparison-header{
   display: flex;
@@ -383,28 +374,45 @@ body {
 }
 
 .bubble {
-  display: inline-block; 
-  padding: 8px 15px;
+  display: inline-block;           /* Better for text-wrapping pills */
+  padding: 10px 16px;              /* Adjust as needed */
   background-color: #fff;
   border-radius: 25px;
-  font-size: 28px;
+  font-size: 22px;
   margin: 0 5px;
   text-align: center;
+  line-height: 1.2;                /* Tighter vertical spacing */
+  white-space: normal;             /* Allows wrapping */
+  box-sizing: border-box;          /* Ensures padding is respected */
+  max-width: 100%;                 /* Prevents overflow */
 }
 
 .bubble.match {
   background-color: #d4edda; 
   color: #155724;
+  border: 3px solid #155724;
 }
 
 .bubble.no-match {
   background-color: #f8d7da; 
   color: #721c24;
+  border: 3px solid #721c24;
+}
+
+.match {
+  color: green;
+
+}
+
+.no-match {
+  color: red;
+
 }
 
 .bubble.calorie-lower {
   background-color: #f8d7da;
   color: #721c24;
+  border: 3px solid #721c24;
 }
 
 .bubble.calorie-lower::after {
@@ -414,6 +422,7 @@ body {
 .bubble.calorie-higher {
   background-color: #f8d7da;
   color: #721c24;
+  border: 3px solid #721c24;
 }
 
 .bubble.calorie-higher::after {
@@ -423,21 +432,27 @@ body {
 .bubble.calorie-same {
   background-color: #d4edda; 
   color: #155724;
+  border: 3px solid #155724;
+
 }
 
 .bubble.ingredients-none {
   background-color: #f8d7da; /* red */
   color: #721c24;
+  border: 3px solid #721c24;
 }
 
 .bubble.ingredients-some {
   background-color: #fff3cd; /* yellow */
   color: #856404;
+  border: 3px solid rgb(61, 52, 0); 
 }
 
 .bubble.ingredients-all {
   background-color: #d4edda; /* green */
   color: #155724;
+  border: 3px solid #155724;
+
 }
 
 .col {
