@@ -94,21 +94,27 @@ body {
   }
 
 
-  .info {
+ .info {
   width: 1200px;
   height: 1000px;
   background: #aba9a9;
-  border-radius: 6px;
+  border-radius: 25px;
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, 20%) scale(1);
+  transform: translate(-50%, 40%) scale(0.95);
   text-align: center;
   padding: 0 30px 30px;
+  opacity: 0;
   visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
   z-index: 5;
-  border-radius: 25px;
+}
 
+.info.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 15%) scale(1);
 }
 
 .info h2{
@@ -118,20 +124,27 @@ body {
   font-size: 64px;
 }
 
-  .stats {
+ .stats {
   width: 1200px;
   height: 1000px;
   background: #aba9a9;
-  border-radius: 6px;
-  position: absolute;
   border-radius: 25px;
+  position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, 15%) scale(1);
+  transform: translate(-50%, 40%) scale(0.95);
   text-align: center;
   padding: 0 30px 30px;
+  opacity: 0;
   visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
   z-index: 5;
+}
+
+.stats.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 15%) scale(1);
 }
 
 .stats h2{
