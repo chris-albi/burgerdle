@@ -9,8 +9,8 @@
         </head>
         <body>
           <div id="main-page">
-            <header id="site-header">
-              <div id="header-container">
+            <header id="siteheader">
+              <div id="headercontainer">
                 <div class="box">
                   <button class="unstyled-button" id="popupButton" onclick="openInfo()" type="button">
                       <img
@@ -36,17 +36,17 @@
             <main>
               <div class="info" id="info">
                 <div class="info-popup">
-                  hi
+                  <h2> HOW TO PLAY </h2>
                 </div>
                 <button type="closeinfo" onclick="closeInfo()">OK</button>
               </div>
               <div class="stats" id="stats">
                 <div class="stats-popup">
-                  hi
+                  <h2> STATISTICS </h2>
                 </div>
                 <button type="closeStats" onclick="closeStats()">OK</button>
               </div>
-              <div class="topnav">
+              <div class="topnav" id="topnav">
                 <div class="search-wrapper" id="search-bar">
                   <input type="text" id="searchInput" placeholder="Input fast food item here" oninput="filterItems()">
                   <div id="dropdown" class="dropdown-content" style="margin-left: 0%;margin-top: 2%"></div>

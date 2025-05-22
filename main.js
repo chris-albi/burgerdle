@@ -142,7 +142,7 @@ function compareIngredientsClass(userIngredients, productIngredients) {
   
   
   container.innerHTML = `
-   <div class="comparison-header">
+   <div class="comparison-header" id="topheader">
     <p>Name</p>
     <p>Restaurant</p>
     <p>Type</p>
@@ -152,15 +152,15 @@ function compareIngredientsClass(userIngredients, productIngredients) {
     <p>Year</p>
     <p>Ingredients</p>
  </div>
-  <div class="comparison-card">
-    <div class="bubble ${compareClass(userItem.name, productName)}">${userItem.name}</div>
-    <div class="bubble ${compareClass(userItem.restaurant, productRestaurant)}">${userItem.restaurant}</div>
-    <div class="bubble ${compareClass(userItem.type, productType)}">${userItem.type}</div>
-    <div class="bubble ${compareIntClass(userItem.calories, productCalories)}">${userItem.calories}</div>
-    <div class="bubble ${compareClass(userItem.vegan, productVegan)}">${userItem.vegan ? "Yes" : "No"}</div>
-    <div class="bubble ${compareClass(userItem.glutenFree, productGF)}">${userItem.glutenFree ? "Yes" : "No"}</div>
-    <div class="bubble ${compareClass(userItem.yearOfRelease, productRelease)}">${userItem.yearOfRelease}</div>
-    <div class="bubble ${compareIngredientsClass(userItem.ingredients, productIngredients)}">
+  <div class="comparison-card" id="comparisonbubble">
+    <div id="comparisonbubble" class="bubble ${compareClass(userItem.name, productName)}">${userItem.name}</div>
+    <div id="comparisonbubble" class="bubble ${compareClass(userItem.restaurant, productRestaurant)}">${userItem.restaurant}</div>
+    <div id="comparisonbubble" class="bubble ${compareClass(userItem.type, productType)}">${userItem.type}</div>
+    <div id="comparisonbubble" class="bubble ${compareIntClass(userItem.calories, productCalories)}">${userItem.calories}</div>
+    <div id="comparisonbubble" class="bubble ${compareClass(userItem.vegan, productVegan)}">${userItem.vegan ? "Yes" : "No"}</div>
+    <div id="comparisonbubble" class="bubble ${compareClass(userItem.glutenFree, productGF)}">${userItem.glutenFree ? "Yes" : "No"}</div>
+    <div id="comparisonbubble" class="bubble ${compareClass(userItem.yearOfRelease, productRelease)}">${userItem.yearOfRelease}</div>
+    <div id="comparisonbubble" class="bubble ${compareIngredientsClass(userItem.ingredients, productIngredients)}">
       ${userItem.ingredients.join(", ")}<br>
       <small>${matchingIngredients.join(", ") || "None"}</small>
     </div>
@@ -512,30 +512,59 @@ function checkUserSelection() {
 
 
 
+function darken() {
+  document.body.style.backgroundColor = "#3B3B3B";
+  document.getElementById("headercontainer").style.borderColor = "black";
+  document.getElementById("gameplay-section").style.backgroundColor = "#3B3B3B"
+  document.getElementById("site-footer").style.backgroundColor = "#3B3B3B"
+  document.getElementById("topnav").style.backgroundColor = "#3B3B3B"
+  document.getElementById("site-footer").style.borderColor = "black";
+  document.getElementById("topheader").style.backgroundColor = "#3B3B3B"
+  document.getElementById("topheader").style.borderColor = "#3B3B3B";
+  document.getElementById("topheader").style.color = "#3B3B3B";
+  document.getElementById("comparisonbubble").style.backgroundColor = "#3B3B3B";
+  document.getElementById("comparisonbubble").style.color = "#3B3B3B"; 
+}
 
-
+function brighten (){
+  document.body.style.backgroundColor = "#DCDCDC";
+  document.getElementById("headercontainer").style.borderColor = "gray";
+  document.getElementById("gameplay-section").style.backgroundColor = "#DCDCDC";
+  document.getElementById("site-footer").style.backgroundColor = "#DCDCDC";
+  document.getElementById("topnav").style.backgroundColor = "#DCDCDC";
+  document.getElementById("site-footer").style.borderColor = "gray";
+  document.getElementById("topheader").style.backgroundColor = "white";
+  document.getElementById("topheader").style.borderColor = "gray";
+  document.getElementById("comparisonbubble").style.backgroundColor = "#DCDCDC";
+}
 function openPopup() {
   popup.classList.add("visible");
+  darken();
 }
 
 function closePopup () {
   popup.classList.remove("visible");
+  brighten();
 }
 
 function openInfo() {
   info.classList.add("visible");
+  darken(); 
 }
 
 function closeInfo () {
   info.classList.remove("visible");
+  brighten();
 }
 
 function openStats() {
   stats.classList.add("visible");
+  darken();
 }
 
 function closeStats() {
   stats.classList.remove("visible");
+  brighten();
 }
 
 // Search bar functionality
