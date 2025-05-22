@@ -442,6 +442,8 @@ function checkUserSelection() {
         if ( guessNumber == 0 ) {
           displayComparisonOne(userItem, productName)
           if (userItem.name == productName) {
+            console.log(document.getElementById("submitButton"));
+            document.getElementById("submitButton").disabled = true;
             console.log("You win!") 
             openPopup();
           }
@@ -452,6 +454,7 @@ function checkUserSelection() {
           guessNumber += 1;
           if (userItem.name == productName) {
             console.log("You win!") 
+            document.getElementById("submitButton").disabled = true;
             openPopup();
           }
         }
@@ -460,6 +463,7 @@ function checkUserSelection() {
           guessNumber += 1;
           if (userItem.name == productName) {
             console.log("You win!") 
+            document.getElementById("submitButton").disabled = true;
             openPopup();
           }
         }
@@ -468,6 +472,7 @@ function checkUserSelection() {
           guessNumber += 1;
           if (userItem.name == productName) {
             console.log("You win!") 
+            document.getElementById("submitButton").disabled = true;
             openPopup();
           }
         }
@@ -476,6 +481,7 @@ function checkUserSelection() {
           guessNumber += 1;
           if (userItem.name == productName) {
             console.log("You win!") 
+            document.getElementById("submitButton").disabled = true;
             openPopup();
           }
         }
@@ -483,6 +489,7 @@ function checkUserSelection() {
           displayComparisonSix(userItem, productName)
           if (userItem.name == productName) {
             console.log("You win!") 
+            document.getElementById("submitButton").disabled = true;
             openPopup();
           }
           else {
