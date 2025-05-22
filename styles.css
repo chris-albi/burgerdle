@@ -337,22 +337,24 @@ body {
 .comparison-container {
   display: flex;
   gap: 20px;
+  grid-template-columns: repeat(7, 1fr);
   margin-top: 20px;
 }
 
 .comparison-card {
   display: flex;
   align-items: center;
+  grid-template-columns: repeat(7, 1fr);
   justify-content: space-between;
   width: 95%;
 }
 
 
 .comparison-header{
-  display: flex;
-  justify-content: space-between;
+    display: grid;
+  grid-template-columns: repeat(7, 1fr);
   font-weight: bold;
-  width: 95%;
+  text-align: center;
   padding: 15px;
   border-radius: 10px;
   border: 1px solid #ccc;
@@ -374,17 +376,18 @@ body {
 }
 
 .bubble {
-  display: inline-block;           /* Better for text-wrapping pills */
-  padding: 10px 16px;              /* Adjust as needed */
+  display: inline-block;   
+  padding: 10px 16px;             
   background-color: #fff;
   border-radius: 25px;
   font-size: 22px;
+  min-width: 100px;
   margin: 0 5px;
   text-align: center;
-  line-height: 1.2;                /* Tighter vertical spacing */
-  white-space: normal;             /* Allows wrapping */
-  box-sizing: border-box;          /* Ensures padding is respected */
-  max-width: 100%;                 /* Prevents overflow */
+  line-height: 1.2;              
+  white-space: normal;          
+  box-sizing: border-box;        
+  max-width: 400px;      
 }
 
 .bubble.match {
@@ -455,17 +458,7 @@ body {
 
 }
 
-.col {
-  display: flex;
-  flex: 1;
-  padding: 10px;
-  box-sizing: border-box;
-  text-align: center;
-  overflow-wrap: break-word;
-}
 
-.victory-screen{
-}
 
  .popup {
   width: 1200px;
