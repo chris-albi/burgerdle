@@ -596,3 +596,12 @@ function filterItems() {
     dropdown.appendChild(option);
   });
 }
+
+
+var elem = $( '#info' )[0];
+
+$( document ).on( 'keydown', function ( e ) {
+    if ( e.keyCode === 27 ) {
+        $( elem ).hide();
+    }
+});

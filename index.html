@@ -35,16 +35,84 @@
                 </header>
             <main>
               <div class="info" id="info">
-                <div class="info-popup">
+                <button class="closeinfo" onclick="closeInfo()">✖</button>
+                <div class="info-header">
                   <h2> HOW TO PLAY </h2>
                 </div>
-                <button type="closeinfo" onclick="closeInfo()">OK</button>
+                  <div class="info-main" id="info-main">
+                    <h3><u><b>The game</b></u></h3>
+                    <h3>
+                     Guess the<span class="burger-yellow"> burgerdle </span>in 6 tries.
+                      <ul style="list-style-type: square">
+                        <li>Each guess must be a valid item.</li>
+                        <li>
+                          Incorrect guesses will help guide you to the target item.
+                        </li>
+                        </ul>
+                        <p>If you guess the target item, you win!</p>
+                        <p>
+                          A new <span class="burger-yellow"> burgerdle </span> is available every day!
+                        </h3>
+                        </div>
+                    <div class="info-main" id="info-examples">
+                      <h3><u><b>Examples</b></u></h3>
+                      <h3>
+                        If your guess has a shared attribute with the target item, the bubble will turn green. </h3>
+                        <img
+                        src="./assets/green-bubble.png"
+                        style="height: 30%; width: 30%"
+                        class="center"
+                        /> 
+                        <h3> If the two don't match, the bubble will turn red. </h3>
+                        <img
+                        src="./assets/red-bubble.png"
+                        style="height: 30%; width: 30%"
+                        class="center"
+                        /> 
+                        <h3> If you only match some of the ingredients of the item, the bubble will turn yellow and tell you which match. </h3>
+                        <img
+                        src="./assets/yellow-bubble.png"
+                        style="height: 90%; width: 90%"
+                        class="center"
+                        /> 
+                    </div>
+                    <div id="info-github" class="info-main">
+              <h3>
+                Source code available on my
+                <a
+                  href="https://github.com/chris-albi"
+                  target="_blank"
+                  noreferrer="noopener noreferrer"
+                  >GitHub</a
+                >!
+              </p>
+              <p>
+                Suggestions? Find a bug?
+                <a href="mailto: burgerdle@gmail.com">Let me know!</a>
+              </p>
+            </div>
+            <div id="info-credits" class="info-main">
+              <p>
+                Special thanks to
+                <a
+                  href="https://costcodle.com"
+                  target="_blank"
+                  noreferrer="noopener noreferrer"
+                >COSTCODLE</a
+                >
+                for inspiring <span class="burger-yellow">burgerdle</span
+                >! (I stole their whole site vibe I'm sorry...)
+              </p>
+              <br />
+              <p>And thank you for checking out my game!</p>
+            </div>
+            </div>
               </div>
               <div class="stats" id="stats">
+                <button class="closestats" onclick="closeStats()">✖</button>
                 <div class="stats-popup">
                   <h2> STATISTICS </h2>
                 </div>
-                <button type="closeStats" onclick="closeStats()">OK</button>
               </div>
               <div class="topnav" id="topnav">
                 <div class="search-wrapper" id="search-bar">

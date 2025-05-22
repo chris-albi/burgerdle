@@ -70,6 +70,13 @@ body {
 
   }
 
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
   #site-footer {
     display: flex;
     align-items: center;
@@ -94,6 +101,40 @@ body {
   }
 
 
+  .closeinfo {
+  position: sticky;
+  top: 10px;
+  float: right;
+  background: none;
+  border: none;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+  z-index: 100;
+}
+
+.closeinfo:hover {
+  color: #e74c3c; 
+}
+
+
+  .closestats {
+  position: sticky;
+  top: 10px;
+  float: right;
+  background: none;
+  border: none;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+  z-index: 100;
+}
+
+.closestats:hover {
+  color: #e74c3c; 
+}
  .info {
   width: 1200px;
   height: 1000px;
@@ -109,6 +150,19 @@ body {
   visibility: hidden;
   transition: opacity 0.3s ease, transform 0.3s ease;
   z-index: 5;
+  overflow-y: scroll;
+}
+
+.info-main{
+  text-align: left;
+   border-bottom: 2px solid black;
+  margin-bottom: 5px;
+}
+
+.info-header {
+  border-bottom: 2px solid black;
+  margin: -15px;
+  margin-bottom: -5px;
 }
 
 .info.visible {
@@ -122,6 +176,16 @@ body {
   font-weight: bold;
   -webkit-text-stroke: 2px black;
   font-size: 64px;
+}
+
+.burger-yellow {
+    color: rgb(92, 72, 46);
+
+}
+.info h3{
+  color: 333;
+  font-weight: normal;
+  font-size: 32px;
 }
 
  .stats {
@@ -141,6 +205,18 @@ body {
   z-index: 5;
 }
 
+.stats-main{
+  text-align: left;
+   border-bottom: 2px solid black;
+  margin-bottom: 5px;
+}
+
+.stats-header {
+  border-bottom: 2px solid black;
+  margin: -15px;
+  margin-bottom: -5px;
+}
+
 .stats.visible {
   opacity: 1;
   visibility: visible;
@@ -153,6 +229,7 @@ body {
   -webkit-text-stroke: 2px black;
   font-size: 64px;
 }
+
 /* search bar CSS */
 .topnav {
   display: flex;
@@ -367,18 +444,28 @@ body {
 .victory-screen{
 }
 
-.popup{
+ .popup {
   width: 1200px;
   height: 1000px;
-  background: gainsboro;
-  border-radius: 6px;
+  background: #aba9a9;
+  border-radius: 25px;
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, 20%) scale(1);
+  transform: translate(-50%, 40%) scale(0.95);
   text-align: center;
   padding: 0 30px 30px;
+  opacity: 0;
   visibility: hidden;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 5;
+  border: 8px solid black;
+}
+
+.popup.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 15%) scale(1);
 }
 
 .visible{
