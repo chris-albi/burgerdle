@@ -348,6 +348,14 @@ body {
 
 }
 
+.comparisonbubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: inline;
+  align-items: center;
+
+}
 
 .comparison-header{
   display: flex;
@@ -471,6 +479,7 @@ body {
 .visible{
   visibility: visible;
 }
+
 
 .popup h2{
   color: 333;

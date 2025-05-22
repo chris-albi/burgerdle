@@ -153,14 +153,14 @@ function compareIngredientsClass(userIngredients, productIngredients) {
     <p>Ingredients</p>
  </div>
   <div class="comparison-card" id="comparisonbubble">
-    <div id="comparisonbubble" class="bubble ${compareClass(userItem.name, productName)}">${userItem.name}</div>
-    <div id="comparisonbubble" class="bubble ${compareClass(userItem.restaurant, productRestaurant)}">${userItem.restaurant}</div>
-    <div id="comparisonbubble" class="bubble ${compareClass(userItem.type, productType)}">${userItem.type}</div>
-    <div id="comparisonbubble" class="bubble ${compareIntClass(userItem.calories, productCalories)}">${userItem.calories}</div>
-    <div id="comparisonbubble" class="bubble ${compareClass(userItem.vegan, productVegan)}">${userItem.vegan ? "Yes" : "No"}</div>
-    <div id="comparisonbubble" class="bubble ${compareClass(userItem.glutenFree, productGF)}">${userItem.glutenFree ? "Yes" : "No"}</div>
-    <div id="comparisonbubble" class="bubble ${compareClass(userItem.yearOfRelease, productRelease)}">${userItem.yearOfRelease}</div>
-    <div id="comparisonbubble" class="bubble ${compareIngredientsClass(userItem.ingredients, productIngredients)}">
+    <div class="bubble ${compareClass(userItem.name, productName)}">${userItem.name}</div>
+    <div class="bubble ${compareClass(userItem.restaurant, productRestaurant)}">${userItem.restaurant}</div>
+    <div class="bubble ${compareClass(userItem.type, productType)}">${userItem.type}</div>
+    <div class="bubble ${compareIntClass(userItem.calories, productCalories)}">${userItem.calories}</div>
+    <div class="bubble ${compareClass(userItem.vegan, productVegan)}">${userItem.vegan ? "Yes" : "No"}</div>
+    <div class="bubble ${compareClass(userItem.glutenFree, productGF)}">${userItem.glutenFree ? "Yes" : "No"}</div>
+    <div class="bubble ${compareClass(userItem.yearOfRelease, productRelease)}">${userItem.yearOfRelease}</div>
+    <div class="bubble ${compareIngredientsClass(userItem.ingredients, productIngredients)}">
       ${userItem.ingredients.join(", ")}<br>
       <small>${matchingIngredients.join(", ") || "None"}</small>
     </div>
@@ -204,7 +204,7 @@ function compareIngredientsClass(userIngredients, productIngredients) {
   
   
   container.innerHTML = `
-  <div class="comparison-card">
+  <div class="comparison-card" id="comparisonbubbletwo">
     <div class="bubble ${compareClass(userItem.name, productName)}">${userItem.name}</div>
     <div class="bubble ${compareClass(userItem.restaurant, productRestaurant)}">${userItem.restaurant}</div>
     <div class="bubble ${compareClass(userItem.type, productType)}">${userItem.type}</div>
@@ -256,7 +256,7 @@ function compareIngredientsClass(userIngredients, productIngredients) {
   
   
   container.innerHTML = `
-  <div class="comparison-card">
+  <div class="comparison-card" id="comparisonbubblethree">
     <div class="bubble ${compareClass(userItem.name, productName)}">${userItem.name}</div>
     <div class="bubble ${compareClass(userItem.restaurant, productRestaurant)}">${userItem.restaurant}</div>
     <div class="bubble ${compareClass(userItem.type, productType)}">${userItem.type}</div>
@@ -308,7 +308,7 @@ function compareIngredientsClass(userIngredients, productIngredients) {
   
   
   container.innerHTML = `
-  <div class="comparison-card">
+  <div class="comparison-card" id="comparisonbubblefour">
     <div class="bubble ${compareClass(userItem.name, productName)}">${userItem.name}</div>
     <div class="bubble ${compareClass(userItem.restaurant, productRestaurant)}">${userItem.restaurant}</div>
     <div class="bubble ${compareClass(userItem.type, productType)}">${userItem.type}</div>
@@ -360,7 +360,7 @@ function compareIngredientsClass(userIngredients, productIngredients) {
   
   
   container.innerHTML = `
-  <div class="comparison-card">
+  <div class="comparison-card" id="comparisonbubblefive">
     <div class="bubble ${compareClass(userItem.name, productName)}">${userItem.name}</div>
     <div class="bubble ${compareClass(userItem.restaurant, productRestaurant)}">${userItem.restaurant}</div>
     <div class="bubble ${compareClass(userItem.type, productType)}">${userItem.type}</div>
@@ -412,7 +412,7 @@ function compareIngredientsClass(userIngredients, productIngredients) {
   
   
   container.innerHTML = `
-  <div class="comparison-card">
+  <div class="comparison-card" id="comparisonbubblesix">
     <div class="bubble ${compareClass(userItem.name, productName)}">${userItem.name}</div>
     <div class="bubble ${compareClass(userItem.restaurant, productRestaurant)}">${userItem.restaurant}</div>
     <div class="bubble ${compareClass(userItem.type, productType)}">${userItem.type}</div>
@@ -522,9 +522,13 @@ function darken() {
   document.getElementById("topheader").style.backgroundColor = "#3B3B3B"
   document.getElementById("topheader").style.borderColor = "#3B3B3B";
   document.getElementById("topheader").style.color = "#3B3B3B";
-  document.getElementById("comparisonbubble").style.backgroundColor = "#3B3B3B";
-  document.getElementById("comparisonbubble").style.color = "#3B3B3B"; 
-}
+  document.getElementById("comparisonbubble").style.display = "none";
+  document.getElementById("comparisonbubbletwo").style.display = "none";
+  document.getElementById("comparisonbubblethree").style.display = "none";
+  document.getElementById("comparisonbubblefour").style.display = "none";
+  document.getElementById("comparisonbubblefive").style.display = "none";
+  document.getElementById("comparisonbubblesix").style.display = "none";
+  }
 
 function brighten (){
   document.body.style.backgroundColor = "#DCDCDC";
@@ -535,11 +539,19 @@ function brighten (){
   document.getElementById("site-footer").style.borderColor = "gray";
   document.getElementById("topheader").style.backgroundColor = "white";
   document.getElementById("topheader").style.borderColor = "gray";
-  document.getElementById("comparisonbubble").style.backgroundColor = "#DCDCDC";
+  document.getElementById("comparisonbubble").style.display = "";
+  document.getElementById("comparisonbubbletwo").style.display = "";
+  document.getElementById("comparisonbubblethree").style.display = "";
+  document.getElementById("comparisonbubblefour").style.display = "";
+  document.getElementById("comparisonbubblefive").style.display = "";
+  document.getElementById("comparisonbubblesix").style.display = "";
 }
+
 function openPopup() {
   popup.classList.add("visible");
+  setTimeout(() => {
   darken();
+  }, 0);
 }
 
 function closePopup () {
@@ -549,7 +561,9 @@ function closePopup () {
 
 function openInfo() {
   info.classList.add("visible");
-  darken(); 
+  setTimeout(() => {
+  darken();
+  }, 0);
 }
 
 function closeInfo () {
@@ -559,7 +573,9 @@ function closeInfo () {
 
 function openStats() {
   stats.classList.add("visible");
+  setTimeout(() => {
   darken();
+  }, 0);
 }
 
 function closeStats() {
@@ -596,12 +612,3 @@ function filterItems() {
     dropdown.appendChild(option);
   });
 }
-
-
-var elem = $( '#info' )[0];
-
-$( document ).on( 'keydown', function ( e ) {
-    if ( e.keyCode === 27 ) {
-        $( elem ).hide();
-    }
-});
