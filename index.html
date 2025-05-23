@@ -15,7 +15,7 @@
                   <button class="unstyled-button" id="popupButton" onclick="openInfo()" type="button">
                       <img
                       src="./assets/info.png"
-                      style="height: 30%; width: 30%"
+                      style="height: 20%; width: 20%"
                       />
                     </button>
                   </div>
@@ -28,7 +28,7 @@
                     <button class="unstyled-button" data-overlay="stats-overlay" onclick="openStats()" type="button">
                       <img
                         src="./assets/stats.png"
-                        style="height: 30%; width: 30%"
+                        style="height: 20%; width: 20%"
                       />
                     </button>
                   </div>
@@ -110,10 +110,59 @@
               </div>
               <div class="stats" id="stats">
                 <button class="closestats" onclick="closeStats()">✖</button>
-                <div class="stats-popup">
-                  <h2> STATISTICS </h2>
-                </div>
-              </div>
+                <div id="stat-body" class="overlay-body">
+                          <h2>STATISTICS</h2>
+                          <div id="statistics">
+                            <div class="statistic">
+                              <div id="number-wins" class="stat"></div>
+                              <h3><div class="descriptor">Played</div></h3>
+                            </div>
+                            <div class="statistic">
+                              <div id="win-percent" class="stat"></div>
+                              <h3><div class="descriptor">Win %</div></h3>
+                            </div>
+                            <div class="statistic">
+                              <div id="current-streak" class="stat"></div>
+                              <div class="descriptor">
+                                <h3><center>Current<br />Streak</center></h3>
+                              </div>
+                            </div>
+                            <div class="statistic">
+                              <div id="max-streak" class="stat"></div>
+                              <div class="descriptor">
+                                <h3><center>Max<br />Streak</center></h3>
+                              </div>
+                            </div>
+                          </div>
+                          <h3>Guess Distribution</h3>
+                          <div class="graph">
+                            <div class="graph-row">
+                              <div class="graph-label">1</div>
+                              <div id="graph-1" class="graphElem"></div>
+                            </div>
+                            <div class="graph-row">
+                              <div class="graph-label">2</div>
+                              <div id="graph-2" class="graphElem"></div>
+                            </div>
+                            <div class="graph-row">
+                              <div class="graph-label">3</div>
+                              <div id="graph-3" class="graphElem"></div>
+                            </div>
+                            <div class="graph-row">
+                              <div class="graph-label">4</div>
+                              <div id="graph-4" class="graphElem"></div>
+                            </div>
+                            <div class="graph-row">
+                              <div class="graph-label">5</div>
+                              <div id="graph-5" class="graphElem"></div>
+                            </div>
+                            <div class="graph-row">
+                              <div class="graph-label">6</div>
+                              <div id="graph-6" class="graphElem"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
               <div class="topnav" id="topnav">
                 <div class="search-wrapper" id="search-bar">
                   <input type="text" id="searchInput" placeholder="Input fast food item here" oninput="filterItems()">

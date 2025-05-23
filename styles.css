@@ -495,3 +495,73 @@ body {
   -webkit-text-stroke: 2px black;
   font-size: 64px;
 }
+
+#stat-body {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #aba9a9;
+}
+
+#statistics-title {
+  margin-bottom: 24px;
+}
+
+#statistics {
+  display: flex;
+  justify-content: space-evenly;
+
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.statistic {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stat {
+  font-size: 66px;
+}
+
+.descriptor {
+  font-size: 22px;
+}
+
+.graph {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.graph-label {
+  margin-right: 6px;
+}
+
+.graphElem {
+  font-size: 24px;
+
+  display: flex;
+  align-items: center;
+  -webkit-justify-content: flex-end;
+  justify-content: end;
+
+  padding-right: 4px;
+
+  color: white;
+  background-color: rgb(0, 96, 169);
+}
+
+.graph-row {
+  display: flex;
+  align-items: center;
+
+  height: 26px;
+  margin-bottom: 15px;
+}

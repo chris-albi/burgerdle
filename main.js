@@ -144,27 +144,27 @@ function compareIngredientsClass(userIngredients, productIngredients) {
   container.innerHTML = `
    <div class="comparison-header" id="topheader">
     <p>Name</p>
+    <p>Ingredients</p>
     <p>Restaurant</p>
     <p>Type</p>
     <p>Cal.</p>
     <p>Vegan</p>
     <p>Year</p>
-    <p>Ingredients</p>
  </div>
   <div class="comparison-card" id="comparisonbubble">
     <div class="bubble ${compareClass(userItem.name, productName)}">${userItem.name}</div>
-    <div class="bubble ${compareClass(userItem.restaurant, productRestaurant)}">${userItem.restaurant}</div>
-    <div class="bubble ${compareClass(userItem.type, productType)}">${userItem.type}</div>
-    <div class="bubble ${compareIntClass(userItem.calories, productCalories)}">${userItem.calories}</div>
-    <div class="bubble ${compareClass(userItem.vegan, productVegan)}">${userItem.vegan ? "Yes" : "No"}</div>
-    <div class="bubble ${compareClass(userItem.yearOfRelease, productRelease)}">${userItem.yearOfRelease}</div>
-    <div class="bubble ${compareIngredientsClass(userItem.ingredients, productIngredients)}">
+        <div class="bubble ${compareIngredientsClass(userItem.ingredients, productIngredients)}">
       ${userItem.ingredients.map(ingredient =>
         productIngredients.includes(ingredient)
           ? `<span class="match">${ingredient}</span>`
           : `<span class="no-match">${ingredient}</span>`
       ).join(", ")}
     </div>
+    <div class="bubble ${compareClass(userItem.restaurant, productRestaurant)}">${userItem.restaurant}</div>
+    <div class="bubble ${compareClass(userItem.type, productType)}">${userItem.type}</div>
+    <div class="bubble ${compareIntClass(userItem.calories, productCalories)}">${userItem.calories}</div>
+    <div class="bubble ${compareClass(userItem.vegan, productVegan)}">${userItem.vegan ? "Yes" : "No"}</div>
+    <div class="bubble ${compareClass(userItem.yearOfRelease, productRelease)}">${userItem.yearOfRelease}</div>
 </div>
 `;
 }
