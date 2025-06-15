@@ -120,9 +120,9 @@ body {
 
 
   .closestats {
-  position: sticky;
+  position: absolute;
   top: 10px;
-  float: right;
+  right: 20px;
   background: none;
   border: none;
   font-size: 32px;
@@ -137,13 +137,13 @@ body {
 }
  .info {
   width: 1200px;
-  height: 1000px;
+  height: 900px;
   background: #aba9a9;
   border-radius: 25px;
   position: absolute;
-  top: 0;
+  top: -10%;
   left: 50%;
-  transform: translate(-50%, 40%) scale(0.95);
+  transform: translate(-50%, 20%) scale(0.95);
   text-align: center;
   padding: 0 30px 30px;
   opacity: 0;
@@ -190,11 +190,11 @@ body {
 
  .stats {
   width: 1200px;
-  height: 1000px;
+  height: 900px;
   background: #aba9a9;
   border-radius: 25px;
   position: absolute;
-  top: 0;
+  top: -10%;
   left: 50%;
   transform: translate(-50%, 40%) scale(0.95);
   text-align: center;
