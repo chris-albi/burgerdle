@@ -342,26 +342,31 @@ body {
 }
 
 .comparison-card {
-  display: flex;
-  align-items: center;
-  grid-template-columns: repeat(7, 1fr);
-  justify-content: space-between;
-  width: 95%;
+  display: grid;
+  grid-template-columns: 12px 1fr 338px 1fr 100px 1fr 100px 1fr 100px 1fr 100px 1fr;
+  column-gap: 0; 
+  width: 100%;
+  position: relative;
+  padding: 10px 0;
+  margin-bottom: 50px;
+  align-items: start;
 }
 
 
-.comparison-header{
-    display: grid;
-  grid-template-columns: repeat(7, 1fr);
+.comparison-header {
+  display: grid;
+  grid-template-columns: 300px 390px 235px 150px 150px 150px 150px;
+  column-gap: 50px;
   font-weight: bold;
   text-align: center;
   padding: 15px;
   border-radius: 10px;
   border: 1px solid #ccc;
   background-color: #f9f9f9;
-  margin: 0 10px;
-  flex: 1;
+  padding-left: 50px;
 }
+
+
 
 #top-label {
   display: flex;
@@ -376,19 +381,20 @@ body {
 }
 
 .bubble {
-  display: inline-block;   
-  padding: 10px 16px;             
+  position: absolute;
+  top: 0;
+  padding: 10px 16px;
   background-color: #fff;
   border-radius: 25px;
-  font-size: 22px;
-  min-width: 100px;
-  margin: 0 5px;
+  font-size: 20px;
   text-align: center;
-  line-height: 1.2;              
-  white-space: normal;          
-  box-sizing: border-box;        
-  max-width: 400px;      
+  line-height: 1.2;
+  white-space: normal;
+  max-width: 400px;
+  min-width: 80px;
+  box-sizing: border-box;
 }
+
 
 .bubble.match {
   background-color: #d4edda; 
