@@ -33,7 +33,6 @@ const userStats = JSON.parse(localStorage.getItem("stats")) || {
 //User game state
 const gameState = JSON.parse(localStorage.getItem("state")) || {
   gameNumber: -1,
-  guesses: [],
   hasWon: false,
 };
 
@@ -81,16 +80,14 @@ function fetchGameData(gameNumber) {
 
   
 function initializeGame() {
-  // Reset game state and track new game if user last played on a different day
   if (gameState.gameNumber !== gameNumber) {
     if (gameState.hasWon === false) {
       userStats.currentStreak = 0;
     }
     gameState.gameNumber = gameNumber;
-    gameState.guesses = [];
     gameState.hasWon = false;
     userStats.numGames++;
-
+    console.log("omg hi");
     localStorage.setItem("stats", JSON.stringify(userStats));
     localStorage.setItem("state", JSON.stringify(gameState));
   }
@@ -589,15 +586,13 @@ function checkUserSelection() {
       
       if (userItem && productName) {
         if ( guessNumber == 0 ) {
-          displayComparisonOne(userItem, productName)
-          if (userItem.name == productName) {
-            console.log(document.getElementById("submitButton"));
-            document.getElementById("submitButton").disabled = true;
-            console.log("You win!") 
-            openPopup();
-          }
           guessNumber += 1;
           lastGuess = selectedName;
+          displayComparisonOne(userItem, productName)
+          if (userItem.name == productName) {
+            openPopup();
+            gameWon();
+          }
         }
         else if (guessNumber == 1) {
           if (lastGuess != selectedName) {
@@ -605,9 +600,8 @@ function checkUserSelection() {
             guessNumber += 1;
             lastGuess = selectedName;
             if (userItem.name == productName) {
-              console.log("You win!") 
-              document.getElementById("submitButton").disabled = true;
               openPopup();
+              gameWon();
           }
         }
         }
@@ -617,9 +611,8 @@ function checkUserSelection() {
             guessNumber += 1;
             lastGuess = selectedName;
             if (userItem.name == productName) {
-              console.log("You win!") 
-              document.getElementById("submitButton").disabled = true;
               openPopup();
+              gameWon();
             }
           }
         }
@@ -629,9 +622,8 @@ function checkUserSelection() {
             guessNumber += 1;
             lastGuess = selectedName;
             if (userItem.name == productName) {
-              console.log("You win!") 
-              document.getElementById("submitButton").disabled = true;
               openPopup();
+              gameWon();
             }
           }
         }
@@ -641,9 +633,8 @@ function checkUserSelection() {
             guessNumber += 1;
             lastGuess = selectedName;
             if (userItem.name == productName) {
-              console.log("You win!") 
-              document.getElementById("submitButton").disabled = true;
               openPopup();
+              gameWon();
             }
         }
         }
@@ -651,17 +642,14 @@ function checkUserSelection() {
           if (lastGuess != selectedName) {
             displayComparisonSix(userItem, productName)
             if (userItem.name == productName) {
-              console.log("You win!") 
-              document.getElementById("submitButton").disabled = true;
               openPopup();
+              gameWon();
             }
         
             else {
             guessNumber += 1;
-            console.log("You lose!")
-            const victoryHeading = document.querySelector(".victory-screen h2");
-            victoryHeading.textContent = "you are loser :(";
             openPopup();
+            gameLost();
           }   
             }
           
@@ -680,10 +668,82 @@ function checkUserSelection() {
     });
     }
 
-    
+function gameWon() {
+  userStats.numWins++;
+  userStats.currentStreak++;
+  userStats.winsInNum[guessNumber-1]++;
+  console.log(userStats.winsInNum);
+  if (userStats.currentStreak > userStats.maxStreak) { 
+    userStats.maxStreak = userStats.currentStreak;
+  }
+  document.getElementById("submitButton").disabled = true;
+  victoryheader.innerHTML += `<h2>You win! 🎉 </h2>`;
+  victoryheader.innerHTML += `<p>Burgerdle guessed in ${guessNumber}/6 attempts!</p>`;
+  victoryscreen.innerHTML += `<h2>Guess Distribution</h2>`;
+  renderStatistics();
+  finalDistribution();
+}
+
+function gameLost() {
+  document.getElementById("submitButton").disabled = true;
+  victoryheader.innerHTML += `<h2>You lost! </h2>`;
+  victoryheader.innerHTML += `<p>The correct item was ${productName}</p>`;
+  victoryscreen.innerHTML += `<h2>Guess Distribution</h2>`;
+}
 
 
 
+function renderStatistics() {
+  const numWinsElem = document.getElementById("number-wins");
+  numWinsElem.innerHTML = `${userStats.numGames}`;
+
+  const winPercentElem = document.getElementById("win-percent");
+  if (userStats.numGames === 0) {
+     winPercentElem.innerHTML = `0`;
+  } else {
+    winPercentElem.innerHTML = `${Math.round(
+       (userStats.numWins / userStats.numGames) * 100
+     )}`;    }
+
+  const currentStreakElem = document.getElementById("current-streak");
+  currentStreakElem.innerHTML = `${userStats.currentStreak}`;
+
+   const maxStreakElem = document.getElementById("max-streak");
+   maxStreakElem.innerHTML = `${userStats.maxStreak}`;
+}
+
+function graphDistribution() {
+      userStats.winsInNum.forEach((value, index) => {
+        console.log(index);
+        console.log(value);
+        const graphElem = document.getElementById(`graph-${index+1}`);
+        if (userStats.numWins === 0) {
+          graphElem.style = `width: 5%`;
+        } else {
+          graphElem.style = `width: ${
+            Math.floor((value / userStats.numWins) * 0.95 * 100) + 5
+          }%`;
+        }
+        graphElem.innerHTML = `${value}`;
+      });
+    }
+
+function finalDistribution() {
+      setTimeout(2000);
+      userStats.winsInNum.forEach((value, index) => {
+        console.log(index);
+        console.log(value);
+        const graphElem = document.getElementById(`finalgraph-${index+1}`);
+        if (userStats.numWins === 0) {
+          graphElem.style = `width: 5%`;
+        } else {
+          graphElem.style = `width: ${
+            Math.floor((value / userStats.numWins) * 0.95 * 100) + 5
+          }%`;
+        }
+        graphElem.innerHTML = `${value}`;
+      });
+    }
 
 function darken() {
   document.body.style.backgroundColor = "#3B3B3B";
@@ -727,6 +787,7 @@ function openPopup() {
   }, 0);
 }
 
+
 function closePopup () {
   popup.classList.remove("visible");
   brighten();
@@ -749,6 +810,8 @@ function openStats() {
   setTimeout(() => {
   darken();
   }, 0);
+  renderStatistics();
+  graphDistribution();
 }
 
 function closeStats() {

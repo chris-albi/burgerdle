@@ -44,7 +44,7 @@
                     <h3>
                      Guess the<span class="burger-yellow"> burgerdle </span>in 6 tries.
                       <ul style="list-style-type: square">
-                        <li>Each guess must be a valid item.</li>
+                        <li>Each guess must be a valid fast food item.</li>
                         <li>
                           Incorrect guesses will help guide you to the target item.
                         </li>
@@ -111,7 +111,7 @@
               <div class="stats" id="stats">
                 <button class="closestats" onclick="closeStats()">✖</button>
                 <div id="stat-body" class="overlay-body">
-                          <h2>STATISTICS</h2>
+                          <div id="stats-header" class="stats-header"><h2>STATISTICS</h2></div>
                           <div id="statistics">
                             <div class="statistic">
                               <div id="number-wins" class="stat"></div>
@@ -180,10 +180,35 @@
               <div id="comparison-5" class="comparison-container col"></div>
               <div id="comparison-6" class="comparison-container col"></div>
               <div class="popup" id="popup">
-                <div class="victory-screen"> 
-                  <h2>you are winner! :)</h2>
-                </div>
-                <button type="closestats" onclick="closePopup()">OK</button>
+                <div id="victoryheader" class="victoryheader"> </div>
+                <div id="victoryscreen" class="victoryscreen"> </div>
+                <div class="graph">
+                   <div class="graph-row">
+                     <div class="graph-label">1</div>
+                     <div id="finalgraph-1" class="graphElem"></div>
+                  </div>
+                   <div class="graph-row">
+                    <div class="graph-label">2</div>
+                     <div id="finalgraph-2" class="graphElem"></div>
+                  </div>
+                   <div class="graph-row">
+                    <div class="graph-label">3</div>
+                    <div id="finalgraph-3" class="graphElem"></div>
+                   </div>
+                  <div class="graph-row">
+                    <div class="graph-label">4</div>
+                     <div id="finalgraph-4" class="graphElem"></div>
+                  </div>
+                   <div class="graph-row">
+                     <div class="graph-label">5</div>
+                     <div id="finalgraph-5" class="graphElem"></div>
+                   </div>
+                   <div class="graph-row">
+                     <div class="graph-label">6</div>
+                    <div id="finalgraph-6" class="graphElem"></div>
+                  </div>
+                 </div>
+                <button class="closestats" onclick="closePopup()">✖</button>
               </div>
             </div>
             <footer id="site-footer">
