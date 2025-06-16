@@ -150,21 +150,21 @@ function compareIngredientsClass(userIngredients, productIngredients) {
     <p>Type</p>
     <p>Cal.</p>
     <p>Vegan</p>
-    <p>Year</p>
+    <p>Debut</p>
  </div>
 
-<div class="comparison-card" id="comparisonbubble">
-    <div class="bubble ${compareClass(userItem.name, productName)}" style="left: 200px; transform: translateX(-50%);">
+<div class="comparison-card" id="comparisonbubbleone">
+    <div class="bubble ${compareClass(userItem.name, productName)}" style="left: 225px; transform: translateX(-50%);">
       ${userItem.name}
     </div>
-    <div class="bubble ${compareIngredientsClass(userItem.ingredients, productIngredients)}" style="left: 600px; transform: translateX(-50%);">
+    <div class="bubble ${compareIngredientsClass(userItem.ingredients, productIngredients)}" style="left: 625px; transform: translateX(-50%);">
       ${userItem.ingredients.map(ingredient =>
         productIngredients.includes(ingredient)
           ? `<span class="match">${ingredient}</span>`
           : `<span class="no-match">${ingredient}</span>`
       ).join(", ")}
     </div>
-    <div class="bubble ${compareClass(userItem.restaurant, productRestaurant)}" style="left: 950px; transform: translateX(-50%);">
+    <div class="bubble ${compareClass(userItem.restaurant, productRestaurant)}" style="left: 955px; transform: translateX(-50%);">
       ${userItem.restaurant}
     </div>
     <div class="bubble ${compareClass(userItem.type, productType)}" style="left: 1200px; transform: translateX(-50%);">
@@ -181,6 +181,19 @@ function compareIngredientsClass(userIngredients, productIngredients) {
     </div>
   </div>
 `;
+console.log(userItem.ingredients.join('').length);
+
+  const offset = document.getElementById("comparisonbubbleone");
+  if (userItem.ingredients.join('').length < 28 ) {
+      offset.style.margin = "0px 0px 60px 0px";
+
+  }
+  else if (userItem.ingredients.join('').length < 52 ) {
+      offset.style.margin = "0px 0px 80px 0px";
+  }
+  else {
+       offset.style.margin = "0px 0px 100px 0px";
+  }
 }
 
 function displayComparisonTwo(userItem, mysteryItem) {
@@ -219,18 +232,18 @@ function compareIngredientsClass(userIngredients, productIngredients) {
   
   
 container.innerHTML = `
-<div class="comparison-card" id="comparisonbubble">
-    <div class="bubble ${compareClass(userItem.name, productName)}" style="left: 200px; transform: translateX(-50%);">
+<div class="comparison-card" id="comparisonbubbletwo">
+    <div class="bubble ${compareClass(userItem.name, productName)}" style="left: 225px; transform: translateX(-50%);">
       ${userItem.name}
     </div>
-    <div class="bubble ${compareIngredientsClass(userItem.ingredients, productIngredients)}" style="left: 600px; transform: translateX(-50%);">
+    <div class="bubble ${compareIngredientsClass(userItem.ingredients, productIngredients)}" style="left: 625px; transform: translateX(-50%);">
       ${userItem.ingredients.map(ingredient =>
         productIngredients.includes(ingredient)
           ? `<span class="match">${ingredient}</span>`
           : `<span class="no-match">${ingredient}</span>`
       ).join(", ")}
     </div>
-    <div class="bubble ${compareClass(userItem.restaurant, productRestaurant)}" style="left: 950px; transform: translateX(-50%);">
+    <div class="bubble ${compareClass(userItem.restaurant, productRestaurant)}" style="left: 955px; transform: translateX(-50%);">
       ${userItem.restaurant}
     </div>
     <div class="bubble ${compareClass(userItem.type, productType)}" style="left: 1200px; transform: translateX(-50%);">
@@ -247,6 +260,17 @@ container.innerHTML = `
     </div>
   </div>
 `;
+
+  const offset = document.getElementById("comparisonbubbletwo");
+  if (userItem.ingredients.join('').length < 28 ) {
+      offset.style.margin = "0px 0px 60px 0px";
+  }
+  else if (userItem.ingredients.join('').length < 52  ) {
+      offset.style.margin = "0px 0px 80px 0px";
+  }
+  else {
+       offset.style.margin = "0px 0px 100px 0px";
+  }
 }
 
 function displayComparisonThree(userItem, mysteryItem) {
@@ -285,18 +309,18 @@ function compareIngredientsClass(userIngredients, productIngredients) {
   
   
 container.innerHTML = `
-<div class="comparison-card" id="comparisonbubble">
-    <div class="bubble ${compareClass(userItem.name, productName)}" style="left: 200px; transform: translateX(-50%);">
+<div class="comparison-card" id="comparisonbubblethree">
+    <div class="bubble ${compareClass(userItem.name, productName)}" style="left: 225px; transform: translateX(-50%);">
       ${userItem.name}
     </div>
-    <div class="bubble ${compareIngredientsClass(userItem.ingredients, productIngredients)}" style="left: 600px; transform: translateX(-50%);">
+    <div class="bubble ${compareIngredientsClass(userItem.ingredients, productIngredients)}" style="left: 625px; transform: translateX(-50%);">
       ${userItem.ingredients.map(ingredient =>
         productIngredients.includes(ingredient)
           ? `<span class="match">${ingredient}</span>`
           : `<span class="no-match">${ingredient}</span>`
       ).join(", ")}
     </div>
-    <div class="bubble ${compareClass(userItem.restaurant, productRestaurant)}" style="left: 950px; transform: translateX(-50%);">
+    <div class="bubble ${compareClass(userItem.restaurant, productRestaurant)}" style="left: 955px; transform: translateX(-50%);">
       ${userItem.restaurant}
     </div>
     <div class="bubble ${compareClass(userItem.type, productType)}" style="left: 1200px; transform: translateX(-50%);">
@@ -313,6 +337,16 @@ container.innerHTML = `
     </div>
   </div>
 `;
+  const offset = document.getElementById("comparisonbubblethree");
+  if (userItem.ingredients.join('').length < 28 ) {
+      offset.style.margin = "0px 0px 60px 0px";
+  }
+  else if (userItem.ingredients.join('').length < 52  ) {
+      offset.style.margin = "0px 0px 80px 0px";
+  }
+  else {
+       offset.style.margin = "0px 0px 100px 0px";
+  }
 }
 
 function displayComparisonFour(userItem, mysteryItem) {
@@ -351,18 +385,18 @@ function compareIngredientsClass(userIngredients, productIngredients) {
   
   
 container.innerHTML = `
-<div class="comparison-card" id="comparisonbubble">
-    <div class="bubble ${compareClass(userItem.name, productName)}" style="left: 200px; transform: translateX(-50%);">
+<div class="comparison-card" id="comparisonbubblefour">
+    <div class="bubble ${compareClass(userItem.name, productName)}" style="left: 225px; transform: translateX(-50%);">
       ${userItem.name}
     </div>
-    <div class="bubble ${compareIngredientsClass(userItem.ingredients, productIngredients)}" style="left: 600px; transform: translateX(-50%);">
+    <div class="bubble ${compareIngredientsClass(userItem.ingredients, productIngredients)}" style="left: 625px; transform: translateX(-50%);">
       ${userItem.ingredients.map(ingredient =>
         productIngredients.includes(ingredient)
           ? `<span class="match">${ingredient}</span>`
           : `<span class="no-match">${ingredient}</span>`
       ).join(", ")}
     </div>
-    <div class="bubble ${compareClass(userItem.restaurant, productRestaurant)}" style="left: 950px; transform: translateX(-50%);">
+    <div class="bubble ${compareClass(userItem.restaurant, productRestaurant)}" style="left: 955px; transform: translateX(-50%);">
       ${userItem.restaurant}
     </div>
     <div class="bubble ${compareClass(userItem.type, productType)}" style="left: 1200px; transform: translateX(-50%);">
@@ -379,6 +413,16 @@ container.innerHTML = `
     </div>
   </div>
 `;
+  const offset = document.getElementById("comparisonbubblefour");
+  if (userItem.ingredients.join('').length < 28 ) {
+      offset.style.margin = "0px 0px 60px 0px";
+  }
+  else if (userItem.ingredients.join('').length < 52  ) {
+      offset.style.margin = "0px 0px 80px 0px";
+  }
+  else {
+       offset.style.margin = "0px 0px 100px 0px";
+  }
 }
 
 function displayComparisonFive(userItem, mysteryItem) {
@@ -417,18 +461,18 @@ function compareIngredientsClass(userIngredients, productIngredients) {
   
   
 container.innerHTML = `
-<div class="comparison-card" id="comparisonbubble">
-    <div class="bubble ${compareClass(userItem.name, productName)}" style="left: 200px; transform: translateX(-50%);">
+<div class="comparison-card" id="comparisonbubblefive">
+    <div class="bubble ${compareClass(userItem.name, productName)}" style="left: 225px; transform: translateX(-50%);">
       ${userItem.name}
     </div>
-    <div class="bubble ${compareIngredientsClass(userItem.ingredients, productIngredients)}" style="left: 600px; transform: translateX(-50%);">
+    <div class="bubble ${compareIngredientsClass(userItem.ingredients, productIngredients)}" style="left: 625px; transform: translateX(-50%);">
       ${userItem.ingredients.map(ingredient =>
         productIngredients.includes(ingredient)
           ? `<span class="match">${ingredient}</span>`
           : `<span class="no-match">${ingredient}</span>`
       ).join(", ")}
     </div>
-    <div class="bubble ${compareClass(userItem.restaurant, productRestaurant)}" style="left: 950px; transform: translateX(-50%);">
+    <div class="bubble ${compareClass(userItem.restaurant, productRestaurant)}" style="left: 955px; transform: translateX(-50%);">
       ${userItem.restaurant}
     </div>
     <div class="bubble ${compareClass(userItem.type, productType)}" style="left: 1200px; transform: translateX(-50%);">
@@ -445,6 +489,16 @@ container.innerHTML = `
     </div>
   </div>
 `;
+  const offset = document.getElementById("comparisonbubblefive");
+  if (userItem.ingredients.join('').length < 28 ) {
+      offset.style.margin = "0px 0px 60px 0px";
+  }
+  else if (userItem.ingredients.join('').length < 52  ) {
+      offset.style.margin = "0px 0px 80px 0px";
+  }
+  else {
+       offset.style.margin = "0px 0px 100px 0px";
+  }
 }
 
 function displayComparisonSix(userItem, mysteryItem) {
@@ -483,18 +537,18 @@ function compareIngredientsClass(userIngredients, productIngredients) {
   
   
 container.innerHTML = `
-<div class="comparison-card" id="comparisonbubble">
-    <div class="bubble ${compareClass(userItem.name, productName)}" style="left: 200px; transform: translateX(-50%);">
+<div class="comparison-card" id="comparisonbubblesix">
+    <div class="bubble ${compareClass(userItem.name, productName)}" style="left: 225px; transform: translateX(-50%);">
       ${userItem.name}
     </div>
-    <div class="bubble ${compareIngredientsClass(userItem.ingredients, productIngredients)}" style="left: 600px; transform: translateX(-50%);">
+    <div class="bubble ${compareIngredientsClass(userItem.ingredients, productIngredients)}" style="left: 625px; transform: translateX(-50%);">
       ${userItem.ingredients.map(ingredient =>
         productIngredients.includes(ingredient)
           ? `<span class="match">${ingredient}</span>`
           : `<span class="no-match">${ingredient}</span>`
       ).join(", ")}
     </div>
-    <div class="bubble ${compareClass(userItem.restaurant, productRestaurant)}" style="left: 950px; transform: translateX(-50%);">
+    <div class="bubble ${compareClass(userItem.restaurant, productRestaurant)}" style="left: 955px; transform: translateX(-50%);">
       ${userItem.restaurant}
     </div>
     <div class="bubble ${compareClass(userItem.type, productType)}" style="left: 1200px; transform: translateX(-50%);">
@@ -511,6 +565,16 @@ container.innerHTML = `
     </div>
   </div>
 `;
+  const offset = document.getElementById("comparisonbubblesix");
+  if (userItem.ingredients.join('').length < 28 ) {
+      offset.style.margin = "0px 0px 60px 0px";
+  }
+  else if (userItem.ingredients.join('').length < 52  ) {
+      offset.style.margin = "0px 0px 80px 0px";
+  }
+  else {
+       offset.style.margin = "0px 0px 100px 0px";
+  }
 }
 // guess containers end please forgive me...
 
@@ -631,7 +695,7 @@ function darken() {
   document.getElementById("topheader").style.backgroundColor = "#3B3B3B"
   document.getElementById("topheader").style.borderColor = "#3B3B3B";
   document.getElementById("topheader").style.color = "#3B3B3B";
-  document.getElementById("comparisonbubble").style.display = "none";
+  document.getElementById("comparisonbubbleone").style.display = "none";
   document.getElementById("comparisonbubbletwo").style.display = "none";
   document.getElementById("comparisonbubblethree").style.display = "none";
   document.getElementById("comparisonbubblefour").style.display = "none";
@@ -648,7 +712,7 @@ function brighten (){
   document.getElementById("site-footer").style.borderColor = "gray";
   document.getElementById("topheader").style.backgroundColor = "white";
   document.getElementById("topheader").style.borderColor = "gray";
-  document.getElementById("comparisonbubble").style.display = "";
+  document.getElementById("comparisonbubbleone").style.display = "";
   document.getElementById("comparisonbubbletwo").style.display = "";
   document.getElementById("comparisonbubblethree").style.display = "";
   document.getElementById("comparisonbubblefour").style.display = "";
@@ -699,9 +763,13 @@ function filterItems() {
   const dropdown = document.getElementById('dropdown');
   dropdown.innerHTML = '';  
 
-  if (!input) return;
+if (!input) return;
 
-  const filtered = items.filter(item => item.name.toLowerCase().includes(input));
+  const filtered = items.filter(item => 
+    item.name.toLowerCase().includes(input) ||
+    (item.restaurant && item.restaurant.toLowerCase().includes(input))
+  );
+
   
   filtered.slice(0, 100).forEach(item => {
     const option = document.createElement('div');

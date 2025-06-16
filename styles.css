@@ -347,15 +347,15 @@ body {
   column-gap: 0; 
   width: 100%;
   position: relative;
-  padding: 10px 0;
-  margin-bottom: 50px;
+  padding: 0 0;
+  margin-bottom: 80px;
   align-items: start;
 }
 
 
 .comparison-header {
   display: grid;
-  grid-template-columns: 300px 390px 235px 150px 150px 150px 150px;
+  grid-template-columns: 350px 340px 235px 150px 150px 150px 150px;
   column-gap: 50px;
   font-weight: bold;
   text-align: center;
@@ -391,7 +391,7 @@ body {
   line-height: 1.2;
   white-space: normal;
   max-width: 400px;
-  min-width: 80px;
+  min-width: 60px;
   box-sizing: border-box;
 }
 
