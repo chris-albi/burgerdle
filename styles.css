@@ -136,7 +136,7 @@ body {
 }
  .info {
   width: 900px;
-  height: 900px;
+  height: 800px;
   background: #aba9a9;
   border-radius: 25px;
   position: absolute;
@@ -150,6 +150,8 @@ body {
   transition: opacity 0.3s ease, transform 0.3s ease;
   z-index: 5;
   overflow-y: scroll;
+    border: 8px solid black;
+
 }
 
 .info-main{
@@ -189,8 +191,8 @@ body {
 }
 
  .stats {
-  width: 900px;
-  height: 900px;
+  width: 600px;
+  height: 800px;
   background: #aba9a9;
   border-radius: 25px;
   position: absolute;
@@ -203,6 +205,7 @@ body {
   visibility: hidden;
   transition: opacity 0.3s ease, transform 0.3s ease;
   z-index: 5;
+  border: 8px solid black;
 }
 
 
@@ -477,8 +480,8 @@ body {
 }
 
  .popup {
-  width: 1200px;
-  height: 900px;
+  width: 900px;
+  height: 800px;
   background: #aba9a9;
   border-radius: 25px;
   position: absolute;

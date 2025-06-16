@@ -689,6 +689,8 @@ function gameLost() {
   victoryheader.innerHTML += `<h2>You lost! </h2>`;
   victoryheader.innerHTML += `<p>The correct item was ${productName}</p>`;
   victoryscreen.innerHTML += `<h2>Guess Distribution</h2>`;
+  renderStatistics();
+  finalDistribution();
 }
 
 
