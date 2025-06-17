@@ -821,6 +821,16 @@ function closeStats() {
   brighten();
 }
 
+function copyStats() {
+    let output = `burgerdle #${gameNumber}`;
+  if (guessNumber < 6) {
+    output += ` ${guessNumber}/6\n`;
+  } else {
+    output += ` ${gameState.guesses.length}/6\n`;
+  }
+  output += `https://burgerdle.com`;
+  navigator.clipboard.writeText(output);
+}
 // Search bar functionality
 
 function filterItems() {

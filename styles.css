@@ -14,10 +14,14 @@ body {
 
 }
 
+.hidden{
+  display: none;
+}
 .search-bar
 {
   visibility: visible;
 }
+
 #gameplay-section {
   display: row;
   flex-direction: column;
@@ -517,6 +521,27 @@ body {
   visibility: visible;
 }
 
+#share-button {
+  width: 100px;
+  font-size: 24x;
+
+  font-family: "VT323", monospace;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 32px;
+  background-color: #353e6e;
+
+}
+
+#share-button:hover {
+  background-color: #6c7ee6;
+
+}
 
 .popup h2{
   color: 333;

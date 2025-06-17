@@ -163,6 +163,9 @@
                           </div>
                         </div>
                       </div>
+              <div id="share-toast" class="animate__animated hidden">
+               <center>Results copied to clipboard</center>
+              </div>
               <div class="topnav" id="topnav">
                 <div class="search-wrapper" id="search-bar">
                   <input type="text" id="searchInput" placeholder="Input fast food item here" oninput="filterItems()">
@@ -209,6 +212,11 @@
                   </div>
                  </div>
                 <button class="closestats" onclick="closePopup()">✖</button>
+                <button class="share-button" id="share-button" onclick="copyStats()"> <p>Share</p>
+                  <img class="share-img" id="share-img"
+                  src="./assets/share.png"
+                  style="height: 20%; width: 20%"
+                  />
               </div>
             </div>
             <footer id="site-footer">
