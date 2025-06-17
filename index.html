@@ -166,6 +166,20 @@
               <div id="share-toast" class="animate__animated hidden">
                <center>Results copied to clipboard</center>
               </div>
+              <div class="opening visible" id="opening">
+                  <button class="closeopening" onclick="closeOpening()">✖</button>
+                  <div class="opening-header">
+                    <h2> burgerdle </h2>
+                  </div>
+                  <div class="opening-main">
+                    <b>The daily fast food guessing game</b>
+                    <p> Guess the mystery item. You have six attempts! </p>
+                    </div>
+                <div>
+                <button class="submit" id="dailyButton" onclick="dailyGame()" type="button">Daily</button>
+                <button class="submit" id="practiceButton" onclick="practiceGame()" type="button">Practice</button>
+                </div>
+              </div>
               <div class="topnav" id="topnav">
                 <div class="search-wrapper" id="search-bar">
                   <input type="text" id="searchInput" placeholder="Input fast food item here" oninput="filterItems()">

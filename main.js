@@ -13,6 +13,8 @@ let productRelease;
 let productIngredients;
 let guessNumber = 0;
 let lastGuess;
+let isPracticeGame = false;
+
 window.onload = async function () {
   const response = await fetch('items.json');
   items = await response.json();
@@ -46,12 +48,31 @@ const gameState = JSON.parse(localStorage.getItem("state")) || {
     return Math.ceil(dayDifference);
   }
 
-  
+openingScreen();
+
 playGame();
 
-function playGame() {
-  fetchGameData(getGameNumber());
+function dailyGame () {
+  closeOpening();
+  playGame();
 }
+
+function practiceGame (){
+  isPracticeGame = true;
+  playGame();
+  closeOpening();
+}
+
+function playGame() {
+  if (isPracticeGame == true) {
+    fetchGameData(Math.floor(Math.random() * 183) + 1);
+  }
+  else {
+    fetchGameData(getGameNumber());
+    console.log("hi");
+  }
+}
+
 
 function fetchGameData(gameNumber) {
   fetch("./items.json")
@@ -694,7 +715,6 @@ function gameLost() {
 }
 
 
-
 function renderStatistics() {
   const numWinsElem = document.getElementById("number-wins");
   numWinsElem.innerHTML = `${userStats.numGames}`;
@@ -781,6 +801,20 @@ function brighten (){
   document.getElementById("comparisonbubblefive").style.display = "";
   document.getElementById("comparisonbubblesix").style.display = "";
 }
+
+
+function openingScreen() {
+  setTimeout(() => {
+  darken();
+  }, 0);
+  opening.classList.add("visible");
+}
+
+function closeOpening() {
+  opening.classList.remove("visible");
+  brighten();
+}
+
 
 function openPopup() {
   popup.classList.add("visible");
