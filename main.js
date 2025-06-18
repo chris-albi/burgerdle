@@ -50,28 +50,6 @@ const gameState = JSON.parse(localStorage.getItem("state")) || {
 
 openingScreen();
 
-playGame();
-
-function dailyGame () {
-  closeOpening();
-  playGame();
-}
-
-function practiceGame (){
-  isPracticeGame = true;
-  playGame();
-  closeOpening();
-}
-
-function playGame() {
-  if (isPracticeGame == true) {
-    fetchGameData(Math.floor(Math.random() * 183) + 1);
-  }
-  else {
-    fetchGameData(getGameNumber());
-    console.log("hi");
-  }
-}
 
 
 function fetchGameData(gameNumber) {
@@ -98,6 +76,34 @@ function fetchGameData(gameNumber) {
       console.error("Error fetching or parsing data:", error);
     });
   }
+
+
+function dailyGame () {
+  closeOpening();
+  setTimeout(() => {
+    playGame();
+  }, 500);
+}
+
+function practiceGame (){
+  isPracticeGame = true;
+  playGame();
+  closeOpening();
+  closePopup();
+}
+
+function initHeader(){ 
+  
+}
+function playGame() {
+  if (isPracticeGame == true) {
+    fetchGameData(Math.floor(Math.random() * 183) + 1);
+  }
+  else {
+    fetchGameData(getGameNumber());
+    console.log("hi");
+  }
+}
 
   
 function initializeGame() {
@@ -663,6 +669,7 @@ function checkUserSelection() {
           if (lastGuess != selectedName) {
             displayComparisonSix(userItem, productName)
             if (userItem.name == productName) {
+              guessNumber += 1;
               openPopup();
               gameWon();
             }
@@ -785,23 +792,33 @@ function darken() {
   document.getElementById("comparisonbubblesix").style.display = "none";
   }
 
-function brighten (){
+function brighten() {
   document.body.style.backgroundColor = "#DCDCDC";
-  document.getElementById("headercontainer").style.borderColor = "gray";
-  document.getElementById("gameplay-section").style.backgroundColor = "#DCDCDC";
-  document.getElementById("site-footer").style.backgroundColor = "#DCDCDC";
-  document.getElementById("topnav").style.backgroundColor = "#DCDCDC";
-  document.getElementById("site-footer").style.borderColor = "gray";
-  document.getElementById("topheader").style.backgroundColor = "white";
-  document.getElementById("topheader").style.borderColor = "gray";
-  document.getElementById("comparisonbubbleone").style.display = "";
-  document.getElementById("comparisonbubbletwo").style.display = "";
-  document.getElementById("comparisonbubblethree").style.display = "";
-  document.getElementById("comparisonbubblefour").style.display = "";
-  document.getElementById("comparisonbubblefive").style.display = "";
-  document.getElementById("comparisonbubblesix").style.display = "";
+
+  safelySetStyle("headercontainer", "borderColor", "gray");
+  safelySetStyle("gameplay-section", "backgroundColor", "#DCDCDC");
+  safelySetStyle("site-footer", "backgroundColor", "#DCDCDC");
+  safelySetStyle("site-footer", "borderColor", "gray");
+  safelySetStyle("topnav", "backgroundColor", "#DCDCDC");
+  safelySetStyle("topheader", "backgroundColor", "white");
+  safelySetStyle("topheader", "borderColor", "gray");
+
+  safelySetStyle("comparisonbubbleone", "display", "");
+  safelySetStyle("comparisonbubbletwo", "display", "");
+  safelySetStyle("comparisonbubblethree", "display", "");
+  safelySetStyle("comparisonbubblefour", "display", "");
+  safelySetStyle("comparisonbubblefive", "display", "");
+  safelySetStyle("comparisonbubblesix", "display", "");
 }
 
+function safelySetStyle(id, styleProp, value) {
+  const el = document.getElementById(id);
+  if (el) {
+    el.style[styleProp] = value;
+  } else {
+    console.warn(`Element with ID "${id}" not found.`);
+  }
+}
 
 function openingScreen() {
   setTimeout(() => {
