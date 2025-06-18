@@ -133,7 +133,7 @@ function getIngredientMatch(userIngredients, mysteryIngredients) {
 
 function displayComparisonOne(userItem, mysteryItem) {
   const container = document.getElementById("comparison-1");
-
+console.log(JSON.stringify(userItem.yearOfRelease));
 function compareClass(val1, val2) {
   return val1 == val2 ? "match" : "no-match";
 }
@@ -145,6 +145,16 @@ function compareIntClass(val1, val2) {
     return "calorie-higher"; 
   } else {
     return "calorie-same";
+  }
+}
+
+function compareDecadeClass(val1, val2) {
+  if (val1 < val2) {
+    return "decade-lower"; 
+  } else if (val1 > val2) {
+    return "decade-higher"; 
+  } else {
+    return "decade-same";
   }
 }
 
@@ -200,9 +210,9 @@ function compareIngredientsClass(userIngredients, productIngredients) {
     <div class="bubble ${compareClass(userItem.vegan, productVegan)}" style="left: 1600px; transform: translateX(-50%);">
       ${userItem.vegan ? "Yes" : "No"}
     </div>
-    <div class="bubble ${compareClass(userItem.yearOfRelease, productRelease)}" style="left: 1800px; transform: translateX(-50%);">
-      ${userItem.yearOfRelease}
-    </div>
+<div class="bubble ${compareDecadeClass(userItem.yearOfRelease, productRelease)}" style="left: 1800px; transform: translateX(-50%);">
+  ${userItem.yearOfRelease}s
+</div>
   </div>
 `;
 console.log(userItem.ingredients.join('').length);
@@ -234,6 +244,16 @@ function compareIntClass(val1, val2) {
     return "calorie-higher"; 
   } else {
     return "calorie-same";
+  }
+}
+
+function compareDecadeClass(val1, val2) {
+  if (val1 < val2) {
+    return "decade-lower"; 
+  } else if (val1 > val2) {
+    return "decade-higher"; 
+  } else {
+    return "decade-same";
   }
 }
 
@@ -279,9 +299,9 @@ container.innerHTML = `
     <div class="bubble ${compareClass(userItem.vegan, productVegan)}" style="left: 1600px; transform: translateX(-50%);">
       ${userItem.vegan ? "Yes" : "No"}
     </div>
-    <div class="bubble ${compareClass(userItem.yearOfRelease, productRelease)}" style="left: 1800px; transform: translateX(-50%);">
-      ${userItem.yearOfRelease}
-    </div>
+<div class="bubble ${compareDecadeClass(userItem.yearOfRelease, productRelease)}" style="left: 1800px; transform: translateX(-50%);">
+  ${userItem.yearOfRelease}s
+</div>
   </div>
 `;
 
@@ -311,6 +331,16 @@ function compareIntClass(val1, val2) {
     return "calorie-higher"; 
   } else {
     return "calorie-same";
+  }
+}
+
+function compareDecadeClass(val1, val2) {
+  if (val1 < val2) {
+    return "decade-lower"; 
+  } else if (val1 > val2) {
+    return "decade-higher"; 
+  } else {
+    return "decade-same";
   }
 }
 
@@ -356,9 +386,9 @@ container.innerHTML = `
     <div class="bubble ${compareClass(userItem.vegan, productVegan)}" style="left: 1600px; transform: translateX(-50%);">
       ${userItem.vegan ? "Yes" : "No"}
     </div>
-    <div class="bubble ${compareClass(userItem.yearOfRelease, productRelease)}" style="left: 1800px; transform: translateX(-50%);">
-      ${userItem.yearOfRelease}
-    </div>
+<div class="bubble ${compareDecadeClass(userItem.yearOfRelease, productRelease)}" style="left: 1800px; transform: translateX(-50%);">
+  ${userItem.yearOfRelease}s
+</div>
   </div>
 `;
   const offset = document.getElementById("comparisonbubblethree");
@@ -387,6 +417,16 @@ function compareIntClass(val1, val2) {
     return "calorie-higher"; 
   } else {
     return "calorie-same";
+  }
+}
+
+function compareDecadeClass(val1, val2) {
+  if (val1 < val2) {
+    return "decade-lower"; 
+  } else if (val1 > val2) {
+    return "decade-higher"; 
+  } else {
+    return "decade-same";
   }
 }
 
@@ -432,9 +472,9 @@ container.innerHTML = `
     <div class="bubble ${compareClass(userItem.vegan, productVegan)}" style="left: 1600px; transform: translateX(-50%);">
       ${userItem.vegan ? "Yes" : "No"}
     </div>
-    <div class="bubble ${compareClass(userItem.yearOfRelease, productRelease)}" style="left: 1800px; transform: translateX(-50%);">
-      ${userItem.yearOfRelease}
-    </div>
+<div class="bubble ${compareDecadeClass(userItem.yearOfRelease, productRelease)}" style="left: 1800px; transform: translateX(-50%);">
+  ${userItem.yearOfRelease}s
+</div>
   </div>
 `;
   const offset = document.getElementById("comparisonbubblefour");
@@ -463,6 +503,16 @@ function compareIntClass(val1, val2) {
     return "calorie-higher"; 
   } else {
     return "calorie-same";
+  }
+}
+
+function compareDecadeClass(val1, val2) {
+  if (val1 < val2) {
+    return "decade-lower"; 
+  } else if (val1 > val2) {
+    return "decade-higher"; 
+  } else {
+    return "decade-same";
   }
 }
 
@@ -508,9 +558,9 @@ container.innerHTML = `
     <div class="bubble ${compareClass(userItem.vegan, productVegan)}" style="left: 1600px; transform: translateX(-50%);">
       ${userItem.vegan ? "Yes" : "No"}
     </div>
-    <div class="bubble ${compareClass(userItem.yearOfRelease, productRelease)}" style="left: 1800px; transform: translateX(-50%);">
-      ${userItem.yearOfRelease}
-    </div>
+<div class="bubble ${compareDecadeClass(userItem.yearOfRelease, productRelease)}" style="left: 1800px; transform: translateX(-50%);">
+  ${userItem.yearOfRelease}s
+</div>
   </div>
 `;
   const offset = document.getElementById("comparisonbubblefive");
@@ -539,6 +589,16 @@ function compareIntClass(val1, val2) {
     return "calorie-higher"; 
   } else {
     return "calorie-same";
+  }
+}
+
+function compareDecadeClass(val1, val2) {
+  if (val1 < val2) {
+    return "decade-lower"; 
+  } else if (val1 > val2) {
+    return "decade-higher"; 
+  } else {
+    return "decade-same";
   }
 }
 
@@ -584,9 +644,9 @@ container.innerHTML = `
     <div class="bubble ${compareClass(userItem.vegan, productVegan)}" style="left: 1600px; transform: translateX(-50%);">
       ${userItem.vegan ? "Yes" : "No"}
     </div>
-    <div class="bubble ${compareClass(userItem.yearOfRelease, productRelease)}" style="left: 1800px; transform: translateX(-50%);">
-      ${userItem.yearOfRelease}
-    </div>
+<div class="bubble ${compareDecadeClass(userItem.yearOfRelease, productRelease)}" style="left: 1800px; transform: translateX(-50%);">
+  ${userItem.yearOfRelease}s
+</div>
   </div>
 `;
   const offset = document.getElementById("comparisonbubblesix");
@@ -704,7 +764,6 @@ function gameWon() {
   if (userStats.currentStreak > userStats.maxStreak) { 
     userStats.maxStreak = userStats.currentStreak;
   }
-  document.getElementById("submitButton").disabled = true;
   victoryheader.innerHTML += `<h2>You win! 🎉 </h2>`;
   victoryheader.innerHTML += `<p>Burgerdle guessed in ${guessNumber}/6 attempts!</p>`;
   victoryscreen.innerHTML += `<h2>Guess Distribution</h2>`;
@@ -713,7 +772,6 @@ function gameWon() {
 }
 
 function gameLost() {
-  document.getElementById("submitButton").disabled = true;
   victoryheader.innerHTML += `<h2>You lost! </h2>`;
   victoryheader.innerHTML += `<p>The correct item was ${productName}</p>`;
   victoryscreen.innerHTML += `<h2>Guess Distribution</h2>`;
@@ -840,6 +898,17 @@ function openPopup() {
   }, 0);
 }
 
+function resetGame () {
+  document.getElementById("comparison-1").innerHTML = "";
+  document.getElementById("comparison-2").innerHTML = "";
+  document.getElementById("comparison-3").innerHTML = "";
+  document.getElementById("comparison-4").innerHTML = "";
+  document.getElementById("comparison-5").innerHTML = "";
+  document.getElementById("comparison-6").innerHTML = "";
+  document.getElementById("victoryheader").innerHTML = "";
+  document.getElementById("victoryscreen").innerHTML = "";
+  guessNumber = 0;
+}
 
 function closePopup () {
   popup.classList.remove("visible");

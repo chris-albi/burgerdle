@@ -1,2096 +1,5362 @@
 [
-    {
-      "name": "Bacon McDouble",
-      "restaurant": "McDonald's",
-      "calories": 460,
-      "type": "Burger",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "2010s",
-      "game": 1,
-      "ingredients": ["bacon", "cheese", "bread", "beef", "pickles", "onions"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Bacon Ranch Deluxe McCrispy",
-      "restaurant": "McDonald's",
-      "calories": 660,
-      "type": "Chicken Sandwich",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "2020s",
-      "game": 2,
-      "ingredients": ["bacon", "cheese", "ranch", "bread", "chicken", "lettuce", "tomato"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Bacon Ranch McCrispy",
-      "restaurant": "McDonald's",
-      "calories": 650,
-      "type": "Chicken Sandwich",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "2020s",
-      "game": 3,
-      "ingredients": ["bacon", "cheese", "ranch", "bread", "chicken", "lettuce"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Big Mac",
-      "restaurant": "McDonald's",
-      "calories": 540,
-      "type": "Burger",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "1960s",
-      "game": 4,
-      "ingredients": ["cheese", "pickles", "lettuce", "onions", "big mac sauce", "bread", "beef"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Big Mac Bacon",
-      "restaurant": "McDonald's",
-      "calories": 610,
-      "type": "Burger",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "2000s",
-      "game": 5,
-      "ingredients": ["bacon", "cheese", "pickles", "lettuce", "onions", "big mac sauce", "bread", "beef"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Cardi B & Offset Meal",
-      "restaurant": "McDonald's",
-      "calories": 2190,
-      "type": "Misc",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "2020s",
-      "game": 6,
-      "ingredients": ["cheese", "bacon", "chicken", "fries", "soda", "pickles", "bread"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Cheeseburger",
-      "restaurant": "McDonald's",
-      "calories": 300,
-      "type": "Burger",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "1940s",
-      "game": 7,
-      "ingredients": ["cheese", "pickles", "onions", "bread", "beef"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Cheesy Jalapeno Bacon Quarter Pounder",
-      "restaurant": "McDonald's",
-      "calories": 650,
-      "type": "Burger",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "2010s",
-      "game": 8,
-      "ingredients": ["cheese", "bacon", "jalapenos", "bread", "beef", "onions"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Chicken Big Mac",
-      "restaurant": "McDonald's",
-      "calories": 700,
-      "type": "Chicken Sandwich",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "2020s",
-      "game": 9,
-      "ingredients": ["cheese", "pickles", "lettuce", "big mac sauce", "bread", "chicken"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Daily Double",
-      "restaurant": "McDonald's",
-      "calories": 440,
-      "type": "Burger",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "2000s",
-      "game": 10,
-      "ingredients": ["cheese", "pickles", "onions", "bread", "beef"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Deluxe McCrispy",
-      "restaurant": "McDonald's",
-      "calories": 530,
-      "type": "Chicken Sandwich",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "2020s",
-      "game": 11,
-      "ingredients": ["cheese", "bread", "chicken", "lettuce", "tomato"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Double Cheeseburger",
-      "restaurant": "McDonald's",
-      "calories": 440,
-      "type": "Burger",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "2000s",
-      "game": 12,
-      "ingredients": ["cheese", "pickles", "onions", "bread", "beef"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Double Filet-O-Fish",
-      "restaurant": "McDonald's",
-      "calories": 540,
-      "type": "Fish Sandwich",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "1960s",
-      "game": 13,
-      "ingredients": ["cheese", "fish fillets", "pickles", "tartar sauce", "bread"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Double Hamburger",
-      "restaurant": "McDonald's",
-      "calories": 330,
-      "type": "Burger",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "2000s",
-      "game": 14,
-      "ingredients": ["pickles", "onions", "bread", "beef"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Double Quarter Pounder with Cheese",
-      "restaurant": "McDonald's",
-      "calories": 780,
-      "type": "Burger",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "2000s",
-      "game": 15,
-      "ingredients": ["cheese", "pickles", "onions", "bread", "beef"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Double Quarter Pounder with Cheese Deluxe",
-      "restaurant": "McDonald's",
-      "calories": 650,
-      "type": "Burger",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "2000s",
-      "game": 16,
-      "ingredients": ["cheese", "pickles", "onions", "lettuce", "tomato", "bread", "beef"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Filet-O-Fish®",
-      "restaurant": "McDonald's",
-      "calories": 390,
-      "type": "Fish Sandwich",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "1960s",
-      "game": 17,
-      "ingredients": ["cheese", "fish fillets", "pickles", "tartar sauce", "bread"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Hamburger",
-      "restaurant": "McDonald's",
-      "calories": 250,
-      "type": "Burger",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "1940s",
-      "game": 18,
-      "ingredients": ["pickles", "onions", "bread", "beef"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Hot 'n Spicy McChicken",
-      "restaurant": "McDonald's",
-      "calories": 380,
-      "type": "Chicken Sandwich",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "2000s",
-      "game": 19,
-      "ingredients": ["bread", "chicken", "spicy mayo", "lettuce"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "McChicken",
-      "restaurant": "McDonald's",
-      "calories": 410,
-      "type": "Chicken Sandwich",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "1980s",
-      "game": 20,
-      "ingredients": ["bread", "chicken", "mayonnaise", "lettuce"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "McCrispy Chicken Sandwich",
-      "restaurant": "McDonald's",
-      "calories": 470,
-      "type": "Chicken Sandwich",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "2020s",
-      "game": 21,
-      "ingredients": ["bread", "chicken", "lettuce", "mayonnaise"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "McDouble",
-      "restaurant": "McDonald's",
-      "calories": 390,
-      "type": "Burger",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "2000s",
-      "game": 22,
-      "ingredients": ["beef", "cheese", "bread", "pickles", "onions", "ketchup", "mustard"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-        "name": "McRib",
-        "restaurant": "McDonald's",
-        "calories": 520,
-        "type": "Misc",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "1980s",
-        "game": 23,
-        "ingredients": ["pork", "bbq sauce", "bread", "pickles", "onions"],
-        "icon": "assets/mcdonalds.png"
-      },
-      {
-        "name": "Minecraft Movie Meal",
-        "restaurant": "McDonald's",
-        "calories": 755,
-        "type": "Misc",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "2020s",
-        "game": 24,
-        "ingredients": ["burger", "fries", "drink"],
-        "icon": "assets/mcdonalds.png"
-      },
-      {
-        "name": "Quarter Pounder Bacon",
-        "restaurant": "McDonald's",
-        "calories": 640,
-        "type": "Burger",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "2010s",
-        "game": 25,
-        "ingredients": ["bacon", "cheese", "bread", "beef", "pickles", "onions"],
-        "icon": "assets/mcdonalds.png"
-      },
-      {
-        "name": "Quarter Pounder Deluxe",
-        "restaurant": "McDonald's",
-        "calories": 650,
-        "type": "Burger",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "2000s",
-        "game": 26,
-        "ingredients": ["cheese", "bread", "beef", "pickles", "onions", "lettuce", "tomato"],
-        "icon": "assets/mcdonalds.png"
-      },
-      {
-        "name": "Quarter Pounder® with Cheese",
-        "restaurant": "McDonald's",
-        "calories": 540,
-        "type": "Burger",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "1970s",
-        "game": 27,
-        "ingredients": ["cheese", "bread", "beef", "pickles", "onions"],
-        "icon": "assets/mcdonalds.png"
-      },
-      {
-        "name": "Smoky BLT Quarter Pounder with Cheese",
-        "restaurant": "McDonald's",
-        "calories": 770,
-        "type": "Burger",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "2010s",
-        "game": 28,
-        "ingredients": ["bacon", "cheese", "bread", "beef", "pickles", "onions", "lettuce", "tomato"],
-        "icon": "assets/mcdonalds.png"
-      },
-      {
-        "name": "Spicy Deluxe McCrispy",
-        "restaurant": "McDonald's",
-        "calories": 530,
-        "type": "Chicken Sandwich",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "2020s",
-        "game": 29,
-        "ingredients": ["spicy chicken", "cheese", "bread", "pickles", "lettuce", "mayo"],
-        "icon": "assets/mcdonalds.png"
-      },
-      {
-        "name": "Spicy McCrispy",
-        "restaurant": "McDonald's",
-        "calories": 530,
-        "type": "Chicken Sandwich",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "2020s",
-        "game": 30,
-        "ingredients": ["spicy chicken", "bread", "pickles", "lettuce", "mayo"],
-        "icon": "assets/mcdonalds.png"
-      },
-      {
-        "name": "Triple Cheeseburger",
-        "restaurant": "McDonald's",
-        "calories": 0,
-        "type": "Burger",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "2010s",
-        "game": 31,
-        "ingredients": ["cheese", "bread", "beef", "pickles", "onions"],
-        "icon": "assets/mcdonalds.png"
-      },
-      {
-        "name": "Apple Fritter",
-        "restaurant": "McDonald's",
-        "calories": 510,
-        "type": "Dessert",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "2000s",
-        "game": 32,
-        "ingredients": ["apple", "flour", "sugar", "cinnamon"],
-        "icon": "assets/mcdonalds.png"
-      },
-      {
-        "name": "Bacon, Egg & Cheese Bagel",
-        "restaurant": "McDonald's",
-        "calories": 550,
-        "type": "Breakfast",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "2000s",
-        "game": 33,
-        "ingredients": ["bacon", "egg", "cheese", "bagel"],
-        "icon": "assets/mcdonalds.png"
-      },
-      {
-        "name": "Bacon, Egg & Cheese Biscuit",
-        "restaurant": "McDonald's",
-        "calories": 450,
-        "type": "Breakfast",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "2000s",
-        "game": 34,
-        "ingredients": ["bacon", "egg", "cheese", "biscuit"],
-        "icon": "assets/mcdonalds.png"
-      },
-      {
-        "name": "Bacon, Egg & Cheese McGriddles",
-        "restaurant": "McDonald's",
-        "calories": 420,
-        "type": "Breakfast",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "2000s",
-        "game": 35,
-        "ingredients": ["bacon", "egg", "cheese", "griddles"],
-        "icon": "assets/mcdonalds.png"
-      },
-      {
-        "name": "Big Breakfast with Hotcakes",
-        "restaurant": "McDonald's",
-        "calories": 1340,
-        "type": "Breakfast",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "1970s",
-        "game": 36,
-        "ingredients": ["egg", "sausage", "hash browns", "hotcakes", "syrup"],
-        "icon": "assets/mcdonalds.png"
-      },
-      {
-        "name": "Big Breakfast®",
-        "restaurant": "McDonald's",
-        "calories": 750,
-        "type": "Breakfast",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "1970s",
-        "game": 37,
-        "ingredients": ["egg", "sausage", "hash browns"],
-        "icon": "assets/mcdonalds.png"
-      },
-      {
-        "name": "Blueberry Muffin",
-        "restaurant": "McDonald's",
-        "calories": 470,
-        "type": "Dessert",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "2000s",
-        "game": 38,
-        "ingredients": ["blueberries", "flour", "sugar", "butter"],
-        "icon": "assets/mcdonalds.png"
-      },
-      {
-        "name": "Cinnamon Roll",
-        "restaurant": "McDonald's",
-        "calories": 560,
-        "type": "Dessert",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "2000s",
-        "game": 39,
-        "ingredients": ["cinnamon", "flour", "sugar", "butter"],
-        "icon": "assets/mcdonalds.png"
-      },
-      {
-        "name": "Egg McMuffin",
-        "restaurant": "McDonald's",
-        "calories": 300,
-        "type": "Breakfast",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "1970s",
-        "game": 40,
-        "ingredients": ["egg", "cheese", "ham", "english muffin"],
-        "icon": "assets/mcdonalds.png"
-      },
-      {
-        "name": "Fruit & Maple Oatmeal",
-        "restaurant": "McDonald's",
-        "calories": 260,
-        "type": "Breakfast",
-        "vegan": true,
-        "glutenFree": false,
-        "yearOfRelease": "2000s",
-        "game": 41,
-        "ingredients": ["oats", "fruit", "maple syrup"],
-        "icon": "assets/mcdonalds.png"
-      },
-      {
-        "name": "Hash Brown",
-        "restaurant": "McDonald's",
-        "calories": 150,
-        "type": "Side",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "1970s",
-        "game": 42,
-        "ingredients": ["potatoes", "oil", "salt"],
-        "icon": "assets/mcdonalds.png"
-      },
-      {
-        "name": "Hotcakes",
-        "restaurant": "McDonald's",
-        "calories": 590,
-        "type": "Breakfast",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "1970s",
-        "game": 43,
-        "ingredients": ["flour", "eggs", "butter", "syrup"],
-        "icon": "assets/mcdonalds.png"
-      },
-      {
-        "name": "Hotcakes and Sausage",
-        "restaurant": "McDonald's",
-        "calories": 780,
-        "type": "Breakfast",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "1970s",
-        "game": 44,
-        "ingredients": ["flour", "eggs", "butter", "syrup", "sausage"],
-        "icon": "assets/mcdonalds.png"
-      },
-      {
-        "name": "Sausage Biscuit",
-        "restaurant": "McDonald's",
-        "calories": 460,
-        "type": "Breakfast",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "2000s",
-        "game": 45,
-        "ingredients": ["sausage", "biscuit"],
-        "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Sausage Biscuit with Egg",
-      "restaurant": "McDonald's",
-      "calories": 530,
-      "type": "Breakfast",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "2000s",
-      "game": 46,
-      "ingredients": ["sausage", "egg", "biscuit"],
-        "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Sausage Burrito",
-      "restaurant": "McDonald's",
-      "calories": 300,
-      "type": "Breakfast",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "2000s",
-      "game": 47,
-      "ingredients": ["sausage", "egg", "cheese", "tortilla"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Sausage McGriddles®",
-      "restaurant": "McDonald's",
-      "calories": 430,
-      "type": "Breakfast",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "2000s",
-      "game": 48,
-      "ingredients": ["sausage", "egg", "cheese", "griddles"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Sausage McMuffin®",
-      "restaurant": "McDonald's",
-      "calories": 400,
-      "type": "Breakfast",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "1970s",
-      "game": 49,
-      "ingredients": ["sausage", "egg", "cheese", "english muffin"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Sausage McMuffin® with Egg",
-      "restaurant": "McDonald's",
-      "calories": 480,
-      "type": "Breakfast",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "1970s",
-      "game": 50,
-      "ingredients": ["sausage", "egg", "cheese", "english muffin"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Sausage, Egg & Cheese McGriddles",
-      "restaurant": "McDonald's",
-      "calories": 550,
-      "type": "Breakfast",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "2000s",
-      "game": 51,
-      "ingredients": ["sausage", "egg", "cheese", "griddles"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Apple Slices",
-      "restaurant": "McDonald's",
-      "calories": 15,
-      "type": "Side",
-      "vegan": true,
-      "glutenFree": true,
-      "yearOfRelease": "2000s",
-      "game": 52,
-      "ingredients": ["apple"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "French Fries, Large",
-      "restaurant": "McDonald's",
-      "calories": 522,
-      "type": "Side",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "1940s",
-      "game": 53,
-      "ingredients": ["potatoes", "oil", "salt"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Side Salad",
-      "restaurant": "McDonald's",
-      "calories": 15,
-      "type": "Side",
-      "vegan": true,
-      "glutenFree": true,
-      "yearOfRelease": "2000s",
-      "game": 54,
-      "ingredients": ["lettuce", "tomato", "cucumbers", "dressing"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Strawberry Gogurt",
-      "restaurant": "McDonald's",
-      "calories": 45,
-      "type": "Dessert",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "2000s",
-      "game": 55,
-      "ingredients": ["strawberries", "yogurt", "sugar"],
-      "icon": "assets/mcdonalds.png"
-    },
-    {
-      "name": "Chicken McNuggets, 6 piece",
-      "restaurant": "McDonald's",
-      "calories": 270,
-      "type": "Side",
-      "vegan": false,
-      "glutenFree": false,
-      "yearOfRelease": "1980s",
-      "game": 56,
-      "ingredients": ["chicken", "breading", "oil"],
-      "icon": "assets/mcdonalds.png"
-    },
-      {
-        "name": "Bean Burrito",
-        "restaurant": "Taco Bell",
-        "calories": 350,
-        "type": "Burrito",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "1990s",
-        "game": 57,
-        "ingredients": ["beans", "cheese", "sour cream", "onions", "tortilla"],
-        "icon": "assets/taco bell.png"
-      },
-      {
-        "name": "Beefy 5-Layer Burrito",
-        "restaurant": "Taco Bell",
-        "calories": 490,
-        "type": "Burrito",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "2000s",
-        "game": 58,
-        "ingredients": ["beef", "cheese", "sour cream", "taco sauce", "tortilla", "beans"],
-        "icon": "assets/taco bell.png"
-      },
-      {
-        "name": "Burrito Supreme - Chicken",
-        "restaurant": "Taco Bell",
-        "calories": 370,
-        "type": "Burrito",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "2000s",
-        "game": 59,
-        "ingredients": ["chicken", "cheese", "lettuce", "tomato", "sour cream", "taco sauce", "tortilla"],
-        "icon": "assets/taco bell.png"
-      },
-      {
-        "name": "Burrito Supreme - Steak",
-        "restaurant": "Taco Bell",
-        "calories": 370,
-        "type": "Burrito",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "2000s",
-        "game": 60,
-        "ingredients": ["steak", "cheese", "lettuce", "tomato", "sour cream", "taco sauce", "tortilla"],
-        "icon": "assets/taco bell.png"
-      },
-      {
-        "name": "Burrito Supreme – Beef",
-        "restaurant": "Taco Bell",
-        "calories": 390,
-        "type": "Burrito",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "2000s",
-        "game": 61,
-        "ingredients": ["beef", "cheese", "lettuce", "tomato", "sour cream", "taco sauce", "tortilla"],
-        "icon": "assets/taco bell.png"
-      },
-      {
-        "name": "Cheesy Bean and Rice Burrito",
-        "restaurant": "Taco Bell",
-        "calories": 410,
-        "type": "Burrito",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "2000s",
-        "game": 62,
-        "ingredients": ["beans", "rice", "cheese", "taco sauce", "tortilla"],
-        "icon": "assets/taco bell.png"
-      },
-      {
-        "name": "Chicken Enchilada Burrito",
-        "restaurant": "Taco Bell",
-        "calories": 380,
-        "type": "Burrito",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "2000s",
-        "game": 63,
-        "ingredients": ["chicken", "cheese", "enchilada sauce", "onions", "tortilla"],
-        "icon": "assets/taco bell.png"
-      },
-      {
-        "name": "Green Burrito",
-        "restaurant": "Taco Bell",
-        "calories": 370,
-        "type": "Burrito",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "2020s",
-        "game": 64,
-        "ingredients": ["beef", "cheese", "guacamole", "lettuce", "sour cream", "tortilla"],
-        "icon": "assets/taco bell.png"
-      },
-      {
-        "name": "Grilled Cheese Burrito",
-        "restaurant": "Taco Bell",
-        "calories": 710,
-        "type": "Burrito",
-        "vegan": false,
-        "glutenFree": false,
-        "yearOfRelease": "2020s",
-        "game": 65,
-        "ingredients": ["beef", "cheese", "nacho cheese", "sour cream", "taco sauce", "tortilla"],
-        "icon": "assets/taco bell.png"
-      },
-      {
-        "name": "Veggie Burrito Supreme",
-        "restaurant": "Taco Bell",
-        "calories": 390,
-        "type": "Burrito",
-        "vegan": true,
-        "glutenFree": false,
-        "yearOfRelease": "2000s",
-        "game": 66,
-        "ingredients": ["beans", "cheese", "lettuce", "tomato", "sour cream", "taco sauce", "tortilla"],
-        "icon": "assets/taco bell.png"
-      },
-        {
-            "name": "Black Bean Soft Taco",
-            "restaurant": "Taco Bell",
-            "calories": 170,
-            "type": "Taco",
-            "vegan": true,
-            "yearOfRelease": "2000s",
-            "game": 67,
-            "ingredients": ["black beans", "cheese", "lettuce", "taco sauce", "soft tortilla"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Crunchy Taco",
-            "restaurant": "Taco Bell",
-            "calories": 170,
-            "type": "Taco",
-            "vegan": false,
-            "yearOfRelease": "1960s",
-            "game": 68,
-            "ingredients": ["beef", "cheese", "lettuce", "taco sauce", "taco shell"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Crunchy Taco Supreme",
-            "restaurant": "Taco Bell",
-            "calories": 190,
-            "type": "Taco",
-            "vegan": false,
-            "yearOfRelease": "1990s",
-            "game": 69,
-            "ingredients": ["beef", "cheese", "lettuce", "tomato", "sour cream", "taco sauce", "taco shell"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Nacho Cheese Doritos Locos Taco",
-            "restaurant": "Taco Bell",
-            "calories": 170,
-            "type": "Taco",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 70,
-            "ingredients": ["beef", "cheese", "lettuce", "taco sauce", "doritos taco shell"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Nacho Cheese Doritos Locos Taco Supreme",
-            "restaurant": "Taco Bell",
-            "calories": 190,
-            "type": "Taco",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 71,
-            "ingredients": ["beef", "cheese", "lettuce", "tomato", "sour cream", "taco sauce", "doritos taco shell"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Soft Taco - Beef",
-            "restaurant": "Taco Bell",
-            "calories": 180,
-            "type": "Taco",
-            "vegan": false,
-            "yearOfRelease": "1980s",
-            "game": 72,
-            "ingredients": ["beef", "cheese", "lettuce", "taco sauce", "tortilla"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Soft Taco Supreme – Beef",
-            "restaurant": "Taco Bell",
-            "calories": 210,
-            "type": "Taco",
-            "vegan": false,
-            "yearOfRelease": "1990s",
-            "game": 73,
-            "ingredients": ["beef", "cheese", "lettuce", "tomato", "sour cream", "taco sauce", "tortilla"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Spicy Potato Soft Taco",
-            "restaurant": "Taco Bell",
-            "calories": 230,
-            "type": "Taco",
-            "vegan": true,
-            "yearOfRelease": "2010s",
-            "game": 74,
-            "ingredients": ["potatoes", "cheese", "lettuce", "sour cream", "taco sauce", "tortilla"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Breakfast California Crunchwrap",
-            "restaurant": "Taco Bell",
-            "calories": 630,
-            "type": "Breakfast",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 75,
-            "ingredients": ["eggs", "bacon", "cheese", "hash brown", "tomato", "sour cream", "tortilla"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Breakfast Crunchwrap - Bacon",
-            "restaurant": "Taco Bell",
-            "calories": 670,
-            "type": "Breakfast",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 76,
-            "ingredients": ["eggs", "bacon", "cheese", "hash brown", "sour cream", "tortilla"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Breakfast Crunchwrap - Sausage",
-            "restaurant": "Taco Bell",
-            "calories": 710,
-            "type": "Breakfast",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 77,
-            "ingredients": ["eggs", "sausage", "cheese", "hash brown", "sour cream", "tortilla"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Breakfast Crunchwrap - Steak",
-            "restaurant": "Taco Bell",
-            "calories": 660,
-            "type": "Breakfast",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 78,
-            "ingredients": ["eggs", "steak", "cheese", "hash brown", "sour cream", "tortilla"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Breakfast Quesadilla",
-            "restaurant": "Taco Bell",
-            "calories": 510,
-            "type": "Breakfast",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 79,
-            "ingredients": ["eggs", "cheese", "bacon", "tortilla"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Cheesy Toasted Breakfast Burrito",
-            "restaurant": "Taco Bell",
-            "calories": 340,
-            "type": "Breakfast",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 80,
-            "ingredients": ["eggs", "cheese", "bacon", "tortilla"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Cinnabon Delights",
-            "restaurant": "Taco Bell",
-            "calories": 160,
-            "type": "Dessert",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 81,
-            "ingredients": ["cinnamon", "cream cheese", "dough"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Grande Toasted Breakfast Burrito",
-            "restaurant": "Taco Bell",
-            "calories": 560,
-            "type": "Breakfast",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 82,
-            "ingredients": ["eggs", "cheese", "bacon", "hash brown", "tortilla"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Hash Brown",
-            "restaurant": "Taco Bell",
-            "calories": 160,
-            "type": "Side",
-            "vegan": true,
-            "glutenFree": true,
-            "yearOfRelease": "1980s",
-            "game": 83,
-            "ingredients": ["potato", "oil", "salt"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Caliente Cantina Chicken Bowl",
-            "restaurant": "Taco Bell",
-            "calories": 480,
-            "type": "Bowl",
-            "vegan": false,
-            "yearOfRelease": "2020s",
-            "game": 84,
-            "ingredients": ["chicken", "rice", "cheese", "sour cream", "guacamole", "lettuce", "tortilla strips"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Caliente Cantina Chicken Burrito",
-            "restaurant": "Taco Bell",
-            "calories": 450,
-            "type": "Burrito",
-            "vegan": false,
-            "yearOfRelease": "2020s",
-            "game": 85,
-            "ingredients": ["chicken", "rice", "cheese", "sour cream", "guacamole", "tortilla"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Caliente Cantina Chicken Crispy Taco",
-            "restaurant": "Taco Bell",
-            "calories": 290,
-            "type": "Taco",
-            "vegan": false,
-            "yearOfRelease": "2020s",
-            "game": 86,
-            "ingredients": ["crispy chicken", "cheese", "lettuce", "taco shell"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Caliente Cantina Chicken Quesadilla",
-            "restaurant": "Taco Bell",
-            "calories": 560,
-            "type": "Quesadilla",
-            "vegan": false,
-            "yearOfRelease": "2020s",
-            "game": 87,
-            "ingredients": ["chicken", "cheese", "flour tortilla", "sour cream"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Caliente Cantina Chicken Soft Taco",
-            "restaurant": "Taco Bell",
-            "calories": 200,
-            "type": "Taco",
-            "vegan": false,
-            "yearOfRelease": "2020s",
-            "game": 88,
-            "ingredients": ["chicken", "cheese", "lettuce", "soft taco shell"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Cantina Chicken Bowl",
-            "restaurant": "Taco Bell",
-            "calories": 490,
-            "type": "Bowl",
-            "vegan": false,
-            "yearOfRelease": "2020s",
-            "game": 89,
-            "ingredients": ["chicken", "rice", "cheese", "sour cream", "guacamole", "lettuce", "tortilla strips"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Cantina Chicken Burrito",
-            "restaurant": "Taco Bell",
-            "calories": 540,
-            "type": "Burrito",
-            "vegan": false,
-            "yearOfRelease": "2020s",
-            "game": 90,
-            "ingredients": ["chicken", "rice", "cheese", "sour cream", "guacamole", "tortilla"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Cantina Chicken Quesadilla",
-            "restaurant": "Taco Bell",
-            "calories": 570,
-            "type": "Quesadilla",
-            "vegan": false,
-            "yearOfRelease": "2020s",
-            "game": 91,
-            "ingredients": ["chicken", "cheese", "flour tortilla", "sour cream"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Cantina Chicken Soft Taco",
-            "restaurant": "Taco Bell",
-            "calories": 210,
-            "type": "Taco",
-            "vegan": false,
-            "yearOfRelease": "2020s",
-            "game": 92,
-            "ingredients": ["chicken", "cheese", "lettuce", "soft taco shell"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Cantina Crispy Chicken Taco",
-            "restaurant": "Taco Bell",
-            "calories": 270,
-            "type": "Taco",
-            "vegan": false,
-            "yearOfRelease": "2020s",
-            "game": 93,
-            "ingredients": ["crispy chicken", "cheese", "lettuce", "taco shell"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Black Bean Chalupa",
-            "restaurant": "Taco Bell",
-            "calories": 330,
-            "type": "Chalupa",
-            "vegan": true,
-            "yearOfRelease": "2000s",
-            "game": 94,
-            "ingredients": ["black beans", "cheese", "lettuce", "tomato", "chalupa shell", "sour cream"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Chalupa Supreme - Chicken",
-            "restaurant": "Taco Bell",
-            "calories": 330,
-            "type": "Chalupa",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 95,
-            "ingredients": ["chicken", "cheese", "lettuce", "tomato", "chalupa shell", "sour cream"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Chalupa Supreme - Steak",
-            "restaurant": "Taco Bell",
-            "calories": 330,
-            "type": "Chalupa",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 96,
-            "ingredients": ["steak", "cheese", "lettuce", "tomato", "chalupa shell", "sour cream"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Chalupa Supreme – Beef",
-            "restaurant": "Taco Bell",
-            "calories": 350,
-            "type": "Chalupa",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 97,
-            "ingredients": ["beef", "cheese", "lettuce", "tomato", "chalupa shell", "sour cream"],
-            "icon": "assets/taco bell.png"
-          },
-          {
-            "name": "Chipotle Chicken and Cheese, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 450,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 98,
-            "ingredients": ["chicken", "cheese", "chipotle sauce", "lettuce", "tomato", "onions", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "All American Club, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 450,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 99,
-            "ingredients": ["turkey", "ham", "cheese", "lettuce", "tomato", "mayonnaise", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "All-Pro Sweet Onion Teriyaki, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 430,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 100,
-            "ingredients": ["chicken", "sweet onion sauce", "lettuce", "tomato", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "B.L.T., 6 Inch",
-            "restaurant": "Subway",
-            "calories": 330,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "1960s",
-            "game": 101,
-            "ingredients": ["bacon", "lettuce", "tomato", "mayonnaise", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Bella Mozza, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 420,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 102,
-            "ingredients": ["mozzarella cheese", "tomato", "basil", "olive oil", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Benissimo Sandwich, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 510,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 103,
-            "ingredients": ["ham", "salami", "cheese", "lettuce", "tomato", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Big Hot Pastrami, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 470,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 104,
-            "ingredients": ["pastrami", "cheese", "mustard", "lettuce", "tomato", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Black Forest Ham, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 270,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "1980s",
-            "game": 105,
-            "ingredients": ["ham", "lettuce", "tomato", "mayonnaise", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Buffalo Chicken Sandwich, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 340,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 106,
-            "ingredients": ["chicken", "buffalo sauce", "lettuce", "tomato", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Chicken & Bacon Ranch, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 530,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 107,
-            "ingredients": ["chicken", "bacon", "ranch sauce", "cheese", "lettuce", "tomato", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Cold Cut Combo, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 280,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "1970s",
-            "game": 108,
-            "ingredients": ["ham", "salami", "bologna", "lettuce", "tomato", "mayonnaise", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Elite Chicken & Bacon Ranch, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 570,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 109,
-            "ingredients": ["chicken", "bacon", "ranch sauce", "cheese", "lettuce", "tomato", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Garlic Roast Beef, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 480,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 110,
-            "ingredients": ["roast beef", "garlic sauce", "cheese", "lettuce", "tomato", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Grand Slam Ham, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 500,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 111,
-            "ingredients": ["ham", "cheese", "lettuce", "tomato", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Ham & Jack Slider, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 150,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 112,
-            "ingredients": ["ham", "cheese", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Hotshot Italiano, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 620,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 113,
-            "ingredients": ["italian sausage", "pepperoni", "cheese", "lettuce", "tomato", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Italian B.M.T., 6 Inch",
-            "restaurant": "Subway",
-            "calories": 360,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "1970s",
-            "game": 114,
-            "ingredients": ["salami", "pepperoni", "ham", "cheese", "lettuce", "tomato", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Italian Spice Slider, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 230,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 115,
-            "ingredients": ["italian sausage", "cheese", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Little Cheesesteak Slider, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 180,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 116,
-            "ingredients": ["beef", "cheese", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Little Turkey Slider, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 200,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 117,
-            "ingredients": ["turkey", "cheese", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Meatball Marinara, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 410,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "1970s",
-            "game": 118,
-            "ingredients": ["meatballs", "marinara sauce", "cheese", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Oven Roasted Chicken, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 280,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 119,
-            "ingredients": ["chicken", "lettuce", "tomato", "mayonnaise", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Oven Roasted Turkey, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 260,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "1980s",
-            "game": 120,
-            "ingredients": ["turkey", "lettuce", "tomato", "mayonnaise", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Oven Roasted Turkey & Ham, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 270,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "1980s",
-            "game": 121,
-            "ingredients": ["turkey", "ham", "lettuce", "tomato", "mayonnaise", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Roast Beef, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 200,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "1970s",
-            "game": 122,
-            "ingredients": ["roast beef", "lettuce", "tomato", "mayonnaise", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Rotisserie Style Chicken, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 300,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 123,
-            "ingredients": ["rotisserie chicken", "lettuce", "tomato", "mayonnaise", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Spicy Italian, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 430,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "1990s",
-            "game": 124,
-            "ingredients": ["pepperoni", "salami", "lettuce", "tomato", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Steak and Cheese, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 320,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 125,
-            "ingredients": ["steak", "cheese", "lettuce", "tomato", "mayonnaise", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Subway Club, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 460,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "1980s",
-            "game": 126,
-            "ingredients": ["turkey", "ham", "roast beef", "lettuce", "tomato", "mayonnaise", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Supreme Meats Sandwich, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 510,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 127,
-            "ingredients": ["salami", "pepperoni", "ham", "roast beef", "lettuce", "tomato", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Sweet Onion Chicken Teriyaki, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 340,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 128,
-            "ingredients": ["chicken teriyaki", "lettuce", "tomato", "sweet onion sauce", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Teriyaki Blitz, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 450,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 129,
-            "ingredients": ["chicken teriyaki", "cheese", "lettuce", "tomato", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "The Beast, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 730,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 130,
-            "ingredients": ["beef", "steak", "pepperoni", "cheese", "lettuce", "tomato", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "The Boss, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 580,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 131,
-            "ingredients": ["bacon", "steak", "cheese", "lettuce", "tomato", "mayonnaise", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "The Champ, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 440,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 132,
-            "ingredients": ["ham", "turkey", "cheese", "lettuce", "tomato", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "The Great Garlic, 6 Inch",
-            "restaurant": "Subway",
-            "calories": 470,
-            "type": "Sandwich",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 133,
-            "ingredients": ["roast beef", "cheese", "garlic aioli", "lettuce", "tomato", "sandwich bread"],
-            "icon": "assets/subway.png"
-          },
-          {
-            "name": "Bacon & Cheese Whopper",
-            "restaurant": "Burger King",
-            "calories": 790,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 134,
-            "ingredients": ["bacon", "cheese", "lettuce", "tomato", "onions", "pickles", "ketchup", "mayonnaise", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Bacon Cheeseburger",
-            "restaurant": "Burger King",
-            "calories": 317,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 135,
-            "ingredients": ["bacon", "cheese", "ketchup", "mustard", "pickles", "onions", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Bacon Double Cheeseburger",
-            "restaurant": "Burger King",
-            "calories": 405,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 136,
-            "ingredients": ["bacon", "cheese", "ketchup", "mustard", "pickles", "onions", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Bacon King",
-            "restaurant": "Burger King",
-            "calories": "1250",
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 137,
-            "ingredients": ["bacon", "cheese", "mayonnaise", "ketchup", "pickles", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Bacon Melt",
-            "restaurant": "Burger King",
-            "calories": 610,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 138,
-            "ingredients": ["bacon", "cheese", "melted cheese", "onions", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "BBQ Bacon Whopper Jr",
-            "restaurant": "Burger King",
-            "calories": 398,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 139,
-            "ingredients": ["bacon", "cheese", "BBQ sauce", "pickles", "lettuce", "tomato", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Big King",
-            "restaurant": "Burger King",
-            "calories": 1009,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 140,
-            "ingredients": ["cheese", "lettuce", "pickles", "onions", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "B.K. Cheeseburger",
-            "restaurant": "Burger King",
-            "calories": 283,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "1970s",
-            "game": 141,
-            "ingredients": ["cheese", "ketchup", "mustard", "pickles", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Classic Melt",
-            "restaurant": "Burger King",
-            "calories": 575,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 142,
-            "ingredients": ["cheese", "melted cheese", "onions", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Double BK Stacker",
-            "restaurant": "Burger King",
-            "calories": 1048,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 143,
-            "ingredients": ["bacon", "cheese", "ketchup", "mayonnaise", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "B.K. Double Cheeseburger",
-            "restaurant": "Burger King",
-            "calories": 388,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "1970s",
-            "game": 144,
-            "ingredients": ["cheese", "ketchup", "mustard", "pickles", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Double Quarter Pound King",
-            "restaurant": "Burger King",
-            "calories": 901,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 145,
-            "ingredients": ["cheese", "pickles", "onions", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Double Whopper",
-            "restaurant": "Burger King",
-            "calories": "890-1002",
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "1970s",
-            "game": 146,
-            "ingredients": ["cheese", "pickles", "lettuce", "onions", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "French Onion Melt",
-            "restaurant": "Burger King",
-            "calories": 600,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2020s",
-            "game": 147,
-            "ingredients": ["cheese", "melted cheese", "onions", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Fried Pickle Ranch Whopper",
-            "restaurant": "Burger King",
-            "calories": 870,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2020s",
-            "game": 148,
-            "ingredients": ["fried pickles", "ranch sauce", "lettuce", "tomato", "onions", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Game Day Pretzel Whopper",
-            "restaurant": "Burger King",
-            "calories": 870,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2020s",
-            "game": 149,
-            "ingredients": ["pretzel bun", "cheese", "onions", "lettuce", "tomato", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "B.K. Hamburger",
-            "restaurant": "Burger King",
-            "calories": 242,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "1970s",
-            "game": 150,
-            "ingredients": ["ketchup", "mustard", "pickles", "onions", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Impossible Whopper",
-            "restaurant": "Burger King",
-            "calories": 629,
-            "type": "Burger",
-            "vegan": true,
-            "yearOfRelease": "2019",
-            "game": 151,
-            "ingredients": ["impossible patty", "lettuce", "tomato", "pickles", "onions", "ketchup", "mayonnaise", "burger bun"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Maple Bourbon BBQ Whopper",
-            "restaurant": "Burger King",
-            "calories": 880,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2020s",
-            "game": 152,
-            "ingredients": ["maple bourbon BBQ sauce", "bacon", "cheese", "lettuce", "tomato", "onions", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Mexican Street Corn Whopper",
-            "restaurant": "Burger King",
-            "calories": 710,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2020s",
-            "game": 153,
-            "ingredients": ["street corn sauce", "corn", "cheese", "jalapeños", "lettuce", "tomato", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Miami BK Stacker",
-            "restaurant": "Burger King",
-            "calories": 571,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 154,
-            "ingredients": ["bacon", "cheese", "stacker sauce", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Philly BK Stacker",
-            "restaurant": "Burger King",
-            "calories": 520,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 155,
-            "ingredients": ["cheese", "grilled onions", "peppers", "stacker sauce", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Quad BK Stacker",
-            "restaurant": "Burger King",
-            "calories": 820,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 156,
-            "ingredients": ["beef", "bacon", "cheese", "stacker sauce", "burger bun"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Quarter Pound King",
-            "restaurant": "Burger King",
-            "calories": 580,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 157,
-            "ingredients": ["cheese", "pickles", "onions", "ketchup", "mustard", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Rodeo Burger",
-            "restaurant": "Burger King",
-            "calories": 340,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 158,
-            "ingredients": ["onion rings", "BBQ sauce", "cheese", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Shroom n' Swiss Melt",
-            "restaurant": "Burger King",
-            "calories": 659,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 159,
-            "ingredients": ["mushrooms", "swiss cheese", "melted cheese", "onions", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Single Impossible King",
-            "restaurant": "Burger King",
-            "calories": 552,
-            "type": "Burger",
-            "vegan": true,
-            "yearOfRelease": "2020s",
-            "game": 160,
-            "ingredients": ["impossible patty", "cheese", "pickles", "onions", "ketchup", "mustard", "burger bun"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Texas BK Stacker",
-            "restaurant": "Burger King",
-            "calories": 585,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 161,
-            "ingredients": ["bacon", "cheese", "onion rings", "BBQ sauce", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Texas Double Whopper",
-            "restaurant": "Burger King",
-            "calories": 1056,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 162,
-            "ingredients": ["bacon", "cheese", "lettuce", "tomato", "onions", "BBQ sauce", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Triple BK Stacker",
-            "restaurant": "Burger King",
-            "calories": 1370,
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 163,
-            "ingredients": ["beef", "bacon", "cheese", "stacker sauce", "burger bun"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Triple Whopper",
-            "restaurant": "Burger King",
-            "calories": "1140-1216",
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 164,
-            "ingredients": ["lettuce", "tomato", "pickles", "onions", "cheese", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Whopper",
-            "restaurant": "Burger King",
-            "calories": "657-740",
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "1950s",
-            "game": 165,
-            "ingredients": ["lettuce", "tomato", "pickles", "onions", "ketchup", "mayonnaise", "bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Whopper Jr",
-            "restaurant": "Burger King",
-            "calories": "315-380",
-            "type": "Burger",
-            "vegan": false,
-            "yearOfRelease": "1960s",
-            "game": 166,
-            "ingredients": ["lettuce", "tomato", "pickles", "onions", "ketchup", "mayonnaise", "burger bun", "beef"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Crispy Taco",
-            "restaurant": "Burger King",
-            "calories": 170,
-            "type": "Side",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 167,
-            "ingredients": ["taco shell", "seasoned beef", "cheese", "lettuce"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "BK French Fries, Large",
-            "restaurant": "Burger King",
-            "calories": "434",
-            "type": "Side",
-            "vegan": true,
-            "yearOfRelease": "1970s",
-            "game": 168,
-            "ingredients": ["potatoes", "vegetable oil", "salt"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Motts' Applesauce",
-            "restaurant": "Burger King",
-            "calories": 50,
-            "type": "Side",
-            "vegan": true,
-            "glutenFree": true,
-            "yearOfRelease": "2010s",
-            "game": 169,
-            "ingredients": ["apples", "ascorbic acid"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Mozzarella Fries",
-            "restaurant": "Burger King",
-            "calories": "240-730",
-            "type": "Side",
-            "vegan": false,
-            "yearOfRelease": "2020s",
-            "game": 170,
-            "ingredients": ["mozzarella cheese", "breaded coating", "oil"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Onion Rings",
-            "restaurant": "Burger King",
-            "calories": "302-652",
-            "type": "Side",
-            "vegan": false,
-            "yearOfRelease": "1980s",
-            "game": 171,
-            "ingredients": ["onions", "breading", "vegetable oil"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Pickle Fries",
-            "restaurant": "Burger King",
-            "calories": 380,
-            "type": "Side",
-            "vegan": false,
-            "yearOfRelease": "2020s",
-            "game": 172,
-            "ingredients": ["pickles", "breading", "oil"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Chocolate Chip Cookie",
-            "restaurant": "Burger King",
-            "calories": 330,
-            "type": "Dessert",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 173,
-            "ingredients": ["flour", "sugar", "chocolate chips", "eggs", "butter"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Chocolate Milk Shake",
-            "restaurant": "Burger King",
-            "calories": 762,
-            "type": "Dessert",
-            "vegan": false,
-            "yearOfRelease": "1970s",
-            "game": 174,
-            "ingredients": ["chocolate syrup", "milk", "soft serve"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Chocolate Oreo Shake",
-            "restaurant": "Burger King",
-            "calories": 717,
-            "type": "Dessert",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 175,
-            "ingredients": ["oreo cookies", "chocolate syrup", "milk", "soft serve"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Cookie Batter Shake",
-            "restaurant": "Burger King",
-            "calories": 969,
-            "type": "Dessert",
-            "vegan": false,
-            "yearOfRelease": "2020s",
-            "game": 176,
-            "ingredients": ["cookie dough", "milk", "soft serve"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Hershey Pie Shake",
-            "restaurant": "Burger King",
-            "calories": 857,
-            "type": "Dessert",
-            "vegan": false,
-            "yearOfRelease": "2020s",
-            "game": 177,
-            "ingredients": ["hershey pie pieces", "chocolate", "milk", "soft serve"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Hershey's Sundae Pie",
-            "restaurant": "Burger King",
-            "calories": 306,
-            "type": "Dessert",
-            "vegan": false,
-            "yearOfRelease": "2000s",
-            "game": 178,
-            "ingredients": ["chocolate", "whipped topping", "cookie crust"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Oreo Shake",
-            "restaurant": "Burger King",
-            "calories": 715,
-            "type": "Dessert",
-            "vegan": false,
-            "yearOfRelease": "2010s",
-            "game": 179,
-            "ingredients": ["oreo cookies", "milk", "soft serve"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Soft Serve Ice Cream Cone",
-            "restaurant": "Burger King",
-            "calories": 142,
-            "type": "Dessert",
-            "vegan": false,
-            "yearOfRelease": "1970s",
-            "game": 180,
-            "ingredients": ["soft serve", "cone"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Soft Serve Ice Cream Cup",
-            "restaurant": "Burger King",
-            "calories": 171,
-            "type": "Dessert",
-            "vegan": false,
-            "glutenFree": true,
-            "yearOfRelease": "1970s",
-            "game": 181,
-            "ingredients": ["soft serve"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Spider-Verse Sundae",
-            "restaurant": "Burger King",
-            "calories": 250,
-            "type": "Dessert",
-            "vegan": false,
-            "yearOfRelease": "2020s",
-            "game": 182,
-            "ingredients": ["vanilla soft serve", "chocolate"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Strawberry Milk Shake",
-            "restaurant": "Burger King",
-            "calories": 644,
-            "type": "Dessert",
-            "vegan": false,
-            "yearOfRelease": "1970s",
-            "game": 183,
-            "ingredients": ["strawberry syrup", "milk", "soft serve"],
-            "icon": "assets/burger king.png"
-          },
-          {
-            "name": "Vanilla Milk Shake",
-            "restaurant": "Burger King",
-            "calories": 583,
-            "type": "Dessert",
-            "vegan": false,
-            "yearOfRelease": "1970s",
-            "game": 184,
-            "ingredients": ["vanilla syrup", "milk", "soft serve"],
-            "icon": "assets/burger king.png"
-          }
-    ]
-  
+  {
+    "name": "Bacon McDouble",
+    "restaurant": "McDonald's",
+    "calories": 460,
+    "type": "Burger",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2010,
+    "game": 1,
+    "ingredients": [
+      "bacon",
+      "cheese",
+      "bread",
+      "beef",
+      "pickles",
+      "onions",
+      "ketchup",
+      "mustard"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Bacon Ranch Deluxe McCrispy",
+    "restaurant": "McDonald's",
+    "calories": 660,
+    "type": "Chicken Sandwich",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2020,
+    "game": 2,
+    "ingredients": [
+      "bacon",
+      "cheese",
+      "ranch",
+      "bread",
+      "chicken",
+      "lettuce",
+      "tomato"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Bacon Ranch McCrispy",
+    "restaurant": "McDonald's",
+    "calories": 650,
+    "type": "Chicken Sandwich",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2020,
+    "game": 3,
+    "ingredients": [
+      "bacon",
+      "cheese",
+      "ranch",
+      "bread",
+      "chicken",
+      "lettuce"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Big Mac",
+    "restaurant": "McDonald's",
+    "calories": 540,
+    "type": "Burger",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 1960,
+    "game": 4,
+    "ingredients": [
+      "cheese",
+      "pickles",
+      "lettuce",
+      "onions",
+      "big mac sauce",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Big Mac Bacon",
+    "restaurant": "McDonald's",
+    "calories": 610,
+    "type": "Burger",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 5,
+    "ingredients": [
+      "bacon",
+      "cheese",
+      "pickles",
+      "lettuce",
+      "onions",
+      "big mac sauce",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Cheeseburger",
+    "restaurant": "McDonald's",
+    "calories": 300,
+    "type": "Burger",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 1940,
+    "game": 7,
+    "ingredients": [
+      "cheese",
+      "pickles",
+      "onions",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Cheesy Jalapeno Bacon Quarter Pounder",
+    "restaurant": "McDonald's",
+    "calories": 650,
+    "type": "Burger",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2010,
+    "game": 8,
+    "ingredients": [
+      "cheese",
+      "bacon",
+      "jalapenos",
+      "bread",
+      "beef",
+      "onions"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Chicken Big Mac",
+    "restaurant": "McDonald's",
+    "calories": 700,
+    "type": "Chicken Sandwich",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2020,
+    "game": 9,
+    "ingredients": [
+      "cheese",
+      "pickles",
+      "lettuce",
+      "big mac sauce",
+      "bread",
+      "chicken"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Daily Double",
+    "restaurant": "McDonald's",
+    "calories": 440,
+    "type": "Burger",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 10,
+    "ingredients": [
+      "cheese",
+      "pickles",
+      "onions",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Deluxe McCrispy",
+    "restaurant": "McDonald's",
+    "calories": 530,
+    "type": "Chicken Sandwich",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2020,
+    "game": 11,
+    "ingredients": [
+      "cheese",
+      "bread",
+      "chicken",
+      "lettuce",
+      "tomato"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Double Cheeseburger",
+    "restaurant": "McDonald's",
+    "calories": 440,
+    "type": "Burger",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 12,
+    "ingredients": [
+      "cheese",
+      "pickles",
+      "onions",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Double Filet-O-Fish",
+    "restaurant": "McDonald's",
+    "calories": 540,
+    "type": "Fish Sandwich",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 1960,
+    "game": 13,
+    "ingredients": [
+      "cheese",
+      "fish fillets",
+      "pickles",
+      "tartar sauce",
+      "bread"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Double Hamburger",
+    "restaurant": "McDonald's",
+    "calories": 330,
+    "type": "Burger",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 14,
+    "ingredients": [
+      "pickles",
+      "onions",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Double Quarter Pounder with Cheese",
+    "restaurant": "McDonald's",
+    "calories": 780,
+    "type": "Burger",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 15,
+    "ingredients": [
+      "cheese",
+      "pickles",
+      "onions",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Double Quarter Pounder with Cheese Deluxe",
+    "restaurant": "McDonald's",
+    "calories": 650,
+    "type": "Burger",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 16,
+    "ingredients": [
+      "cheese",
+      "pickles",
+      "onions",
+      "lettuce",
+      "tomato",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Filet-O-Fish®",
+    "restaurant": "McDonald's",
+    "calories": 390,
+    "type": "Fish Sandwich",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 1960,
+    "game": 17,
+    "ingredients": [
+      "cheese",
+      "fish fillets",
+      "pickles",
+      "tartar sauce",
+      "bread"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Hamburger",
+    "restaurant": "McDonald's",
+    "calories": 250,
+    "type": "Burger",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 1940,
+    "game": 18,
+    "ingredients": [
+      "pickles",
+      "onions",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Hot 'n Spicy McChicken",
+    "restaurant": "McDonald's",
+    "calories": 380,
+    "type": "Chicken Sandwich",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 19,
+    "ingredients": [
+      "bread",
+      "chicken",
+      "mayonnaise",
+      "lettuce"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "McChicken",
+    "restaurant": "McDonald's",
+    "calories": 410,
+    "type": "Chicken Sandwich",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 1980,
+    "game": 20,
+    "ingredients": [
+      "bread",
+      "chicken",
+      "mayonnaise",
+      "lettuce"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "McCrispy Chicken Sandwich",
+    "restaurant": "McDonald's",
+    "calories": 470,
+    "type": "Chicken Sandwich",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2020,
+    "game": 21,
+    "ingredients": [
+      "bread",
+      "chicken",
+      "lettuce",
+      "mayonnaise"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "McDouble",
+    "restaurant": "McDonald's",
+    "calories": 390,
+    "type": "Burger",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 22,
+    "ingredients": [
+      "beef",
+      "cheese",
+      "bread",
+      "pickles",
+      "onions",
+      "ketchup",
+      "mustard"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "McRib",
+    "restaurant": "McDonald's",
+    "calories": 520,
+    "type": "Misc",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 1980,
+    "game": 23,
+    "ingredients": [
+      "pork",
+      "bbq sauce",
+      "bread",
+      "pickles",
+      "onions"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Quarter Pounder Bacon",
+    "restaurant": "McDonald's",
+    "calories": 640,
+    "type": "Burger",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2010,
+    "game": 25,
+    "ingredients": [
+      "bacon",
+      "cheese",
+      "bread",
+      "beef",
+      "pickles",
+      "onions"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Quarter Pounder Deluxe",
+    "restaurant": "McDonald's",
+    "calories": 650,
+    "type": "Burger",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 26,
+    "ingredients": [
+      "cheese",
+      "bread",
+      "beef",
+      "pickles",
+      "onions",
+      "lettuce",
+      "tomato"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Quarter Pounder® with Cheese",
+    "restaurant": "McDonald's",
+    "calories": 540,
+    "type": "Burger",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 1970,
+    "game": 27,
+    "ingredients": [
+      "cheese",
+      "bread",
+      "beef",
+      "pickles",
+      "onions"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Smoky BLT Quarter Pounder with Cheese",
+    "restaurant": "McDonald's",
+    "calories": 770,
+    "type": "Burger",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2010,
+    "game": 28,
+    "ingredients": [
+      "bacon",
+      "cheese",
+      "bread",
+      "beef",
+      "pickles",
+      "onions",
+      "lettuce",
+      "tomato"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Spicy Deluxe McCrispy",
+    "restaurant": "McDonald's",
+    "calories": 530,
+    "type": "Chicken Sandwich",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2020,
+    "game": 29,
+    "ingredients": [
+      "chicken",
+      "cheese",
+      "bread",
+      "pickles",
+      "lettuce",
+      "mayonnaise"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Spicy McCrispy",
+    "restaurant": "McDonald's",
+    "calories": 530,
+    "type": "Chicken Sandwich",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2020,
+    "game": 30,
+    "ingredients": [
+      "chicken",
+      "bread",
+      "pickles",
+      "lettuce",
+      "mayonnaise"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Triple Cheeseburger",
+    "restaurant": "McDonald's",
+    "calories": 0,
+    "type": "Burger",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2010,
+    "game": 31,
+    "ingredients": [
+      "cheese",
+      "bread",
+      "beef",
+      "pickles",
+      "onions"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Apple Fritter",
+    "restaurant": "McDonald's",
+    "calories": 510,
+    "type": "Dessert",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 32,
+    "ingredients": [
+      "apple",
+      "sugar",
+      "cinnamon"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Bacon, Egg & Cheese Bagel",
+    "restaurant": "McDonald's",
+    "calories": 550,
+    "type": "Breakfast",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 33,
+    "ingredients": [
+      "bacon",
+      "egg",
+      "cheese",
+      "bread"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Bacon, Egg & Cheese Biscuit",
+    "restaurant": "McDonald's",
+    "calories": 450,
+    "type": "Breakfast",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 34,
+    "ingredients": [
+      "bacon",
+      "egg",
+      "cheese",
+      "biscuit"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Bacon, Egg & Cheese McGriddles",
+    "restaurant": "McDonald's",
+    "calories": 420,
+    "type": "Breakfast",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 35,
+    "ingredients": [
+      "bacon",
+      "egg",
+      "cheese",
+      "bread"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Big Breakfast with Hotcakes",
+    "restaurant": "McDonald's",
+    "calories": 1340,
+    "type": "Breakfast",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 1970,
+    "game": 36,
+    "ingredients": [
+      "egg",
+      "sausage",
+      "hash browns",
+      "hotcakes",
+      "syrup"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Big Breakfast®",
+    "restaurant": "McDonald's",
+    "calories": 750,
+    "type": "Breakfast",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 1970,
+    "game": 37,
+    "ingredients": [
+      "egg",
+      "sausage",
+      "hash browns"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Blueberry Muffin",
+    "restaurant": "McDonald's",
+    "calories": 470,
+    "type": "Dessert",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 38,
+    "ingredients": [
+      "blueberries",
+      "sugar",
+      "butter"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Cinnamon Roll",
+    "restaurant": "McDonald's",
+    "calories": 560,
+    "type": "Dessert",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 39,
+    "ingredients": [
+      "cinnamon",
+      "sugar",
+      "butter"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Egg McMuffin",
+    "restaurant": "McDonald's",
+    "calories": 300,
+    "type": "Breakfast",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 1970,
+    "game": 40,
+    "ingredients": [
+      "egg",
+      "cheese",
+      "ham",
+      "english muffin"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Fruit & Maple Oatmeal",
+    "restaurant": "McDonald's",
+    "calories": 260,
+    "type": "Breakfast",
+    "vegan": true,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 41,
+    "ingredients": [
+      "oats",
+      "fruit",
+      "maple syrup"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Hash Brown",
+    "restaurant": "McDonald's",
+    "calories": 150,
+    "type": "Side",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 1970,
+    "game": 42,
+    "ingredients": [
+      "potatoes",
+      "oil"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Hotcakes",
+    "restaurant": "McDonald's",
+    "calories": 590,
+    "type": "Breakfast",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 1970,
+    "game": 43,
+    "ingredients": [
+      "pancakes",
+      "syrup"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Hotcakes and Sausage",
+    "restaurant": "McDonald's",
+    "calories": 780,
+    "type": "Breakfast",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 1970,
+    "game": 44,
+    "ingredients": [
+      "syrup",
+      "sausage",
+      "pancakes"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Sausage Biscuit",
+    "restaurant": "McDonald's",
+    "calories": 460,
+    "type": "Breakfast",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 45,
+    "ingredients": [
+      "sausage",
+      "biscuit"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Sausage Biscuit with Egg",
+    "restaurant": "McDonald's",
+    "calories": 530,
+    "type": "Breakfast",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 46,
+    "ingredients": [
+      "sausage",
+      "egg",
+      "biscuit"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Sausage Burrito",
+    "restaurant": "McDonald's",
+    "calories": 300,
+    "type": "Breakfast",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 47,
+    "ingredients": [
+      "sausage",
+      "egg",
+      "cheese",
+      "tortilla"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Sausage McGriddles®",
+    "restaurant": "McDonald's",
+    "calories": 430,
+    "type": "Breakfast",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 48,
+    "ingredients": [
+      "sausage",
+      "egg",
+      "cheese",
+      "bread"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Sausage McMuffin®",
+    "restaurant": "McDonald's",
+    "calories": 400,
+    "type": "Breakfast",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 1970,
+    "game": 49,
+    "ingredients": [
+      "sausage",
+      "egg",
+      "cheese",
+      "english muffin"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Sausage McMuffin® with Egg",
+    "restaurant": "McDonald's",
+    "calories": 480,
+    "type": "Breakfast",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 1970,
+    "game": 50,
+    "ingredients": [
+      "sausage",
+      "egg",
+      "cheese",
+      "english muffin"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Sausage, Egg & Cheese McGriddles",
+    "restaurant": "McDonald's",
+    "calories": 550,
+    "type": "Breakfast",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 51,
+    "ingredients": [
+      "sausage",
+      "egg",
+      "cheese",
+      "bread"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Apple Slices",
+    "restaurant": "McDonald's",
+    "calories": 15,
+    "type": "Side",
+    "vegan": true,
+    "glutenFree": true,
+    "yearOfRelease": 2000,
+    "game": 52,
+    "ingredients": [
+      "apple"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "French Fries, Large",
+    "restaurant": "McDonald's",
+    "calories": 522,
+    "type": "Side",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 1940,
+    "game": 53,
+    "ingredients": [
+      "potatoes",
+      "oil"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Side Salad",
+    "restaurant": "McDonald's",
+    "calories": 15,
+    "type": "Side",
+    "vegan": true,
+    "glutenFree": true,
+    "yearOfRelease": 2000,
+    "game": 54,
+    "ingredients": [
+      "lettuce",
+      "tomato",
+      "cucumbers",
+      "dressing"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Strawberry Gogurt",
+    "restaurant": "McDonald's",
+    "calories": 45,
+    "type": "Dessert",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 55,
+    "ingredients": [
+      "strawberries",
+      "yogurt",
+      "sugar"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Chicken McNuggets, 6 piece",
+    "restaurant": "McDonald's",
+    "calories": 270,
+    "type": "Side",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 1980,
+    "game": 56,
+    "ingredients": [
+      "chicken",
+      "breading",
+      "oil"
+    ],
+    "icon": "assets/mcdonalds.png"
+  },
+  {
+    "name": "Bean Burrito",
+    "restaurant": "Taco Bell",
+    "calories": 350,
+    "type": "Burrito",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 1990,
+    "game": 57,
+    "ingredients": [
+      "beans",
+      "cheese",
+      "sour cream",
+      "onions",
+      "tortilla"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Beefy 5-Layer Burrito",
+    "restaurant": "Taco Bell",
+    "calories": 490,
+    "type": "Burrito",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 58,
+    "ingredients": [
+      "beef",
+      "cheese",
+      "sour cream",
+      "taco sauce",
+      "tortilla",
+      "beans"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Burrito Supreme - Chicken",
+    "restaurant": "Taco Bell",
+    "calories": 370,
+    "type": "Burrito",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 59,
+    "ingredients": [
+      "chicken",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "sour cream",
+      "taco sauce",
+      "tortilla"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Burrito Supreme - Steak",
+    "restaurant": "Taco Bell",
+    "calories": 370,
+    "type": "Burrito",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 60,
+    "ingredients": [
+      "steak",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "sour cream",
+      "taco sauce",
+      "tortilla"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Burrito Supreme – Beef",
+    "restaurant": "Taco Bell",
+    "calories": 390,
+    "type": "Burrito",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 61,
+    "ingredients": [
+      "beef",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "sour cream",
+      "taco sauce",
+      "tortilla"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Cheesy Bean and Rice Burrito",
+    "restaurant": "Taco Bell",
+    "calories": 410,
+    "type": "Burrito",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 62,
+    "ingredients": [
+      "beans",
+      "rice",
+      "cheese",
+      "taco sauce",
+      "tortilla"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Chicken Enchilada Burrito",
+    "restaurant": "Taco Bell",
+    "calories": 380,
+    "type": "Burrito",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 63,
+    "ingredients": [
+      "chicken",
+      "cheese",
+      "enchilada sauce",
+      "onions",
+      "tortilla"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Green Burrito",
+    "restaurant": "Taco Bell",
+    "calories": 370,
+    "type": "Burrito",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2020,
+    "game": 64,
+    "ingredients": [
+      "beef",
+      "cheese",
+      "guacamole",
+      "lettuce",
+      "sour cream",
+      "tortilla"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Grilled Cheese Burrito",
+    "restaurant": "Taco Bell",
+    "calories": 710,
+    "type": "Burrito",
+    "vegan": false,
+    "glutenFree": false,
+    "yearOfRelease": 2020,
+    "game": 65,
+    "ingredients": [
+      "beef",
+      "cheese",
+      "nacho cheese",
+      "sour cream",
+      "taco sauce",
+      "tortilla"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Veggie Burrito Supreme",
+    "restaurant": "Taco Bell",
+    "calories": 390,
+    "type": "Burrito",
+    "vegan": true,
+    "glutenFree": false,
+    "yearOfRelease": 2000,
+    "game": 66,
+    "ingredients": [
+      "beans",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "sour cream",
+      "taco sauce",
+      "tortilla"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Black Bean Soft Taco",
+    "restaurant": "Taco Bell",
+    "calories": 170,
+    "type": "Taco",
+    "vegan": true,
+    "yearOfRelease": 2000,
+    "game": 67,
+    "ingredients": [
+      "beans",
+      "cheese",
+      "lettuce",
+      "taco sauce",
+      "soft tortilla"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Crunchy Taco",
+    "restaurant": "Taco Bell",
+    "calories": 170,
+    "type": "Taco",
+    "vegan": false,
+    "yearOfRelease": 1960,
+    "game": 68,
+    "ingredients": [
+      "beef",
+      "cheese",
+      "lettuce",
+      "taco sauce",
+      "taco shell"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Crunchy Taco Supreme",
+    "restaurant": "Taco Bell",
+    "calories": 190,
+    "type": "Taco",
+    "vegan": false,
+    "yearOfRelease": 1990,
+    "game": 69,
+    "ingredients": [
+      "beef",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "sour cream",
+      "taco sauce",
+      "taco shell"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Nacho Cheese Doritos Locos Taco",
+    "restaurant": "Taco Bell",
+    "calories": 170,
+    "type": "Taco",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 70,
+    "ingredients": [
+      "beef",
+      "cheese",
+      "lettuce",
+      "taco sauce",
+      "taco shell"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Nacho Cheese Doritos Locos Taco Supreme",
+    "restaurant": "Taco Bell",
+    "calories": 190,
+    "type": "Taco",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 71,
+    "ingredients": [
+      "beef",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "sour cream",
+      "taco sauce",
+      "taco shell"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Soft Taco - Beef",
+    "restaurant": "Taco Bell",
+    "calories": 180,
+    "type": "Taco",
+    "vegan": false,
+    "yearOfRelease": 1980,
+    "game": 72,
+    "ingredients": [
+      "beef",
+      "cheese",
+      "lettuce",
+      "taco sauce",
+      "tortilla"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Soft Taco Supreme – Beef",
+    "restaurant": "Taco Bell",
+    "calories": 210,
+    "type": "Taco",
+    "vegan": false,
+    "yearOfRelease": 1990,
+    "game": 73,
+    "ingredients": [
+      "beef",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "sour cream",
+      "taco sauce",
+      "tortilla"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Spicy Potato Soft Taco",
+    "restaurant": "Taco Bell",
+    "calories": 230,
+    "type": "Taco",
+    "vegan": true,
+    "yearOfRelease": 2010,
+    "game": 74,
+    "ingredients": [
+      "potatoes",
+      "cheese",
+      "lettuce",
+      "sour cream",
+      "taco sauce",
+      "tortilla"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Breakfast California Crunchwrap",
+    "restaurant": "Taco Bell",
+    "calories": 630,
+    "type": "Breakfast",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 75,
+    "ingredients": [
+      "eggs",
+      "bacon",
+      "cheese",
+      "hash brown",
+      "tomato",
+      "sour cream",
+      "tortilla"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Breakfast Crunchwrap - Bacon",
+    "restaurant": "Taco Bell",
+    "calories": 670,
+    "type": "Breakfast",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 76,
+    "ingredients": [
+      "eggs",
+      "bacon",
+      "cheese",
+      "hash brown",
+      "sour cream",
+      "tortilla"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Breakfast Crunchwrap - Sausage",
+    "restaurant": "Taco Bell",
+    "calories": 710,
+    "type": "Breakfast",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 77,
+    "ingredients": [
+      "eggs",
+      "sausage",
+      "cheese",
+      "hash brown",
+      "sour cream",
+      "tortilla"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Breakfast Crunchwrap - Steak",
+    "restaurant": "Taco Bell",
+    "calories": 660,
+    "type": "Breakfast",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 78,
+    "ingredients": [
+      "eggs",
+      "steak",
+      "cheese",
+      "hash brown",
+      "sour cream",
+      "tortilla"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Breakfast Quesadilla",
+    "restaurant": "Taco Bell",
+    "calories": 510,
+    "type": "Breakfast",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 79,
+    "ingredients": [
+      "eggs",
+      "cheese",
+      "bacon",
+      "tortilla"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Cheesy Toasted Breakfast Burrito",
+    "restaurant": "Taco Bell",
+    "calories": 340,
+    "type": "Breakfast",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 80,
+    "ingredients": [
+      "eggs",
+      "cheese",
+      "bacon",
+      "tortilla"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Cinnabon Delights",
+    "restaurant": "Taco Bell",
+    "calories": 160,
+    "type": "Dessert",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 81,
+    "ingredients": [
+      "cinnamon",
+      "cream cheese",
+      "dough"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Grande Toasted Breakfast Burrito",
+    "restaurant": "Taco Bell",
+    "calories": 560,
+    "type": "Breakfast",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 82,
+    "ingredients": [
+      "eggs",
+      "cheese",
+      "bacon",
+      "hash brown",
+      "tortilla"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Hash Brown",
+    "restaurant": "Taco Bell",
+    "calories": 160,
+    "type": "Side",
+    "vegan": true,
+    "glutenFree": true,
+    "yearOfRelease": 1980,
+    "game": 83,
+    "ingredients": [
+      "potatoes",
+      "oil"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Caliente Cantina Chicken Bowl",
+    "restaurant": "Taco Bell",
+    "calories": 480,
+    "type": "Bowl",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 84,
+    "ingredients": [
+      "chicken",
+      "rice",
+      "cheese",
+      "sour cream",
+      "guacamole",
+      "lettuce",
+      "tortilla strips"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Caliente Cantina Chicken Burrito",
+    "restaurant": "Taco Bell",
+    "calories": 450,
+    "type": "Burrito",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 85,
+    "ingredients": [
+      "chicken",
+      "rice",
+      "cheese",
+      "sour cream",
+      "guacamole",
+      "tortilla"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Caliente Cantina Chicken Crispy Taco",
+    "restaurant": "Taco Bell",
+    "calories": 290,
+    "type": "Taco",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 86,
+    "ingredients": [
+      "chicken",
+      "cheese",
+      "lettuce",
+      "taco shell"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Caliente Cantina Chicken Quesadilla",
+    "restaurant": "Taco Bell",
+    "calories": 560,
+    "type": "Quesadilla",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 87,
+    "ingredients": [
+      "chicken",
+      "cheese",
+      "flour tortilla",
+      "sour cream"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Caliente Cantina Chicken Soft Taco",
+    "restaurant": "Taco Bell",
+    "calories": 200,
+    "type": "Taco",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 88,
+    "ingredients": [
+      "chicken",
+      "cheese",
+      "lettuce",
+      "soft taco shell"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Cantina Chicken Bowl",
+    "restaurant": "Taco Bell",
+    "calories": 490,
+    "type": "Bowl",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 89,
+    "ingredients": [
+      "chicken",
+      "rice",
+      "cheese",
+      "sour cream",
+      "guacamole",
+      "lettuce",
+      "tortilla strips"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Cantina Chicken Burrito",
+    "restaurant": "Taco Bell",
+    "calories": 540,
+    "type": "Burrito",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 90,
+    "ingredients": [
+      "chicken",
+      "rice",
+      "cheese",
+      "sour cream",
+      "guacamole",
+      "tortilla"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Cantina Chicken Quesadilla",
+    "restaurant": "Taco Bell",
+    "calories": 570,
+    "type": "Quesadilla",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 91,
+    "ingredients": [
+      "chicken",
+      "cheese",
+      "flour tortilla",
+      "sour cream"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Cantina Chicken Soft Taco",
+    "restaurant": "Taco Bell",
+    "calories": 210,
+    "type": "Taco",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 92,
+    "ingredients": [
+      "chicken",
+      "cheese",
+      "lettuce",
+      "soft taco shell"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Cantina Crispy Chicken Taco",
+    "restaurant": "Taco Bell",
+    "calories": 270,
+    "type": "Taco",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 93,
+    "ingredients": [
+      "chicken",
+      "cheese",
+      "lettuce",
+      "taco shell"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Black Bean Chalupa",
+    "restaurant": "Taco Bell",
+    "calories": 330,
+    "type": "Chalupa",
+    "vegan": true,
+    "yearOfRelease": 2000,
+    "game": 94,
+    "ingredients": [
+      "beans",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "chalupa shell",
+      "sour cream"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Chalupa Supreme - Chicken",
+    "restaurant": "Taco Bell",
+    "calories": 330,
+    "type": "Chalupa",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 95,
+    "ingredients": [
+      "chicken",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "chalupa shell",
+      "sour cream"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Chalupa Supreme - Steak",
+    "restaurant": "Taco Bell",
+    "calories": 330,
+    "type": "Chalupa",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 96,
+    "ingredients": [
+      "steak",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "chalupa shell",
+      "sour cream"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Chalupa Supreme – Beef",
+    "restaurant": "Taco Bell",
+    "calories": 350,
+    "type": "Chalupa",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 97,
+    "ingredients": [
+      "beef",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "chalupa shell",
+      "sour cream"
+    ],
+    "icon": "assets/taco bell.png"
+  },
+  {
+    "name": "Chipotle Chicken and Cheese, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 450,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 98,
+    "ingredients": [
+      "chicken",
+      "cheese",
+      "chipotle sauce",
+      "lettuce",
+      "tomato",
+      "onions",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "All American Club, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 450,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 99,
+    "ingredients": [
+      "turkey",
+      "ham",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "mayonnaise",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "All-Pro Sweet Onion Teriyaki, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 430,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 100,
+    "ingredients": [
+      "chicken",
+      "sweet onion sauce",
+      "lettuce",
+      "tomato",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "B.L.T., 6 Inch",
+    "restaurant": "Subway",
+    "calories": 330,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 1960,
+    "game": 101,
+    "ingredients": [
+      "bacon",
+      "lettuce",
+      "tomato",
+      "mayonnaise",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Bella Mozza, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 420,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 102,
+    "ingredients": [
+      "cheese",
+      "tomato",
+      "basil",
+      "olive oil",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Benissimo Sandwich, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 510,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 103,
+    "ingredients": [
+      "ham",
+      "salami",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Big Hot Pastrami, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 470,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 104,
+    "ingredients": [
+      "pastrami",
+      "cheese",
+      "mustard",
+      "lettuce",
+      "tomato",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Black Forest Ham, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 270,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 1980,
+    "game": 105,
+    "ingredients": [
+      "ham",
+      "lettuce",
+      "tomato",
+      "mayonnaise",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Buffalo Chicken Sandwich, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 340,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 106,
+    "ingredients": [
+      "chicken",
+      "buffalo sauce",
+      "lettuce",
+      "tomato",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Chicken & Bacon Ranch, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 530,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 107,
+    "ingredients": [
+      "chicken",
+      "bacon",
+      "ranch",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Cold Cut Combo, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 280,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 1970,
+    "game": 108,
+    "ingredients": [
+      "ham",
+      "salami",
+      "bologna",
+      "lettuce",
+      "tomato",
+      "mayonnaise",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Elite Chicken & Bacon Ranch, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 570,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 109,
+    "ingredients": [
+      "chicken",
+      "bacon",
+      "ranch",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Garlic Roast Beef, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 480,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 110,
+    "ingredients": [
+      "roast beef",
+      "garlic sauce",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Grand Slam Ham, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 500,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 111,
+    "ingredients": [
+      "ham",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Ham & Jack Slider, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 150,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 112,
+    "ingredients": [
+      "ham",
+      "cheese",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Hotshot Italiano, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 620,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 113,
+    "ingredients": [
+      "sausage",
+      "pepperoni",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Italian B.M.T., 6 Inch",
+    "restaurant": "Subway",
+    "calories": 360,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 1970,
+    "game": 114,
+    "ingredients": [
+      "salami",
+      "pepperoni",
+      "ham",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Italian Spice Slider, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 230,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 115,
+    "ingredients": [
+      "sausage",
+      "cheese",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Little Cheesesteak Slider, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 180,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 116,
+    "ingredients": [
+      "beef",
+      "cheese",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Little Turkey Slider, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 200,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 117,
+    "ingredients": [
+      "turkey",
+      "cheese",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Meatball Marinara, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 410,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 1970,
+    "game": 118,
+    "ingredients": [
+      "meatballs",
+      "marinara sauce",
+      "cheese",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Oven Roasted Chicken, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 280,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 119,
+    "ingredients": [
+      "chicken",
+      "lettuce",
+      "tomato",
+      "mayonnaise",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Oven Roasted Turkey, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 260,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 1980,
+    "game": 120,
+    "ingredients": [
+      "turkey",
+      "lettuce",
+      "tomato",
+      "mayonnaise",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Oven Roasted Turkey & Ham, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 270,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 1980,
+    "game": 121,
+    "ingredients": [
+      "turkey",
+      "ham",
+      "lettuce",
+      "tomato",
+      "mayonnaise",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Roast Beef, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 200,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 1970,
+    "game": 122,
+    "ingredients": [
+      "roast beef",
+      "lettuce",
+      "tomato",
+      "mayonnaise",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Rotisserie Style Chicken, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 300,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 123,
+    "ingredients": [
+      "chicken",
+      "lettuce",
+      "tomato",
+      "mayonnaise",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Spicy Italian, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 430,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 1990,
+    "game": 124,
+    "ingredients": [
+      "pepperoni",
+      "salami",
+      "lettuce",
+      "tomato",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Steak and Cheese, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 320,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 125,
+    "ingredients": [
+      "steak",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "mayonnaise",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Subway Club, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 460,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 1980,
+    "game": 126,
+    "ingredients": [
+      "turkey",
+      "ham",
+      "roast beef",
+      "lettuce",
+      "tomato",
+      "mayonnaise",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Supreme Meats Sandwich, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 510,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 127,
+    "ingredients": [
+      "salami",
+      "pepperoni",
+      "ham",
+      "roast beef",
+      "lettuce",
+      "tomato",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Sweet Onion Chicken Teriyaki, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 340,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 128,
+    "ingredients": [
+      "chicken",
+      "lettuce",
+      "tomato",
+      "sweet onion sauce",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Teriyaki Blitz, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 450,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 129,
+    "ingredients": [
+      "chicken",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "The Beast, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 730,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 130,
+    "ingredients": [
+      "beef",
+      "steak",
+      "pepperoni",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "The Boss, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 580,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 131,
+    "ingredients": [
+      "bacon",
+      "steak",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "mayonnaise",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "The Champ, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 440,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 132,
+    "ingredients": [
+      "ham",
+      "turkey",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "The Great Garlic, 6 Inch",
+    "restaurant": "Subway",
+    "calories": 470,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 133,
+    "ingredients": [
+      "roast beef",
+      "cheese",
+      "garlic aioli",
+      "lettuce",
+      "tomato",
+      "sandwich bread"
+    ],
+    "icon": "assets/subway.png"
+  },
+  {
+    "name": "Bacon & Cheese Whopper",
+    "restaurant": "Burger King",
+    "calories": 790,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 134,
+    "ingredients": [
+      "bacon",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "onions",
+      "pickles",
+      "ketchup",
+      "mayonnaise",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "BK Bacon Cheeseburger",
+    "restaurant": "Burger King",
+    "calories": 317,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 135,
+    "ingredients": [
+      "bacon",
+      "cheese",
+      "ketchup",
+      "mustard",
+      "pickles",
+      "onions",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Bacon Double Cheeseburger",
+    "restaurant": "Burger King",
+    "calories": 405,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 136,
+    "ingredients": [
+      "bacon",
+      "cheese",
+      "ketchup",
+      "mustard",
+      "pickles",
+      "onions",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Bacon King",
+    "restaurant": "Burger King",
+    "calories": "1250",
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 137,
+    "ingredients": [
+      "bacon",
+      "cheese",
+      "mayonnaise",
+      "ketchup",
+      "pickles",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Bacon Melt",
+    "restaurant": "Burger King",
+    "calories": 610,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 138,
+    "ingredients": [
+      "bacon",
+      "cheese",
+      "cheese",
+      "onions",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "BBQ Bacon Whopper Jr",
+    "restaurant": "Burger King",
+    "calories": 398,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 139,
+    "ingredients": [
+      "bacon",
+      "cheese",
+      "bbq sauce",
+      "pickles",
+      "lettuce",
+      "tomato",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Big King",
+    "restaurant": "Burger King",
+    "calories": 1009,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 140,
+    "ingredients": [
+      "cheese",
+      "lettuce",
+      "pickles",
+      "onions",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "B.K. Cheeseburger",
+    "restaurant": "Burger King",
+    "calories": 283,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 1970,
+    "game": 141,
+    "ingredients": [
+      "cheese",
+      "ketchup",
+      "mustard",
+      "pickles",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Classic Melt",
+    "restaurant": "Burger King",
+    "calories": 575,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 142,
+    "ingredients": [
+      "cheese",
+      "onions",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Double BK Stacker",
+    "restaurant": "Burger King",
+    "calories": 1048,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 143,
+    "ingredients": [
+      "bacon",
+      "cheese",
+      "ketchup",
+      "mayonnaise",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "B.K. Double Cheeseburger",
+    "restaurant": "Burger King",
+    "calories": 388,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 1970,
+    "game": 144,
+    "ingredients": [
+      "cheese",
+      "ketchup",
+      "mustard",
+      "pickles",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Double Quarter Pound King",
+    "restaurant": "Burger King",
+    "calories": 901,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 145,
+    "ingredients": [
+      "cheese",
+      "pickles",
+      "onions",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Double Whopper",
+    "restaurant": "Burger King",
+    "calories": "890-1002",
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 1970,
+    "game": 146,
+    "ingredients": [
+      "cheese",
+      "pickles",
+      "lettuce",
+      "onions",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "French Onion Melt",
+    "restaurant": "Burger King",
+    "calories": 600,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 147,
+    "ingredients": [
+      "cheese",
+      "cheese",
+      "onions",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Fried Pickle Ranch Whopper",
+    "restaurant": "Burger King",
+    "calories": 870,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 148,
+    "ingredients": [
+      "pickles",
+      "ranch",
+      "lettuce",
+      "tomato",
+      "onions",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Game Day Pretzel Whopper",
+    "restaurant": "Burger King",
+    "calories": 870,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 149,
+    "ingredients": [
+      "bread",
+      "cheese",
+      "onions",
+      "lettuce",
+      "tomato",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "B.K. Hamburger",
+    "restaurant": "Burger King",
+    "calories": 242,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 1970,
+    "game": 150,
+    "ingredients": [
+      "ketchup",
+      "mustard",
+      "pickles",
+      "onions",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Impossible Whopper",
+    "restaurant": "Burger King",
+    "calories": 629,
+    "type": "Burger",
+    "vegan": true,
+    "yearOfRelease": 2010,
+    "game": 151,
+    "ingredients": [
+      "impossible patty",
+      "lettuce",
+      "tomato",
+      "pickles",
+      "onions",
+      "ketchup",
+      "mayonnaise",
+      "bread"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Maple Bourbon BBQ Whopper",
+    "restaurant": "Burger King",
+    "calories": 880,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 152,
+    "ingredients": [
+      "bbq sauce",
+      "bacon",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "onions",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Mexican Street Corn Whopper",
+    "restaurant": "Burger King",
+    "calories": 710,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 153,
+    "ingredients": [
+      "street corn sauce",
+      "corn",
+      "cheese",
+      "jalapeños",
+      "lettuce",
+      "tomato",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Miami BK Stacker",
+    "restaurant": "Burger King",
+    "calories": 571,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 154,
+    "ingredients": [
+      "bacon",
+      "cheese",
+      "stacker sauce",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Philly BK Stacker",
+    "restaurant": "Burger King",
+    "calories": 520,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 155,
+    "ingredients": [
+      "cheese",
+      "grilled onions",
+      "peppers",
+      "stacker sauce",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Quad BK Stacker",
+    "restaurant": "Burger King",
+    "calories": 820,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 156,
+    "ingredients": [
+      "beef",
+      "bacon",
+      "cheese",
+      "stacker sauce",
+      "bread"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Quarter Pound King",
+    "restaurant": "Burger King",
+    "calories": 580,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 157,
+    "ingredients": [
+      "cheese",
+      "pickles",
+      "onions",
+      "ketchup",
+      "mustard",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Rodeo Burger",
+    "restaurant": "Burger King",
+    "calories": 340,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 158,
+    "ingredients": [
+      "onion rings",
+      "bbq sauce",
+      "cheese",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Shroom n' Swiss Melt",
+    "restaurant": "Burger King",
+    "calories": 659,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 159,
+    "ingredients": [
+      "mushrooms",
+      "swiss cheese",
+      "cheese",
+      "onions",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Single Impossible King",
+    "restaurant": "Burger King",
+    "calories": 552,
+    "type": "Burger",
+    "vegan": true,
+    "yearOfRelease": 2020,
+    "game": 160,
+    "ingredients": [
+      "impossible patty",
+      "cheese",
+      "pickles",
+      "onions",
+      "ketchup",
+      "mustard",
+      "bread"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Texas BK Stacker",
+    "restaurant": "Burger King",
+    "calories": 585,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 161,
+    "ingredients": [
+      "bacon",
+      "cheese",
+      "onion rings",
+      "bbq sauce",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Texas Double Whopper",
+    "restaurant": "Burger King",
+    "calories": 1056,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 162,
+    "ingredients": [
+      "bacon",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "onions",
+      "bbq sauce",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Triple BK Stacker",
+    "restaurant": "Burger King",
+    "calories": 1370,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 163,
+    "ingredients": [
+      "beef",
+      "bacon",
+      "cheese",
+      "stacker sauce",
+      "bread"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Triple Whopper",
+    "restaurant": "Burger King",
+    "calories": "1140-1216",
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 164,
+    "ingredients": [
+      "lettuce",
+      "tomato",
+      "pickles",
+      "onions",
+      "cheese",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Whopper",
+    "restaurant": "Burger King",
+    "calories": "657-740",
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 1950,
+    "game": 165,
+    "ingredients": [
+      "lettuce",
+      "tomato",
+      "pickles",
+      "onions",
+      "ketchup",
+      "mayonnaise",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Whopper Jr",
+    "restaurant": "Burger King",
+    "calories": "315-380",
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 1960,
+    "game": 166,
+    "ingredients": [
+      "lettuce",
+      "tomato",
+      "pickles",
+      "onions",
+      "ketchup",
+      "mayonnaise",
+      "bread",
+      "beef"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Crispy Taco",
+    "restaurant": "Burger King",
+    "calories": 170,
+    "type": "Side",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 167,
+    "ingredients": [
+      "taco shell",
+      "beef",
+      "cheese",
+      "lettuce"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "BK French Fries, Large",
+    "restaurant": "Burger King",
+    "calories": "434",
+    "type": "Side",
+    "vegan": true,
+    "yearOfRelease": 1970,
+    "game": 168,
+    "ingredients": [
+      "potatoes",
+      "oil"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Motts' Applesauce",
+    "restaurant": "Burger King",
+    "calories": 50,
+    "type": "Side",
+    "vegan": true,
+    "glutenFree": true,
+    "yearOfRelease": 2010,
+    "game": 169,
+    "ingredients": [
+      "apple"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Mozzarella Fries",
+    "restaurant": "Burger King",
+    "calories": "240-730",
+    "type": "Side",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 170,
+    "ingredients": [
+      "cheese",
+      "breaded coating",
+      "oil"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Onion Rings",
+    "restaurant": "Burger King",
+    "calories": "302-652",
+    "type": "Side",
+    "vegan": false,
+    "yearOfRelease": 1980,
+    "game": 171,
+    "ingredients": [
+      "onions",
+      "breading",
+      "oil"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Pickle Fries",
+    "restaurant": "Burger King",
+    "calories": 380,
+    "type": "Side",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 172,
+    "ingredients": [
+      "pickles",
+      "breading",
+      "oil"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Chocolate Chip Cookie",
+    "restaurant": "Burger King",
+    "calories": 330,
+    "type": "Dessert",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 173,
+    "ingredients": [
+      "sugar",
+      "chocolate chips",
+      "eggs",
+      "butter"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Chocolate Milk Shake",
+    "restaurant": "Burger King",
+    "calories": 762,
+    "type": "Dessert",
+    "vegan": false,
+    "yearOfRelease": 1970,
+    "game": 174,
+    "ingredients": [
+      "chocolate syrup",
+      "milk",
+      "ice cream"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Chocolate Oreo Shake",
+    "restaurant": "Burger King",
+    "calories": 717,
+    "type": "Dessert",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 175,
+    "ingredients": [
+      "oreo cookies",
+      "chocolate syrup",
+      "milk",
+      "ice cream"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Cookie Batter Shake",
+    "restaurant": "Burger King",
+    "calories": 969,
+    "type": "Dessert",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 176,
+    "ingredients": [
+      "cookie dough",
+      "milk",
+      "ice cream"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Oreo Shake",
+    "restaurant": "Burger King",
+    "calories": 715,
+    "type": "Dessert",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 179,
+    "ingredients": [
+      "oreo cookies",
+      "milk",
+      "ice cream"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Soft Serve Ice Cream Cone",
+    "restaurant": "Burger King",
+    "calories": 142,
+    "type": "Dessert",
+    "vegan": false,
+    "yearOfRelease": 1970,
+    "game": 180,
+    "ingredients": [
+      "ice cream",
+      "cone"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Strawberry Milk Shake",
+    "restaurant": "Burger King",
+    "calories": 644,
+    "type": "Dessert",
+    "vegan": false,
+    "yearOfRelease": 1970,
+    "game": 183,
+    "ingredients": [
+      "strawberry syrup",
+      "milk",
+      "ice cream"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Vanilla Milk Shake",
+    "restaurant": "Burger King",
+    "calories": 583,
+    "type": "Dessert",
+    "vegan": false,
+    "yearOfRelease": 1970,
+    "game": 184,
+    "ingredients": [
+      "vanilla syrup",
+      "milk",
+      "ice cream"
+    ],
+    "icon": "assets/burger king.png"
+  },
+  {
+    "name": "Chick-n-Strips",
+    "restaurant": "Chick-fil-A",
+    "calories": "100-410",
+    "type": "Side",
+    "vegan": false,
+    "yearOfRelease": 1990,
+    "game": 185,
+    "ingredients": [
+      "chicken",
+      "seasoning",
+      "breading",
+      "oil"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Chicken Deluxe Sandwich",
+    "restaurant": "Chick-fil-A",
+    "calories": 500,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 186,
+    "ingredients": [
+      "chicken",
+      "lettuce",
+      "tomato",
+      "pickles",
+      "bread",
+      "cheese"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "CFA Chicken Nuggets, Large",
+    "restaurant": "Chick-fil-A",
+    "calories": "970",
+    "type": "Side",
+    "vegan": false,
+    "yearOfRelease": 1980,
+    "game": 187,
+    "ingredients": [
+      "chicken",
+      "breading",
+      "seasoning",
+      "oil"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "CFA Chicken Sandwich",
+    "restaurant": "Chick-fil-A",
+    "calories": 440,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 1960,
+    "game": 188,
+    "ingredients": [
+      "chicken",
+      "pickles",
+      "bread"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Grilled Chicken Club Sandwich",
+    "restaurant": "Chick-fil-A",
+    "calories": 460,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 189,
+    "ingredients": [
+      "chicken",
+      "bacon",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "bread"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Grilled Chicken Nuggets",
+    "restaurant": "Chick-fil-A",
+    "calories": "70-200",
+    "type": "Side",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 190,
+    "ingredients": [
+      "chicken",
+      "seasoning"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Grilled Chicken Sandwich",
+    "restaurant": "Chick-fil-A",
+    "calories": 320,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 1980,
+    "game": 191,
+    "ingredients": [
+      "chicken",
+      "lettuce",
+      "tomato",
+      "bread"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Grilled Chicken Sub Sandwich",
+    "restaurant": "Chick-fil-A",
+    "calories": "430-440",
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 192,
+    "ingredients": [
+      "chicken",
+      "lettuce",
+      "tomato",
+      "bread"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Honey Pepper Pimento Chicken Sandwich",
+    "restaurant": "Chick-fil-A",
+    "calories": "430-600",
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 193,
+    "ingredients": [
+      "chicken",
+      "cheese",
+      "jalapeños",
+      "honey",
+      "bread"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Smokehouse BBQ Bacon Sandwich",
+    "restaurant": "Chick-fil-A",
+    "calories": "460-620",
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 194,
+    "ingredients": [
+      "chicken",
+      "bacon",
+      "bbq sauce",
+      "cheese",
+      "lettuce",
+      "bread"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Spicy Chicken Sandwich",
+    "restaurant": "Chick-fil-A",
+    "calories": 460,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 195,
+    "ingredients": [
+      "spicy chicken breast",
+      "pickles",
+      "bread"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Spicy Deluxe",
+    "restaurant": "Chick-fil-A",
+    "calories": 550,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 196,
+    "ingredients": [
+      "spicy chicken breast",
+      "lettuce",
+      "tomato",
+      "cheese",
+      "bread"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Bacon, Egg & Cheese Biscuit",
+    "restaurant": "Chick-fil-A",
+    "calories": 420,
+    "type": "Breakfast",
+    "vegan": false,
+    "yearOfRelease": 1990,
+    "game": 197,
+    "ingredients": [
+      "biscuit",
+      "egg",
+      "cheese",
+      "bacon"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Chicken Biscuit",
+    "restaurant": "Chick-fil-A",
+    "calories": 460,
+    "type": "Breakfast",
+    "vegan": false,
+    "yearOfRelease": 1980,
+    "game": 198,
+    "ingredients": [
+      "biscuit",
+      "chicken filet"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Chicken, Egg & Cheese Biscuit",
+    "restaurant": "Chick-fil-A",
+    "calories": 530,
+    "type": "Breakfast",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 199,
+    "ingredients": [
+      "biscuit",
+      "chicken filet",
+      "egg",
+      "cheese"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Egg & Cheese English Muffin",
+    "restaurant": "Chick-fil-A",
+    "calories": "300-520",
+    "type": "Breakfast",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 200,
+    "ingredients": [
+      "English muffin",
+      "egg",
+      "cheese"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Egg White Grill",
+    "restaurant": "Chick-fil-A",
+    "calories": 290,
+    "type": "Breakfast",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 201,
+    "ingredients": [
+      "chicken",
+      "egg whites",
+      "cheese",
+      "English muffin"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Hash Brown Scramble Bowl",
+    "restaurant": "Chick-fil-A",
+    "calories": "410-480",
+    "type": "Breakfast",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 202,
+    "ingredients": [
+      "hash browns",
+      "eggs",
+      "cheese",
+      "chicken",
+      "jalapeño salsa"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Hash Brown Scramble Burrito",
+    "restaurant": "Chick-fil-A",
+    "calories": "650-710",
+    "type": "Breakfast",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 203,
+    "ingredients": [
+      "tortilla",
+      "hash browns",
+      "eggs",
+      "cheese",
+      "chicken",
+      "jalapeño salsa"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Hash Browns",
+    "restaurant": "Chick-fil-A",
+    "calories": 270,
+    "type": "Side",
+    "vegan": true,
+    "yearOfRelease": 1980,
+    "game": 204,
+    "ingredients": [
+      "potatoes",
+      "canola oil"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Hot Buttered Biscuit",
+    "restaurant": "Chick-fil-A",
+    "calories": 290,
+    "type": "Side",
+    "vegan": false,
+    "yearOfRelease": 1980,
+    "game": 205,
+    "ingredients": [
+      "biscuit",
+      "butter"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Sausage Egg and Cheese Biscuit",
+    "restaurant": "Chick-fil-A",
+    "calories": 630,
+    "type": "Breakfast",
+    "vegan": false,
+    "yearOfRelease": 1990,
+    "game": 206,
+    "ingredients": [
+      "biscuit",
+      "sausage",
+      "egg",
+      "cheese"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Spicy Chicken Biscuit",
+    "restaurant": "Chick-fil-A",
+    "calories": 430,
+    "type": "Breakfast",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 207,
+    "ingredients": [
+      "biscuit",
+      "spicy chicken filet"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "CFA Cobb Salad",
+    "restaurant": "Chick-fil-A",
+    "calories": "290-600",
+    "type": "Salad",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 208,
+    "ingredients": [
+      "lettuce",
+      "grape tomatoes",
+      "cheese",
+      "bacon",
+      "egg",
+      "chicken",
+      "corn",
+      "dressing"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Market Salad",
+    "restaurant": "Chick-fil-A",
+    "calories": "210-450",
+    "type": "Salad",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 209,
+    "ingredients": [
+      "lettuce",
+      "red cabbage",
+      "cheese",
+      "chicken",
+      "apple",
+      "berries",
+      "granola",
+      "dressing"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Spicy Southwest Salad",
+    "restaurant": "Chick-fil-A",
+    "calories": "350-650",
+    "type": "Salad",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 210,
+    "ingredients": [
+      "lettuce",
+      "chicken",
+      "beans",
+      "corn",
+      "cheese",
+      "tomatoes",
+      "dressing"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Chicken Noodle Soup",
+    "restaurant": "Chick-fil-A",
+    "calories": "120-230",
+    "type": "Side",
+    "vegan": false,
+    "yearOfRelease": 1980,
+    "game": 211,
+    "ingredients": [
+      "chicken",
+      "noodles",
+      "carrots",
+      "celery",
+      "broth"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Chicken Tortilla Soup",
+    "restaurant": "Chick-fil-A",
+    "calories": "260-550",
+    "type": "Side",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 212,
+    "ingredients": [
+      "chicken",
+      "beans",
+      "vegetables",
+      "tortilla strips",
+      "spices",
+      "broth"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Fruit Cup",
+    "restaurant": "Chick-fil-A",
+    "calories": "50-70",
+    "type": "Side",
+    "vegan": true,
+    "yearOfRelease": 2000,
+    "game": 213,
+    "ingredients": [
+      "apple",
+      "oranges",
+      "strawberries",
+      "blueberries"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Kale Crunch Side",
+    "restaurant": "Chick-fil-A",
+    "calories": 120,
+    "type": "Side",
+    "vegan": true,
+    "yearOfRelease": 2020,
+    "game": 214,
+    "ingredients": [
+      "kale",
+      "cabbage",
+      "apple cider vinaigrette",
+      "almonds"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Mac & Cheese",
+    "restaurant": "Chick-fil-A",
+    "calories": "270-450",
+    "type": "Side",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 215,
+    "ingredients": [
+      "macaroni",
+      "cheese",
+      "parmesan",
+      "milk",
+      "butter"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Waffle Fries",
+    "restaurant": "Chick-fil-A",
+    "calories": "320-550",
+    "type": "Side",
+    "vegan": true,
+    "yearOfRelease": 1980,
+    "game": 216,
+    "ingredients": [
+      "potatoes",
+      "canola oil"
+    ],
+    "icon": "assets/chick-fil-a.png"
+  },
+  {
+    "name": "Asiago Ranch Club",
+    "restaurant": "Wendy's",
+    "calories": "500-640",
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 217,
+    "ingredients": [
+      "chicken filet",
+      "cheese",
+      "ranch",
+      "lettuce",
+      "tomato",
+      "bacon",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Avocado BLT Chicken Sandwich",
+    "restaurant": "Wendy's",
+    "calories": "590-720",
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 218,
+    "ingredients": [
+      "chicken",
+      "avocado",
+      "bacon",
+      "lettuce",
+      "tomato",
+      "ranch",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Bacon Double Stack",
+    "restaurant": "Wendy's",
+    "calories": 480,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 219,
+    "ingredients": [
+      "beef",
+      "cheese",
+      "bacon",
+      "ketchup",
+      "mustard",
+      "pickles",
+      "onions",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Baconator",
+    "restaurant": "Wendy's",
+    "calories": 920,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 220,
+    "ingredients": [
+      "beef",
+      "bacon",
+      "cheese",
+      "mayonnaise",
+      "ketchup",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Big Bacon Classic",
+    "restaurant": "Wendy's",
+    "calories": "630-1150",
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 1990,
+    "game": 221,
+    "ingredients": [
+      "beef",
+      "bacon",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "onion",
+      "pickles",
+      "mayonnaise",
+      "ketchup",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Bourbon Bacon Cheeseburger",
+    "restaurant": "Wendy's",
+    "calories": "710-1280",
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 222,
+    "ingredients": [
+      "beef",
+      "bacon",
+      "cheese",
+      "crispy onions",
+      "bourbon sauce",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Cajun Crunch Spicy Chicken Sandwich",
+    "restaurant": "Wendy's",
+    "calories": 610,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 223,
+    "ingredients": [
+      "spicy chicken filet",
+      "cajun sauce",
+      "pickles",
+      "crispy onions",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Cheeseburger, Kids' Meal",
+    "restaurant": "Wendy's",
+    "calories": 290,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 1980,
+    "game": 224,
+    "ingredients": [
+      "beef",
+      "cheese",
+      "ketchup",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Classic Chicken Sandwich",
+    "restaurant": "Wendy's",
+    "calories": 490,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 1990,
+    "game": 225,
+    "ingredients": [
+      "chicken filet",
+      "lettuce",
+      "tomato",
+      "mayonnaise",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Crispy Chicken BLT",
+    "restaurant": "Wendy's",
+    "calories": 410,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 226,
+    "ingredients": [
+      "chicken",
+      "bacon",
+      "lettuce",
+      "tomato",
+      "cheese",
+      "mayonnaise",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Crispy Chicken Sandwich",
+    "restaurant": "Wendy's",
+    "calories": 330,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 1990,
+    "game": 227,
+    "ingredients": [
+      "crispy chicken filet",
+      "lettuce",
+      "mayonnaise",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Crispy Panko Fish Sandwich",
+    "restaurant": "Wendy's",
+    "calories": 520,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 228,
+    "ingredients": [
+      "panko-breaded fish filet",
+      "lettuce",
+      "cheese",
+      "tartar sauce",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Dave's Double Cheeseburger",
+    "restaurant": "Wendy's",
+    "calories": 810,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 229,
+    "ingredients": [
+      "beef",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "pickles",
+      "onion",
+      "mayonnaise",
+      "ketchup",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Dave's Single Cheeseburger",
+    "restaurant": "Wendy's",
+    "calories": 570,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 230,
+    "ingredients": [
+      "beef",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "pickles",
+      "onions",
+      "mayonnaise",
+      "ketchup",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Dave's Triple Cheeseburger",
+    "restaurant": "Wendy's",
+    "calories": 1090,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 231,
+    "ingredients": [
+      "beef",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "pickles",
+      "onions",
+      "mayonnaise",
+      "ketchup",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Double Stack",
+    "restaurant": "Wendy's",
+    "calories": 440,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 232,
+    "ingredients": [
+      "beef",
+      "cheese",
+      "pickles",
+      "onions",
+      "ketchup",
+      "mustard",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Ghost Pepper Ranch Chicken Sandwich",
+    "restaurant": "Wendy's",
+    "calories": 690,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 233,
+    "ingredients": [
+      "chicken",
+      "ghost pepper ranch",
+      "lettuce",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Grilled Chicken Ranch Wrap",
+    "restaurant": "Wendy's",
+    "calories": 420,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 234,
+    "ingredients": [
+      "chicken",
+      "cheese",
+      "ranch",
+      "wrap"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Grilled Chicken Sandwich",
+    "restaurant": "Wendy's",
+    "calories": 370,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 235,
+    "ingredients": [
+      "chicken",
+      "lettuce",
+      "tomato",
+      "mayonnaise",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Hamburger, Kids' Meal",
+    "restaurant": "Wendy's",
+    "calories": 250,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 1980,
+    "game": 236,
+    "ingredients": [
+      "beef",
+      "ketchup",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Italian Mozzarella Cheeseburger",
+    "restaurant": "Wendy's",
+    "calories": "780-1420",
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 237,
+    "ingredients": [
+      "beef",
+      "mozzarella",
+      "marinara",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Italian Mozzarella Chicken Sandwich",
+    "restaurant": "Wendy's",
+    "calories": "640-780",
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 238,
+    "ingredients": [
+      "chicken",
+      "mozzarella",
+      "marinara",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Jr. Bacon Cheeseburger (JBC)",
+    "restaurant": "Wendy's",
+    "calories": 390,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 1990,
+    "game": 239,
+    "ingredients": [
+      "beef",
+      "bacon",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "mayonnaise",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Jr. Cheeseburger",
+    "restaurant": "Wendy's",
+    "calories": 310,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 1980,
+    "game": 240,
+    "ingredients": [
+      "beef",
+      "cheese",
+      "ketchup",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Jr. Cheeseburger Deluxe",
+    "restaurant": "Wendy's",
+    "calories": 360,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 1990,
+    "game": 241,
+    "ingredients": [
+      "beef",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "onions",
+      "pickles",
+      "ketchup",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Jr. Hamburger",
+    "restaurant": "Wendy's",
+    "calories": 270,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 1980,
+    "game": 242,
+    "ingredients": [
+      "beef",
+      "ketchup",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Krabby Patty Kollab Burger",
+    "restaurant": "Wendy's",
+    "calories": 590,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 243,
+    "ingredients": [
+      "beef",
+      "cheese",
+      "pickles",
+      "onions",
+      "ketchup",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Loaded Nacho Cheeseburger",
+    "restaurant": "Wendy's",
+    "calories": "710-1280",
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 244,
+    "ingredients": [
+      "beef",
+      "cheese",
+      "nacho chips",
+      "jalapeños",
+      "spicy sauce",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Loaded Nacho Chicken Sandwich",
+    "restaurant": "Wendy's",
+    "calories": 670,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 245,
+    "ingredients": [
+      "chicken",
+      "cheese",
+      "nacho chips",
+      "jalapeños",
+      "spicy sauce",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Mushroom Bacon Cheeseburger",
+    "restaurant": "Wendy's",
+    "calories": "670-1350",
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 246,
+    "ingredients": [
+      "beef",
+      "bacon",
+      "cheese",
+      "mushrooms",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Pretzel Baconator",
+    "restaurant": "Wendy's",
+    "calories": 1050,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 247,
+    "ingredients": [
+      "beef",
+      "bacon",
+      "cheese",
+      "bread",
+      "mayonnaise",
+      "ketchup"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Son of Baconator",
+    "restaurant": "Wendy's",
+    "calories": 690,
+    "type": "Burger",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 248,
+    "ingredients": [
+      "beef",
+      "bacon",
+      "cheese",
+      "mayonnaise",
+      "ketchup",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Spicy Chicken Sandwich",
+    "restaurant": "Wendy's",
+    "calories": 500,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 1990,
+    "game": 249,
+    "ingredients": [
+      "chicken",
+      "lettuce",
+      "tomato",
+      "mayonnaise",
+      "bread"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Apple Pecan Chicken Salad",
+    "restaurant": "Wendy's",
+    "calories": "400-520",
+    "type": "Salad",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 250,
+    "ingredients": [
+      "lettuce",
+      "chicken",
+      "apple",
+      "pecans",
+      "blue cheese",
+      "vinaigrette"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Wendy's Cobb Salad",
+    "restaurant": "Wendy's",
+    "calories": 680,
+    "type": "Salad",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 251,
+    "ingredients": [
+      "lettuce",
+      "chicken",
+      "bacon",
+      "egg",
+      "cheese",
+      "tomato",
+      "ranch"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Parmesan Caesar Salad",
+    "restaurant": "Wendy's",
+    "calories": "320-480",
+    "type": "Salad",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 252,
+    "ingredients": [
+      "lettuce",
+      "chicken",
+      "parmesan",
+      "croutons",
+      "caesar dressing"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Taco Salad",
+    "restaurant": "Wendy's",
+    "calories": "670-690",
+    "type": "Salad",
+    "vegan": false,
+    "yearOfRelease": 1990,
+    "game": 253,
+    "ingredients": [
+      "lettuce",
+      "beef",
+      "cheese",
+      "tomato",
+      "sour cream",
+      "tortilla chips",
+      "salsa"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Wendy's Apple Slices",
+    "restaurant": "Wendy's",
+    "calories": 35,
+    "type": "Side",
+    "vegan": true,
+    "yearOfRelease": 1980,
+    "game": 254,
+    "ingredients": [
+      "apple"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Bacon & Cheese Baked Potato",
+    "restaurant": "Wendy's",
+    "calories": 440,
+    "type": "Side",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 255,
+    "ingredients": [
+      "potatoes",
+      "bacon",
+      "cheese",
+      "sour cream",
+      "butter"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Baconator Fries",
+    "restaurant": "Wendy's",
+    "calories": 470,
+    "type": "Side",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 256,
+    "ingredients": [
+      "potatoes",
+      "bacon",
+      "cheese sauce"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Cheese Baked Potato",
+    "restaurant": "Wendy's",
+    "calories": 450,
+    "type": "Side",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 257,
+    "ingredients": [
+      "potatoes",
+      "cheese",
+      "sour cream",
+      "butter"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Cheese Fries",
+    "restaurant": "Wendy's",
+    "calories": 470,
+    "type": "Side",
+    "vegan": false,
+    "yearOfRelease": 1990,
+    "game": 258,
+    "ingredients": [
+      "potatoes",
+      "cheese sauce"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Chili",
+    "restaurant": "Wendy's",
+    "calories": "240-330",
+    "type": "Side",
+    "vegan": false,
+    "yearOfRelease": 1980,
+    "game": 259,
+    "ingredients": [
+      "beef",
+      "beans",
+      "tomato",
+      "spices"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Chili & Cheese Baked Potato",
+    "restaurant": "Wendy's",
+    "calories": 500,
+    "type": "Side",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 260,
+    "ingredients": [
+      "potatoes",
+      "chili",
+      "cheese"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Chili Cheese Fries",
+    "restaurant": "Wendy's",
+    "calories": 570,
+    "type": "Side",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 261,
+    "ingredients": [
+      "potatoes",
+      "chili",
+      "cheese sauce"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Wendy's French Fries, Large",
+    "restaurant": "Wendy's",
+    "calories": 470,
+    "type": "Side",
+    "vegan": true,
+    "yearOfRelease": 1980,
+    "game": 262,
+    "ingredients": [
+      "potatoes",
+      "oil"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Garlic Fries",
+    "restaurant": "Wendy's",
+    "calories": 450,
+    "type": "Side",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 263,
+    "ingredients": [
+      "potatoes",
+      "garlic",
+      "parmesan",
+      "parsley"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Ghost Pepper Fries",
+    "restaurant": "Wendy's",
+    "calories": 520,
+    "type": "Side",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 264,
+    "ingredients": [
+      "potatoes",
+      "ghost pepper seasoning",
+      "cheese sauce"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Plain Baked Potato",
+    "restaurant": "Wendy's",
+    "calories": 270,
+    "type": "Side",
+    "vegan": true,
+    "yearOfRelease": 1980,
+    "game": 265,
+    "ingredients": [
+      "potatoes",
+      "butter"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Wendy's Chicken Nuggets, Large",
+    "restaurant": "Wendy's",
+    "calories": "420",
+    "type": "Side",
+    "vegan": false,
+    "yearOfRelease": 1980,
+    "game": 266,
+    "ingredients": [
+      "chicken",
+      "breading",
+      "oil"
+    ],
+    "icon": "assets/wendys.png"
+  },
+  {
+    "name": "Barbacoa Burrito",
+    "restaurant": "Chipotle",
+    "calories": 460,
+    "type": "Burrito",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 267,
+    "ingredients": [
+      "beef",
+      "rice",
+      "beans",
+      "cheese",
+      "salsa",
+      "tortilla"
+    ],
+    "icon": "assets/chipotle.png"
+  },
+  {
+    "name": "Carne Asada Burrito",
+    "restaurant": "Chipotle",
+    "calories": 570,
+    "type": "Burrito",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 268,
+    "ingredients": [
+      "beef",
+      "rice",
+      "beans",
+      "cheese",
+      "salsa",
+      "tortilla"
+    ],
+    "icon": "assets/chipotle.png"
+  },
+  {
+    "name": "Carnitas Burrito",
+    "restaurant": "Chipotle",
+    "calories": 480,
+    "type": "Burrito",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 269,
+    "ingredients": [
+      "pork",
+      "rice",
+      "beans",
+      "cheese",
+      "salsa",
+      "tortilla"
+    ],
+    "icon": "assets/chipotle.png"
+  },
+  {
+    "name": "Chicken Al Pastor Burrito",
+    "restaurant": "Chipotle",
+    "calories": 520,
+    "type": "Burrito",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 270,
+    "ingredients": [
+      "chicken",
+      "rice",
+      "beans",
+      "cheese",
+      "salsa",
+      "tortilla"
+    ],
+    "icon": "assets/chipotle.png"
+  },
+  {
+    "name": "Chicken Burrito",
+    "restaurant": "Chipotle",
+    "calories": 480,
+    "type": "Burrito",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 271,
+    "ingredients": [
+      "chicken",
+      "rice",
+      "beans",
+      "cheese",
+      "salsa",
+      "tortilla"
+    ],
+    "icon": "assets/chipotle.png"
+  },
+  {
+    "name": "Plant Based Chorizo Burrito",
+    "restaurant": "Chipotle",
+    "calories": 540,
+    "type": "Burrito",
+    "vegan": true,
+    "yearOfRelease": 2020,
+    "game": 272,
+    "ingredients": [
+      "plant-based chorizo",
+      "rice",
+      "beans",
+      "cheese",
+      "salsa",
+      "tortilla"
+    ],
+    "icon": "assets/chipotle.png"
+  },
+  {
+    "name": "Pollo Asado Burrito",
+    "restaurant": "Chipotle",
+    "calories": 530,
+    "type": "Burrito",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 273,
+    "ingredients": [
+      "chicken",
+      "rice",
+      "beans",
+      "cheese",
+      "salsa",
+      "tortilla"
+    ],
+    "icon": "assets/chipotle.png"
+  },
+  {
+    "name": "Sofritas Burrito",
+    "restaurant": "Chipotle",
+    "calories": 445,
+    "type": "Burrito",
+    "vegan": true,
+    "yearOfRelease": 2010,
+    "game": 274,
+    "ingredients": [
+      "tofu sofritas",
+      "rice",
+      "beans",
+      "cheese",
+      "salsa",
+      "tortilla"
+    ],
+    "icon": "assets/chipotle.png"
+  },
+  {
+    "name": "Steak Burrito",
+    "restaurant": "Chipotle",
+    "calories": 480,
+    "type": "Burrito",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 275,
+    "ingredients": [
+      "steak",
+      "rice",
+      "beans",
+      "cheese",
+      "salsa",
+      "tortilla"
+    ],
+    "icon": "assets/chipotle.png"
+  },
+  {
+    "name": "Barbacoa Tacos",
+    "restaurant": "Chipotle",
+    "calories": "350-440",
+    "type": "Taco",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 276,
+    "ingredients": [
+      "beef",
+      "tortilla",
+      "onions",
+      "cilantro",
+      "salsa"
+    ],
+    "icon": "assets/chipotle.png"
+  },
+  {
+    "name": "Carne Asada Tacos",
+    "restaurant": "Chipotle",
+    "calories": "450-500",
+    "type": "Taco",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 277,
+    "ingredients": [
+      "beef",
+      "tortilla",
+      "onions",
+      "cilantro",
+      "salsa"
+    ],
+    "icon": "assets/chipotle.png"
+  },
+  {
+    "name": "Carnitas Tacos",
+    "restaurant": "Chipotle",
+    "calories": "370-460",
+    "type": "Taco",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 278,
+    "ingredients": [
+      "pork",
+      "tortilla",
+      "onions",
+      "cilantro",
+      "salsa"
+    ],
+    "icon": "assets/chipotle.png"
+  },
+  {
+    "name": "Chicken Tacos",
+    "restaurant": "Chipotle",
+    "calories": "370-460",
+    "type": "Taco",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 279,
+    "ingredients": [
+      "chicken",
+      "tortilla",
+      "onions",
+      "cilantro",
+      "salsa"
+    ],
+    "icon": "assets/chipotle.png"
+  },
+  {
+    "name": "Plant Based Chorizo Tacos",
+    "restaurant": "Chipotle",
+    "calories": "420-470",
+    "type": "Taco",
+    "vegan": true,
+    "yearOfRelease": 2020,
+    "game": 280,
+    "ingredients": [
+      "plant-based chorizo",
+      "tortilla",
+      "onions",
+      "cilantro",
+      "salsa"
+    ],
+    "icon": "assets/chipotle.png"
+  },
+  {
+    "name": "Sofritas Tacos",
+    "restaurant": "Chipotle",
+    "calories": "355-400",
+    "type": "Taco",
+    "vegan": true,
+    "yearOfRelease": 2010,
+    "game": 281,
+    "ingredients": [
+      "tofu sofritas",
+      "tortilla",
+      "onions",
+      "cilantro",
+      "salsa"
+    ],
+    "icon": "assets/chipotle.png"
+  },
+  {
+    "name": "Steak Tacos",
+    "restaurant": "Chipotle",
+    "calories": "370-460",
+    "type": "Taco",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 282,
+    "ingredients": [
+      "steak",
+      "tortilla",
+      "onions",
+      "cilantro",
+      "salsa"
+    ],
+    "icon": "assets/chipotle.png"
+  },
+  {
+    "name": "Barbacoa Quesadilla",
+    "restaurant": "Chipotle",
+    "calories": 820,
+    "type": "Quesadilla",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 283,
+    "ingredients": [
+      "beef",
+      "cheese",
+      "tortilla"
+    ],
+    "icon": "assets/chipotle.png"
+  },
+  {
+    "name": "Carnitas Quesadilla",
+    "restaurant": "Chipotle",
+    "calories": 860,
+    "type": "Quesadilla",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 284,
+    "ingredients": [
+      "pork",
+      "cheese",
+      "tortilla"
+    ],
+    "icon": "assets/chipotle.png"
+  },
+  {
+    "name": "Cheese Quesadilla",
+    "restaurant": "Chipotle",
+    "calories": 650,
+    "type": "Quesadilla",
+    "vegan": false,
+    "yearOfRelease": 1990,
+    "game": 285,
+    "ingredients": [
+      "cheese",
+      "tortilla"
+    ],
+    "icon": "assets/chipotle.png"
+  },
+  {
+    "name": "Chicken Quesadilla",
+    "restaurant": "Chipotle",
+    "calories": 830,
+    "type": "Quesadilla",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 286,
+    "ingredients": [
+      "chicken",
+      "cheese",
+      "tortilla"
+    ],
+    "icon": "assets/chipotle.png"
+  },
+  {
+    "name": "Plant Based Chorizo Quesadilla",
+    "restaurant": "Chipotle",
+    "calories": 870,
+    "type": "Quesadilla",
+    "vegan": true,
+    "yearOfRelease": 2020,
+    "game": 287,
+    "ingredients": [
+      "plant-based chorizo",
+      "cheese",
+      "tortilla"
+    ],
+    "icon": "assets/chipotle.png"
+  },
+  {
+    "name": "Sofritas Quesadilla",
+    "restaurant": "Chipotle",
+    "calories": 800,
+    "type": "Quesadilla",
+    "vegan": true,
+    "yearOfRelease": 2010,
+    "game": 288,
+    "ingredients": [
+      "tofu sofritas",
+      "cheese",
+      "tortilla"
+    ],
+    "icon": "assets/chipotle.png"
+  },
+  {
+    "name": "Steak Quesadilla",
+    "restaurant": "Chipotle",
+    "calories": 800,
+    "type": "Quesadilla",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 289,
+    "ingredients": [
+      "steak",
+      "cheese",
+      "tortilla"
+    ],
+    "icon": "assets/chipotle.png"
+  },
+  {
+    "name": "Vegetable Quesadilla",
+    "restaurant": "Chipotle",
+    "calories": 670,
+    "type": "Quesadilla",
+    "vegan": true,
+    "yearOfRelease": 2010,
+    "game": 290,
+    "ingredients": [
+      "vegetables",
+      "cheese",
+      "tortilla"
+    ],
+    "icon": "assets/chipotle.png"
+  },
+  {
+    "name": "Mild Chicken Breast",
+    "restaurant": "Popeyes",
+    "calories": 440,
+    "type": "Chicken",
+    "vegan": false,
+    "yearOfRelease": 1970,
+    "game": 291,
+    "ingredients": [
+      "chicken",
+      "breading",
+      "seasoning",
+      "oil"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Mild Chicken Leg",
+    "restaurant": "Popeyes",
+    "calories": 160,
+    "type": "Chicken",
+    "vegan": false,
+    "yearOfRelease": 1970,
+    "game": 292,
+    "ingredients": [
+      "chicken",
+      "breading",
+      "seasoning",
+      "oil"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Spicy Chicken Breast",
+    "restaurant": "Popeyes",
+    "calories": 420,
+    "type": "Chicken",
+    "vegan": false,
+    "yearOfRelease": 1980,
+    "game": 293,
+    "ingredients": [
+      "chicken",
+      "breading",
+      "seasoning",
+      "oil"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Spicy Chicken Leg",
+    "restaurant": "Popeyes",
+    "calories": 170,
+    "type": "Chicken",
+    "vegan": false,
+    "yearOfRelease": 1980,
+    "game": 294,
+    "ingredients": [
+      "chicken",
+      "breading",
+      "seasoning",
+      "oil"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Ghost Pepper Wings",
+    "restaurant": "Popeyes",
+    "calories": 670,
+    "type": "Chicken",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 295,
+    "ingredients": [
+      "chicken",
+      "ghost pepper seasoning",
+      "breading",
+      "oil"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Sweet 'n Spicy Wings",
+    "restaurant": "Popeyes",
+    "calories": 790,
+    "type": "Chicken",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 296,
+    "ingredients": [
+      "chicken",
+      "sweet and spicy sauce",
+      "breading",
+      "oil"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Chicken Blackened Tenders, 3 pcs",
+    "restaurant": "Popeyes",
+    "calories": 170,
+    "type": "Chicken",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 297,
+    "ingredients": [
+      "chicken",
+      "blackened seasoning"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Chicken Mild Tenders, 3 pcs",
+    "restaurant": "Popeyes",
+    "calories": 340,
+    "type": "Chicken",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 298,
+    "ingredients": [
+      "chicken",
+      "breading",
+      "seasoning",
+      "oil"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Popeyes Chicken Nuggets, 3 pcs",
+    "restaurant": "Popeyes",
+    "calories": 381,
+    "type": "Side",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 299,
+    "ingredients": [
+      "chicken",
+      "breading",
+      "oil"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Blackened Bacon & Cheese Chicken Sandwich",
+    "restaurant": "Popeyes",
+    "calories": "680-690",
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 301,
+    "ingredients": [
+      "chicken",
+      "bacon",
+      "cheese",
+      "bread",
+      "mayonnaise"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Blackened BBQ Chicken Po' Boy",
+    "restaurant": "Popeyes",
+    "calories": 340,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 302,
+    "ingredients": [
+      "chicken",
+      "bbq sauce",
+      "bread",
+      "lettuce",
+      "pickles"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Blackened Chicken Sandwich",
+    "restaurant": "Popeyes",
+    "calories": 550,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 303,
+    "ingredients": [
+      "chicken",
+      "bread",
+      "mayonnaise",
+      "pickles"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Buffalo Ranch Chicken Sandwich",
+    "restaurant": "Popeyes",
+    "calories": 634,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 304,
+    "ingredients": [
+      "chicken",
+      "buffalo sauce",
+      "ranch",
+      "bread",
+      "pickles"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Chicken & Sausage Jambalaya",
+    "restaurant": "Popeyes",
+    "calories": 220,
+    "type": "Side",
+    "vegan": false,
+    "yearOfRelease": 1980,
+    "game": 305,
+    "ingredients": [
+      "chicken",
+      "sausage",
+      "rice",
+      "seasoning"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Chicken Livers",
+    "restaurant": "Popeyes",
+    "calories": 1190,
+    "type": "Side",
+    "vegan": false,
+    "yearOfRelease": 1970,
+    "game": 306,
+    "ingredients": [
+      "chicken",
+      "breading",
+      "oil"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Chicken Po' Boy",
+    "restaurant": "Popeyes",
+    "calories": 660,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 307,
+    "ingredients": [
+      "chicken",
+      "bread",
+      "lettuce",
+      "mayonnaise",
+      "pickles"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Popeyes Chicken Sandwich",
+    "restaurant": "Popeyes",
+    "calories": 699,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 308,
+    "ingredients": [
+      "chicken",
+      "bread",
+      "mayonnaise",
+      "pickles"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Flounder Fish Sandwich",
+    "restaurant": "Popeyes",
+    "calories": "681-730",
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 309,
+    "ingredients": [
+      "fish",
+      "bread",
+      "tartar sauce",
+      "pickles"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Hottie Chicken Sandwich",
+    "restaurant": "Popeyes",
+    "calories": 534,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 310,
+    "ingredients": [
+      "chicken",
+      "sweet & spicy sauce",
+      "bread",
+      "pickles"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Loaded Chicken Wrap",
+    "restaurant": "Popeyes",
+    "calories": 310,
+    "type": "Wrap",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 311,
+    "ingredients": [
+      "chicken",
+      "cheese",
+      "lettuce",
+      "tortilla"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Shrimp Roll",
+    "restaurant": "Popeyes",
+    "calories": 620,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 312,
+    "ingredients": [
+      "shrimp",
+      "bread",
+      "lettuce",
+      "tartar sauce"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Spicy Chicken Sandwich",
+    "restaurant": "Popeyes",
+    "calories": 700,
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2010,
+    "game": 313,
+    "ingredients": [
+      "chicken",
+      "bread",
+      "mayonnaise",
+      "pickles"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Spicy TRUFF Bacon & Cheese Chicken Sandwich",
+    "restaurant": "Popeyes",
+    "calories": "670-800",
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 314,
+    "ingredients": [
+      "chicken",
+      "truffle mayonnaise",
+      "bacon",
+      "cheese",
+      "bread",
+      "pickles"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Spicy TRUFF Chicken Sandwich",
+    "restaurant": "Popeyes",
+    "calories": "530-670",
+    "type": "Sandwich",
+    "vegan": false,
+    "yearOfRelease": 2020,
+    "game": 315,
+    "ingredients": [
+      "chicken",
+      "truffle mayonnaise",
+      "bread",
+      "pickles"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Butterfly Shrimp",
+    "restaurant": "Popeyes",
+    "calories": 420,
+    "type": "Seafood",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 316,
+    "ingredients": [
+      "shrimp",
+      "breading",
+      "seasoning",
+      "oil"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Cajun Fish Filet",
+    "restaurant": "Popeyes",
+    "calories": 380,
+    "type": "Seafood",
+    "vegan": false,
+    "yearOfRelease": 1990,
+    "game": 317,
+    "ingredients": [
+      "fish",
+      "cajun seasoning",
+      "breading",
+      "oil"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Catfish Fillet",
+    "restaurant": "Popeyes",
+    "calories": 460,
+    "type": "Seafood",
+    "vegan": false,
+    "yearOfRelease": 1990,
+    "game": 318,
+    "ingredients": [
+      "fish",
+      "seasoning",
+      "breading",
+      "oil"
+    ],
+    "icon": "assets/popeyes.png"
+  },
+  {
+    "name": "Popcorn Shrimp",
+    "restaurant": "Popeyes",
+    "calories": 390,
+    "type": "Seafood",
+    "vegan": false,
+    "yearOfRelease": 2000,
+    "game": 319,
+    "ingredients": [
+      "shrimp",
+      "breading",
+      "seasoning",
+      "oil"
+    ],
+    "icon": "assets/popeyes.png"
+  }
+]

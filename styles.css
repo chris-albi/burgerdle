@@ -523,6 +523,32 @@ body {
 
 }
 
+.bubble.decade-lower {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 3px solid #721c24;
+}
+
+.bubble.decade-lower::after {
+  content: "↑";
+}
+
+.bubble.decade-higher {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 3px solid #721c24;
+}
+
+.bubble.decade-higher::after {
+  content: "↓";
+}
+
+.bubble.decade-same {
+  background-color: #d4edda; 
+  color: #155724;
+  border: 3px solid #155724;
+}
+
 .bubble.ingredients-none {
   background-color: #f8d7da; /* red */
   color: #721c24;
