@@ -163,11 +163,18 @@ function compareIngredientsClass(userIngredients, productIngredients) {
   const productSet = new Set(productIngredients.map(i => i.toLowerCase()));
 
   const matching = [...userSet].filter(ingredient => productSet.has(ingredient));
-
+    console.log("Here");
+    console.log(userSet.size);
+    console.log(productSet.size);
   if (matching.length === 0) {
     return "ingredients-none";
   } else if (matching.length === userSet.size) {
-    return "ingredients-all";
+      if (userSet.size == productSet.size) {
+        return "ingredients-all";
+      }
+      else {
+        return "ingredients-some";
+      }
   } else {
     return "ingredients-some";
   }
@@ -208,7 +215,7 @@ function compareIngredientsClass(userIngredients, productIngredients) {
       ${userItem.calories}
     </div>
     <div class="bubble ${compareClass(userItem.vegan, productVegan)}" style="left: 1600px; transform: translateX(-50%);">
-      ${userItem.vegan ? "Yes" : "No"}
+      ${userItem.vegan ? "Vegan" : "Non-Vegan"}
     </div>
 <div class="bubble ${compareDecadeClass(userItem.yearOfRelease, productRelease)}" style="left: 1800px; transform: translateX(-50%);">
   ${userItem.yearOfRelease}s
@@ -297,7 +304,7 @@ container.innerHTML = `
       ${userItem.calories}
     </div>
     <div class="bubble ${compareClass(userItem.vegan, productVegan)}" style="left: 1600px; transform: translateX(-50%);">
-      ${userItem.vegan ? "Yes" : "No"}
+      ${userItem.vegan ? "Vegan" : "Non-Vegan"}
     </div>
 <div class="bubble ${compareDecadeClass(userItem.yearOfRelease, productRelease)}" style="left: 1800px; transform: translateX(-50%);">
   ${userItem.yearOfRelease}s
@@ -384,7 +391,7 @@ container.innerHTML = `
       ${userItem.calories}
     </div>
     <div class="bubble ${compareClass(userItem.vegan, productVegan)}" style="left: 1600px; transform: translateX(-50%);">
-      ${userItem.vegan ? "Yes" : "No"}
+      ${userItem.vegan ? "Vegan" : "Non-Vegan"}
     </div>
 <div class="bubble ${compareDecadeClass(userItem.yearOfRelease, productRelease)}" style="left: 1800px; transform: translateX(-50%);">
   ${userItem.yearOfRelease}s
@@ -470,7 +477,7 @@ container.innerHTML = `
       ${userItem.calories}
     </div>
     <div class="bubble ${compareClass(userItem.vegan, productVegan)}" style="left: 1600px; transform: translateX(-50%);">
-      ${userItem.vegan ? "Yes" : "No"}
+      ${userItem.vegan ? "Vegan" : "Non-Vegan"}
     </div>
 <div class="bubble ${compareDecadeClass(userItem.yearOfRelease, productRelease)}" style="left: 1800px; transform: translateX(-50%);">
   ${userItem.yearOfRelease}s
@@ -556,7 +563,7 @@ container.innerHTML = `
       ${userItem.calories}
     </div>
     <div class="bubble ${compareClass(userItem.vegan, productVegan)}" style="left: 1600px; transform: translateX(-50%);">
-      ${userItem.vegan ? "Yes" : "No"}
+      ${userItem.vegan ? "Vegan" : "Non-Vegan"}
     </div>
 <div class="bubble ${compareDecadeClass(userItem.yearOfRelease, productRelease)}" style="left: 1800px; transform: translateX(-50%);">
   ${userItem.yearOfRelease}s
@@ -642,7 +649,7 @@ container.innerHTML = `
       ${userItem.calories}
     </div>
     <div class="bubble ${compareClass(userItem.vegan, productVegan)}" style="left: 1600px; transform: translateX(-50%);">
-      ${userItem.vegan ? "Yes" : "No"}
+      ${userItem.vegan ? "Vegan" : "Non-Vegan"}
     </div>
 <div class="bubble ${compareDecadeClass(userItem.yearOfRelease, productRelease)}" style="left: 1800px; transform: translateX(-50%);">
   ${userItem.yearOfRelease}s
@@ -773,7 +780,7 @@ function gameWon() {
 
 function gameLost() {
   victoryheader.innerHTML += `<h2>You lost! </h2>`;
-  victoryheader.innerHTML += `<p>The correct item was ${productName}</p>`;
+  victoryheader.innerHTML += `<p>The correct item was the ${productName} from ${productRestaurant}</p>`;
   victoryscreen.innerHTML += `<h2>Guess Distribution</h2>`;
   renderStatistics();
   finalDistribution();
@@ -848,6 +855,8 @@ function darken() {
   document.getElementById("comparisonbubblefour").style.display = "none";
   document.getElementById("comparisonbubblefive").style.display = "none";
   document.getElementById("comparisonbubblesix").style.display = "none";
+  console.log(document.getElementById("reset"));
+  document.getElementById("resetButton").style.display = "none";
   }
 
 function brighten() {
@@ -867,6 +876,7 @@ function brighten() {
   safelySetStyle("comparisonbubblefour", "display", "");
   safelySetStyle("comparisonbubblefive", "display", "");
   safelySetStyle("comparisonbubblesix", "display", "");
+  document.getElementById("resetButton").style.visibility = "visible";
 }
 
 function safelySetStyle(id, styleProp, value) {
@@ -896,6 +906,15 @@ function openPopup() {
   setTimeout(() => {
   darken();
   }, 0);
+}
+
+function showReset() {
+  const resetDiv = document.getElementById("reset");
+  if (resetDiv) {
+    resetDiv.classList.remove("hidden"); 
+    resetDiv.classList.add("visible"); 
+  }
+   console.log("showReset function triggered!"); 
 }
 
 function resetGame () {

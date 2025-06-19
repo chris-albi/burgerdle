@@ -224,13 +224,18 @@
                     <div id="finalgraph-6" class="graphElem"></div>
                   </div>
                  </div>
-                <button class="closestats" onclick="closePopup()">✖</button>
-                <button class="share-button" id="share-button" onclick="copyStats()"> <p>Share</p>
-                  <img class="share-img" id="share-img"
-                  src="./assets/share.png"
-                  style="height: 20%; width: 20%"
-                  />
-                <button class="submit" id="practiceButton" onclick="resetGame(); practiceGame();" type="button">Practice</button>
+                <button class="closestats" onclick="closePopup(); showReset()">✖</button>
+                <div class="popup-footer">
+                  <div>
+                      <button class="share-button" id="share-button" onclick="copyStats()"> <p>Share  </p>
+                        <img class="share-img" id="share-img"
+                        src="./assets/share.png"
+                        style="height: 20%; width: 20%"
+                        />
+                      </div>
+                    <div>
+                    </div>
+                </div>
               </div>
             </div>
             <footer id="site-footer">
@@ -242,8 +247,9 @@
                   >Fast Food Database</a
                 >
               </div>
-              <div id="dev-name"></div>
-              <button class="submit" id="resetButton" onclick="resetGame(); practiceGame()" type="button">Practice</button>
+              <div id="reset" class="hidden">
+                <button class="submit" id="resetButton" onclick="resetGame(); practiceGame();" type="button">Practice</button>
+              </div>
             </footer>
           <script src="main.js"></script>
           </body>

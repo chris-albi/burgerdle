@@ -24,7 +24,7 @@
     "name": "Bacon Ranch Deluxe McCrispy",
     "restaurant": "McDonald's",
     "calories": 660,
-    "type": "Chicken Sandwich",
+    "type": "Sandwich",
     "vegan": false,
     "glutenFree": false,
     "yearOfRelease": 2020,
@@ -44,7 +44,7 @@
     "name": "Bacon Ranch McCrispy",
     "restaurant": "McDonald's",
     "calories": 650,
-    "type": "Chicken Sandwich",
+    "type": "Sandwich",
     "vegan": false,
     "glutenFree": false,
     "yearOfRelease": 2020,
@@ -141,7 +141,7 @@
     "name": "Chicken Big Mac",
     "restaurant": "McDonald's",
     "calories": 700,
-    "type": "Chicken Sandwich",
+    "type": "Sandwich",
     "vegan": false,
     "glutenFree": false,
     "yearOfRelease": 2020,
@@ -178,7 +178,7 @@
     "name": "Deluxe McCrispy",
     "restaurant": "McDonald's",
     "calories": 530,
-    "type": "Chicken Sandwich",
+    "type": "Sandwich",
     "vegan": false,
     "glutenFree": false,
     "yearOfRelease": 2020,
@@ -322,7 +322,7 @@
     "name": "Hot 'n Spicy McChicken",
     "restaurant": "McDonald's",
     "calories": 380,
-    "type": "Chicken Sandwich",
+    "type": "Sandwich",
     "vegan": false,
     "glutenFree": false,
     "yearOfRelease": 2000,
@@ -339,7 +339,7 @@
     "name": "McChicken",
     "restaurant": "McDonald's",
     "calories": 410,
-    "type": "Chicken Sandwich",
+    "type": "Sandwich",
     "vegan": false,
     "glutenFree": false,
     "yearOfRelease": 1980,
@@ -356,7 +356,7 @@
     "name": "McCrispy Chicken Sandwich",
     "restaurant": "McDonald's",
     "calories": 470,
-    "type": "Chicken Sandwich",
+    "type": "Sandwich",
     "vegan": false,
     "glutenFree": false,
     "yearOfRelease": 2020,
@@ -489,7 +489,7 @@
     "name": "Spicy Deluxe McCrispy",
     "restaurant": "McDonald's",
     "calories": 530,
-    "type": "Chicken Sandwich",
+    "type": "Sandwich",
     "vegan": false,
     "glutenFree": false,
     "yearOfRelease": 2020,
@@ -508,7 +508,7 @@
     "name": "Spicy McCrispy",
     "restaurant": "McDonald's",
     "calories": 530,
-    "type": "Chicken Sandwich",
+    "type": "Sandwich",
     "vegan": false,
     "glutenFree": false,
     "yearOfRelease": 2020,
@@ -2370,7 +2370,7 @@
   {
     "name": "Bacon King",
     "restaurant": "Burger King",
-    "calories": "1250",
+    "calories": 1250,
     "type": "Burger",
     "vegan": false,
     "yearOfRelease": 2010,
@@ -2532,7 +2532,7 @@
   {
     "name": "Double Whopper",
     "restaurant": "Burger King",
-    "calories": "890-1002",
+    "calories": 890,
     "type": "Burger",
     "vegan": false,
     "yearOfRelease": 1970,
@@ -2862,7 +2862,7 @@
   {
     "name": "Triple Whopper",
     "restaurant": "Burger King",
-    "calories": "1140-1216",
+    "calories": 1140,
     "type": "Burger",
     "vegan": false,
     "yearOfRelease": 2000,
@@ -2881,7 +2881,7 @@
   {
     "name": "Whopper",
     "restaurant": "Burger King",
-    "calories": "657-740",
+    "calories": 657,
     "type": "Burger",
     "vegan": false,
     "yearOfRelease": 1950,
@@ -2901,7 +2901,7 @@
   {
     "name": "Whopper Jr",
     "restaurant": "Burger King",
-    "calories": "315-380",
+    "calories": 315,
     "type": "Burger",
     "vegan": false,
     "yearOfRelease": 1960,
@@ -2937,7 +2937,7 @@
   {
     "name": "BK French Fries, Large",
     "restaurant": "Burger King",
-    "calories": "434",
+    "calories": 434,
     "type": "Side",
     "vegan": true,
     "yearOfRelease": 1970,
@@ -2965,7 +2965,7 @@
   {
     "name": "Mozzarella Fries",
     "restaurant": "Burger King",
-    "calories": "240-730",
+    "calories": 240,
     "type": "Side",
     "vegan": false,
     "yearOfRelease": 2020,
@@ -2980,7 +2980,7 @@
   {
     "name": "Onion Rings",
     "restaurant": "Burger King",
-    "calories": "302-652",
+    "calories": 302,
     "type": "Side",
     "vegan": false,
     "yearOfRelease": 1980,
@@ -3131,7 +3131,7 @@
   {
     "name": "Chick-n-Strips",
     "restaurant": "Chick-fil-A",
-    "calories": "100-410",
+    "calories": 100,
     "type": "Side",
     "vegan": false,
     "yearOfRelease": 1990,
@@ -3165,7 +3165,7 @@
   {
     "name": "CFA Chicken Nuggets, Large",
     "restaurant": "Chick-fil-A",
-    "calories": "970",
+    "calories": 970,
     "type": "Side",
     "vegan": false,
     "yearOfRelease": 1980,
@@ -3212,9 +3212,9 @@
     "icon": "assets/chick-fil-a.png"
   },
   {
-    "name": "Grilled Chicken Nuggets",
+    "name": "Grilled Chicken Nuggets, 3pcs",
     "restaurant": "Chick-fil-A",
-    "calories": "70-200",
+    "calories": 200,
     "type": "Side",
     "vegan": false,
     "yearOfRelease": 2010,
@@ -3244,7 +3244,7 @@
   {
     "name": "Grilled Chicken Sub Sandwich",
     "restaurant": "Chick-fil-A",
-    "calories": "430-440",
+    "calories": 430,
     "type": "Burger",
     "vegan": false,
     "yearOfRelease": 2010,
@@ -3260,7 +3260,7 @@
   {
     "name": "Honey Pepper Pimento Chicken Sandwich",
     "restaurant": "Chick-fil-A",
-    "calories": "430-600",
+    "calories": 430,
     "type": "Burger",
     "vegan": false,
     "yearOfRelease": 2020,
@@ -3277,7 +3277,7 @@
   {
     "name": "Smokehouse BBQ Bacon Sandwich",
     "restaurant": "Chick-fil-A",
-    "calories": "460-620",
+    "calories": 460,
     "type": "Burger",
     "vegan": false,
     "yearOfRelease": 2010,
@@ -3350,7 +3350,7 @@
     "game": 198,
     "ingredients": [
       "biscuit",
-      "chicken filet"
+      "chicken"
     ],
     "icon": "assets/chick-fil-a.png"
   },
@@ -3364,7 +3364,7 @@
     "game": 199,
     "ingredients": [
       "biscuit",
-      "chicken filet",
+      "chicken",
       "egg",
       "cheese"
     ],
@@ -3373,7 +3373,7 @@
   {
     "name": "Egg & Cheese English Muffin",
     "restaurant": "Chick-fil-A",
-    "calories": "300-520",
+    "calories": 300,
     "type": "Breakfast",
     "vegan": false,
     "yearOfRelease": 2010,
@@ -3404,7 +3404,7 @@
   {
     "name": "Hash Brown Scramble Bowl",
     "restaurant": "Chick-fil-A",
-    "calories": "410-480",
+    "calories": 410,
     "type": "Breakfast",
     "vegan": false,
     "yearOfRelease": 2010,
@@ -3421,7 +3421,7 @@
   {
     "name": "Hash Brown Scramble Burrito",
     "restaurant": "Chick-fil-A",
-    "calories": "650-710",
+    "calories": 650,
     "type": "Breakfast",
     "vegan": false,
     "yearOfRelease": 2010,
@@ -3490,14 +3490,14 @@
     "game": 207,
     "ingredients": [
       "biscuit",
-      "spicy chicken filet"
+      "chicken"
     ],
     "icon": "assets/chick-fil-a.png"
   },
   {
     "name": "CFA Cobb Salad",
     "restaurant": "Chick-fil-A",
-    "calories": "290-600",
+    "calories": 290,
     "type": "Salad",
     "vegan": false,
     "yearOfRelease": 2010,
@@ -3517,7 +3517,7 @@
   {
     "name": "Market Salad",
     "restaurant": "Chick-fil-A",
-    "calories": "210-450",
+    "calories": 210,
     "type": "Salad",
     "vegan": false,
     "yearOfRelease": 2010,
@@ -3537,7 +3537,7 @@
   {
     "name": "Spicy Southwest Salad",
     "restaurant": "Chick-fil-A",
-    "calories": "350-650",
+    "calories": 350,
     "type": "Salad",
     "vegan": false,
     "yearOfRelease": 2010,
@@ -3556,7 +3556,7 @@
   {
     "name": "Chicken Noodle Soup",
     "restaurant": "Chick-fil-A",
-    "calories": "120-230",
+    "calories": 120,
     "type": "Side",
     "vegan": false,
     "yearOfRelease": 1980,
@@ -3573,7 +3573,7 @@
   {
     "name": "Chicken Tortilla Soup",
     "restaurant": "Chick-fil-A",
-    "calories": "260-550",
+    "calories": 260,
     "type": "Side",
     "vegan": false,
     "yearOfRelease": 2010,
@@ -3591,7 +3591,7 @@
   {
     "name": "Fruit Cup",
     "restaurant": "Chick-fil-A",
-    "calories": "50-70",
+    "calories": 50,
     "type": "Side",
     "vegan": true,
     "yearOfRelease": 2000,
@@ -3623,7 +3623,7 @@
   {
     "name": "Mac & Cheese",
     "restaurant": "Chick-fil-A",
-    "calories": "270-450",
+    "calories": 270,
     "type": "Side",
     "vegan": false,
     "yearOfRelease": 2010,
@@ -3638,9 +3638,9 @@
     "icon": "assets/chick-fil-a.png"
   },
   {
-    "name": "Waffle Fries",
+    "name": "Waffle Frie, Large",
     "restaurant": "Chick-fil-A",
-    "calories": "320-550",
+    "calories": 550,
     "type": "Side",
     "vegan": true,
     "yearOfRelease": 1980,
@@ -3654,13 +3654,13 @@
   {
     "name": "Asiago Ranch Club",
     "restaurant": "Wendy's",
-    "calories": "500-640",
+    "calories": 500,
     "type": "Sandwich",
     "vegan": false,
     "yearOfRelease": 2010,
     "game": 217,
     "ingredients": [
-      "chicken filet",
+      "chicken",
       "cheese",
       "ranch",
       "lettuce",
@@ -3673,7 +3673,7 @@
   {
     "name": "Avocado BLT Chicken Sandwich",
     "restaurant": "Wendy's",
-    "calories": "590-720",
+    "calories": 720,
     "type": "Sandwich",
     "vegan": false,
     "yearOfRelease": 2020,
@@ -3730,7 +3730,7 @@
   {
     "name": "Big Bacon Classic",
     "restaurant": "Wendy's",
-    "calories": "630-1150",
+    "calories": 630,
     "type": "Burger",
     "vegan": false,
     "yearOfRelease": 1990,
@@ -3752,7 +3752,7 @@
   {
     "name": "Bourbon Bacon Cheeseburger",
     "restaurant": "Wendy's",
-    "calories": "710-1280",
+    "calories": 710,
     "type": "Burger",
     "vegan": false,
     "yearOfRelease": 2020,
@@ -3776,7 +3776,7 @@
     "yearOfRelease": 2020,
     "game": 223,
     "ingredients": [
-      "spicy chicken filet",
+      "chicken",
       "cajun sauce",
       "pickles",
       "crispy onions",
@@ -3809,7 +3809,7 @@
     "yearOfRelease": 1990,
     "game": 225,
     "ingredients": [
-      "chicken filet",
+      "chicken",
       "lettuce",
       "tomato",
       "mayonnaise",
@@ -3845,7 +3845,7 @@
     "yearOfRelease": 1990,
     "game": 227,
     "ingredients": [
-      "crispy chicken filet",
+      "chicken",
       "lettuce",
       "mayonnaise",
       "bread"
@@ -3861,7 +3861,7 @@
     "yearOfRelease": 2020,
     "game": 228,
     "ingredients": [
-      "panko-breaded fish filet",
+      "chicken",
       "lettuce",
       "cheese",
       "tartar sauce",
@@ -4018,7 +4018,7 @@
   {
     "name": "Italian Mozzarella Cheeseburger",
     "restaurant": "Wendy's",
-    "calories": "780-1420",
+    "calories": 780,
     "type": "Burger",
     "vegan": false,
     "yearOfRelease": 2020,
@@ -4026,6 +4026,7 @@
     "ingredients": [
       "beef",
       "mozzarella",
+      "cheese",
       "marinara",
       "bread"
     ],
@@ -4034,7 +4035,7 @@
   {
     "name": "Italian Mozzarella Chicken Sandwich",
     "restaurant": "Wendy's",
-    "calories": "640-780",
+    "calories": 640,
     "type": "Sandwich",
     "vegan": false,
     "yearOfRelease": 2020,
@@ -4042,6 +4043,7 @@
     "ingredients": [
       "chicken",
       "mozzarella",
+      "cheese",
       "marinara",
       "bread"
     ],
@@ -4138,7 +4140,7 @@
   {
     "name": "Loaded Nacho Cheeseburger",
     "restaurant": "Wendy's",
-    "calories": "710-1280",
+    "calories": 710,
     "type": "Burger",
     "vegan": false,
     "yearOfRelease": 2020,
@@ -4174,7 +4176,7 @@
   {
     "name": "Mushroom Bacon Cheeseburger",
     "restaurant": "Wendy's",
-    "calories": "670-1350",
+    "calories": 670,
     "type": "Burger",
     "vegan": false,
     "yearOfRelease": 2020,
@@ -4244,7 +4246,7 @@
   {
     "name": "Apple Pecan Chicken Salad",
     "restaurant": "Wendy's",
-    "calories": "400-520",
+    "calories": 400,
     "type": "Salad",
     "vegan": false,
     "yearOfRelease": 2010,
@@ -4281,7 +4283,7 @@
   {
     "name": "Parmesan Caesar Salad",
     "restaurant": "Wendy's",
-    "calories": "320-480",
+    "calories": 320,
     "type": "Salad",
     "vegan": false,
     "yearOfRelease": 2010,
@@ -4298,7 +4300,7 @@
   {
     "name": "Taco Salad",
     "restaurant": "Wendy's",
-    "calories": "670-690",
+    "calories": 670,
     "type": "Salad",
     "vegan": false,
     "yearOfRelease": 1990,
@@ -4392,7 +4394,7 @@
   {
     "name": "Chili",
     "restaurant": "Wendy's",
-    "calories": "240-330",
+    "calories": 240,
     "type": "Side",
     "vegan": false,
     "yearOfRelease": 1980,
@@ -4497,7 +4499,7 @@
   {
     "name": "Wendy's Chicken Nuggets, Large",
     "restaurant": "Wendy's",
-    "calories": "420",
+    "calories": 420,
     "type": "Side",
     "vegan": false,
     "yearOfRelease": 1980,
@@ -4674,7 +4676,7 @@
   {
     "name": "Barbacoa Tacos",
     "restaurant": "Chipotle",
-    "calories": "350-440",
+    "calories": 350,
     "type": "Taco",
     "vegan": false,
     "yearOfRelease": 2000,
@@ -4691,7 +4693,7 @@
   {
     "name": "Carne Asada Tacos",
     "restaurant": "Chipotle",
-    "calories": "450-500",
+    "calories": 450,
     "type": "Taco",
     "vegan": false,
     "yearOfRelease": 2000,
@@ -4708,7 +4710,7 @@
   {
     "name": "Carnitas Tacos",
     "restaurant": "Chipotle",
-    "calories": "370-460",
+    "calories": 370,
     "type": "Taco",
     "vegan": false,
     "yearOfRelease": 2000,
@@ -4725,7 +4727,7 @@
   {
     "name": "Chicken Tacos",
     "restaurant": "Chipotle",
-    "calories": "370-460",
+    "calories": 370,
     "type": "Taco",
     "vegan": false,
     "yearOfRelease": 2000,
@@ -4742,7 +4744,7 @@
   {
     "name": "Plant Based Chorizo Tacos",
     "restaurant": "Chipotle",
-    "calories": "420-470",
+    "calories": 420,
     "type": "Taco",
     "vegan": true,
     "yearOfRelease": 2020,
@@ -4759,7 +4761,7 @@
   {
     "name": "Sofritas Tacos",
     "restaurant": "Chipotle",
-    "calories": "355-400",
+    "calories": 355,
     "type": "Taco",
     "vegan": true,
     "yearOfRelease": 2010,
@@ -4776,7 +4778,7 @@
   {
     "name": "Steak Tacos",
     "restaurant": "Chipotle",
-    "calories": "370-460",
+    "calories": 370,
     "type": "Taco",
     "vegan": false,
     "yearOfRelease": 2000,
@@ -5053,7 +5055,7 @@
   {
     "name": "Blackened Bacon & Cheese Chicken Sandwich",
     "restaurant": "Popeyes",
-    "calories": "680-690",
+    "calories": 680,
     "type": "Sandwich",
     "vegan": false,
     "yearOfRelease": 2020,
@@ -5184,7 +5186,7 @@
   {
     "name": "Flounder Fish Sandwich",
     "restaurant": "Popeyes",
-    "calories": "681-730",
+    "calories": 681,
     "type": "Sandwich",
     "vegan": false,
     "yearOfRelease": 2020,
@@ -5264,7 +5266,7 @@
   {
     "name": "Spicy TRUFF Bacon & Cheese Chicken Sandwich",
     "restaurant": "Popeyes",
-    "calories": "670-800",
+    "calories": 670,
     "type": "Sandwich",
     "vegan": false,
     "yearOfRelease": 2020,
@@ -5282,7 +5284,7 @@
   {
     "name": "Spicy TRUFF Chicken Sandwich",
     "restaurant": "Popeyes",
-    "calories": "530-670",
+    "calories": 530,
     "type": "Sandwich",
     "vegan": false,
     "yearOfRelease": 2020,

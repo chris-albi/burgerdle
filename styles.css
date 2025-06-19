@@ -17,6 +17,7 @@ body {
 .hidden{
   display: none;
 }
+
 .search-bar
 {
   visibility: visible;
@@ -47,6 +48,14 @@ body {
   border-radius: 8px;
 }
 
+.resetButton {
+  color: rgb(235, 181, 111);
+  background-color: #353e6e;
+  padding: 8px 32px;
+  font-size: 16x;
+  font-family: "VT323", monospace;
+  border-radius: 8px;
+}
   
   .siteheader {
     display: flex;
@@ -606,10 +615,23 @@ body {
   transform: translate(-50%, 15%) scale(1);
 }
 
-.visible{
+.resetButton.visible {
+  opacity: 1;
   visibility: visible;
+  transform: translate(-50%, 15%) scale(1);
+  display: inline-block;
 }
 
+.visible{
+  visibility: visible;
+    display: inline-block;
+}
+
+.popup-footer {
+
+  display: flex;
+  justify-content: center;
+}
 #share-button {
   width: 100px;
   font-size: 24x;
@@ -618,18 +640,26 @@ body {
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 
-  color: rgb(0, 0, 0);
+
+  color: rgb(235, 181, 111);
   border: none;
-  border-radius: 32px;
+  border-radius: 8px;
   background-color: #353e6e;
 
 }
 
 #share-button:hover {
-  background-color: #6c7ee6;
+  background-color: #212850;
+}
 
+#practiceButton:hover {
+  background-color: #212850;
+}
+
+#dailyButton:hover {
+  background-color: #212850;
 }
 
 .popup h2{
