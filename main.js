@@ -33,11 +33,15 @@ const userStats = JSON.parse(localStorage.getItem("stats")) || {
 };
 
 //User game state
-const gameState = JSON.parse(localStorage.getItem("state")) || {
-  gameNumber: -1,
-  hasWon: false,
-};
-
+const savedState = JSON.parse(localStorage.getItem("state")) || {};
+const gameState = Object.assign(
+  {
+    gameNumber: -1,
+    hasWon: false,
+    hasLost: false,
+  },
+  savedState
+);
 
   // New game functionality
   function getGameNumber() {
@@ -79,46 +83,62 @@ function fetchGameData(gameNumber) {
 
 
 function dailyGame () {
-  closeOpening();
-  setTimeout(() => {
-    playGame();
-  }, 500);
-}
+    closeOpening();
+    setTimeout(() => {
+      playGame();
+    }, 500);
+  }
 
 function practiceGame (){
   isPracticeGame = true;
   playGame();
-  closeOpening();
-  closePopup();
 }
 
-function initHeader(){ 
-  
-}
 function playGame() {
-  if (isPracticeGame == true) {
-    fetchGameData(Math.floor(Math.random() * 183) + 1);
+  console.log(checkEligible());
+  if (checkEligible()) {
+    if (isPracticeGame == true) {
+      fetchGameData(Math.floor(Math.random() * 183) + 1);
+      closeOpening();
+      closePopup();
+    }
+    else if (isPracticeGame == false) {
+      fetchGameData(getGameNumber()); 
+      console.log("hii");
+      closeOpening();
+      closePopup();
+    }
+    }
   }
-  else {
-    fetchGameData(getGameNumber());
-    console.log("hi");
-  }
-}
-
-  
-function initializeGame() {
-  if (gameState.gameNumber !== gameNumber) {
+function checkEligible() {
+  if (isPracticeGame == false && gameState.gameNumber !== gameNumber) {
     if (gameState.hasWon === false) {
-      userStats.currentStreak = 0;
+       userStats.currentStreak = 0;
     }
     gameState.gameNumber = gameNumber;
     gameState.hasWon = false;
+    gameState.hasLost = false;
+
+    return true;
+  }
+  else if (isPracticeGame == true){
+    return true;
+  }
+  else if (gameState.hasWon == true || gameState.hasLost == true) {
+    return false;
+  }
+  else {
+    return true;
+  }
+}
+
+
+function initializeGame() {
     userStats.numGames++;
     console.log("omg hi");
     localStorage.setItem("stats", JSON.stringify(userStats));
     localStorage.setItem("state", JSON.stringify(gameState));
-  }
-}
+    }
 
 document.getElementById("submitButton").addEventListener("click", checkUserSelection);
 
@@ -755,6 +775,7 @@ function checkUserSelection() {
         console.log(guessNumber);
       }
       else {
+        console.log(productName);
         console.log("Item not found or mystery item not initialized.");
       }
     })
@@ -764,12 +785,17 @@ function checkUserSelection() {
     }
 
 function gameWon() {
-  userStats.numWins++;
-  userStats.currentStreak++;
-  userStats.winsInNum[guessNumber-1]++;
-  console.log(userStats.winsInNum);
-  if (userStats.currentStreak > userStats.maxStreak) { 
-    userStats.maxStreak = userStats.currentStreak;
+  if (isPracticeGame == false) {
+    userStats.numWins++;
+    userStats.currentStreak++;
+    userStats.winsInNum[guessNumber-1]++;
+    console.log(userStats.winsInNum);
+    if (userStats.currentStreak > userStats.maxStreak) { 
+      userStats.maxStreak = userStats.currentStreak;
+    }
+    gameState.hasWon = true;
+    localStorage.setItem("state", JSON.stringify(gameState));
+    localStorage.setItem("stats", JSON.stringify(userStats));  
   }
   victoryheader.innerHTML += `<h2>You win! 🎉 </h2>`;
   victoryheader.innerHTML += `<p>Burgerdle guessed in ${guessNumber}/6 attempts!</p>`;
@@ -779,6 +805,11 @@ function gameWon() {
 }
 
 function gameLost() {
+  if (isPracticeGame == false) {
+  gameState.hasLost = true;
+  localStorage.setItem("state", JSON.stringify(gameState));
+  localStorage.setItem("stats", JSON.stringify(userStats));
+  }
   victoryheader.innerHTML += `<h2>You lost! </h2>`;
   victoryheader.innerHTML += `<p>The correct item was the ${productName} from ${productRestaurant}</p>`;
   victoryscreen.innerHTML += `<h2>Guess Distribution</h2>`;
@@ -893,6 +924,9 @@ function openingScreen() {
   darken();
   }, 0);
   opening.classList.add("visible");
+  if ((gameState.hasWon == true || gameState.hasLost == true) && gameState.gameNumber == gameNumber) {
+    dailyButton.classList.add("hidden");
+  }
 }
 
 function closeOpening() {
