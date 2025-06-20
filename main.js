@@ -103,7 +103,7 @@ function practiceGame (){
 function playGame() {
   if (checkEligible()) {
     if (isPracticeGame == true) {
-      fetchGameData(Math.floor(Math.random() * 183) + 1);
+      fetchGameData(Math.floor(Math.random() * 318) + 1);
       closeOpening();
       closePopup();
     }
