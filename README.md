@@ -73,8 +73,9 @@ A new burgerdle is available every day!
 - [x] Develop burgerdle database
 - [x] Basic site layout
 - [x] Implement search feature
-- [ ] Gameplay loop
-- [ ] Statistic tracking, site info
+- [x] Gameplay loop
+- [x] Statistic tracking, site info
+- [ ] Gameplay tests and bugfixes
 - [ ] Launch
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -100,7 +101,7 @@ Project Link: [https://github.com/chris-albi/costcodle](https://github.com/chris
 
 This project would not have been possible without the following resources:
 
-* [Zachary's Kermitz's COSTCODLE](https://github.com/KermWasTaken/costcodle/) I stole their whole site vibe because I liked it. thank you costcodle
+* [Zachary's Kermitz's COSTCODLE](https://github.com/KermWasTaken/costcodle/) I
 * [Wordle](https://www.nytimes.com/games/wordle/index.html)
 * [Tradle](https://oec.world/en/tradle/)
 * [Best-README-Template](https://github.com/othneildrew/Best-README-Template/)
