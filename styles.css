@@ -209,9 +209,6 @@ body {
   font-size: 64px;
 }
 
-.opening.clickthrough {
-  pointer-events: none;
-}
 
  .info {
   width: 900px;

@@ -14,7 +14,6 @@ let productIngredients;
 let guessNumber = 0;
 let lastGuess;
 let isPracticeGame = false;
-let finalGuess;
 
 window.onload = async function () {
   const response = await fetch('items.json');
@@ -765,16 +764,12 @@ function checkUserSelection() {
     }
 
 function gameWon() {
-  if(isPracticeGame = false) 
-    {
-    userStats.numWins++;
-    userStats.currentStreak++;
-    userStats.winsInNum[guessNumber-1]++;
-    console.log(userStats.winsInNum);
-    finalGuess = guessNumber;
-    if (userStats.currentStreak > userStats.maxStreak) { 
-      userStats.maxStreak = userStats.currentStreak;
-    }
+  userStats.numWins++;
+  userStats.currentStreak++;
+  userStats.winsInNum[guessNumber-1]++;
+  console.log(userStats.winsInNum);
+  if (userStats.currentStreak > userStats.maxStreak) { 
+    userStats.maxStreak = userStats.currentStreak;
   }
   victoryheader.innerHTML += `<h2>You win! 🎉 </h2>`;
   victoryheader.innerHTML += `<p>Burgerdle guessed in ${guessNumber}/6 attempts!</p>`;
@@ -789,7 +784,6 @@ function gameLost() {
   victoryscreen.innerHTML += `<h2>Guess Distribution</h2>`;
   renderStatistics();
   finalDistribution();
-  finalGuess = guessNumber;
 }
 
 
@@ -899,12 +893,10 @@ function openingScreen() {
   darken();
   }, 0);
   opening.classList.add("visible");
-  opening.classList.remove("clickthrough");
 }
 
 function closeOpening() {
   opening.classList.remove("visible");
-  opening.classList.add("clickthrough");
   brighten();
 }
 
@@ -970,10 +962,10 @@ function closeStats() {
 
 function copyStats() {
     let output = `burgerdle #${gameNumber}`;
-  if (finalGuess < 6) {
-    output += ` ${finalGuess}/6\n`;
+  if (guessNumber < 6) {
+    output += ` ${guessNumber}/6\n`;
   } else {
-    output += ` X/6\n`;
+    output += ` ${gameState.guesses.length}/6\n`;
   }
   output += `https://burgerdle.com`;
   navigator.clipboard.writeText(output);

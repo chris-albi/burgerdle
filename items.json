@@ -525,7 +525,7 @@
   {
     "name": "Triple Cheeseburger",
     "restaurant": "McDonald's",
-    "calories": 530,
+    "calories": 0,
     "type": "Burger",
     "vegan": false,
     "glutenFree": false,
@@ -2556,6 +2556,7 @@
     "yearOfRelease": 2020,
     "game": 147,
     "ingredients": [
+      "cheese",
       "cheese",
       "onions",
       "bread",
