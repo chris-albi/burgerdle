@@ -48,14 +48,6 @@ body {
   border-radius: 8px;
 }
 
-.submit.dark {
-  color: #353e6e;
-  background-color: #353e6e; 
-}
-.dark {  
-  color: #353e6e;
-  background-color: #353e6e;   
-}
 .resetButton {
   color: rgb(235, 181, 111);
   background-color: #353e6e;

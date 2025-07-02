@@ -21,7 +21,7 @@ window.onload = async function () {
   items = await response.json();
 };
 
-const startDate = new Date("01/16/2025");
+const startDate = new Date("01/17/2025");
 const gameNumber = getGameNumber();
 
 //User stats object
@@ -34,21 +34,11 @@ const userStats = JSON.parse(localStorage.getItem("stats")) || {
 };
 
 //User game state
-const savedState = JSON.parse(localStorage.getItem("state")) || {};
-const gameState = Object.assign(
-  {
-    gameNumber: -1,
-    hasWon: false,
-    hasLost: false,
-    guessOne: "",
-    guessTwo: "",
-    guessThree: "",
-    guessFour: "",
-    guessFive: "",
-    guessSix: "",
-  },
-  savedState
-);
+const gameState = JSON.parse(localStorage.getItem("state")) || {
+  gameNumber: -1,
+  hasWon: false,
+};
+
 
   // New game functionality
   function getGameNumber() {
@@ -90,112 +80,46 @@ function fetchGameData(gameNumber) {
 
 
 function dailyGame () {
-    closeOpening();
-    setTimeout(() => {
-      playGame();
-    }, 500);
-  }
+  closeOpening();
+  setTimeout(() => {
+    playGame();
+  }, 500);
+}
 
 function practiceGame (){
   isPracticeGame = true;
   playGame();
+  closeOpening();
+  closePopup();
 }
 
+function initHeader(){ 
+  
+}
 function playGame() {
-  if (checkEligible()) {
-    if (isPracticeGame == true) {
-      fetchGameData(Math.floor(Math.random() * 318) + 1);
-      closeOpening();
-      closePopup();
-    }
-    else if (isPracticeGame == false) {
-      fetchGameData(getGameNumber()); 
-      console.log("hii");
-      reloadGame();
-      closeOpening();
-      closePopup(); 
-    }
-    }
+  if (isPracticeGame == true) {
+    fetchGameData(Math.floor(Math.random() * 183) + 1);
+  }
   else {
     fetchGameData(getGameNumber());
-    reloadGame();
+    console.log("hi");
   }
-  }
+}
 
-function reloadGame() {
-  if (gameState.guessOne !== ""){
-    guessNumber++;
-    console.log("jak");
-    fetch("./items.json")
-      .then((response) => response.json())
-      .then((data) => {
-        const userItem = data.find(item => item.name === gameState.guessOne);
-        console.log(userItem);
-        displayComparisonOne(userItem, productName);
-      if (gameState.guessTwo !== "") {
-        const userItem = data.find(item => item.name === gameState.guessTwo);
-        displayComparisonTwo(userItem, productName);
-        guessNumber = 2;
-      }
-      if (gameState.guessThree !== "") {
-        const userItem = data.find(item => item.name === gameState.guessThree);
-        displayComparisonThree(userItem, productName);
-        guessNumber = 3;
-      }
-      if (gameState.guessFour !== "") {
-        const userItem = data.find(item => item.name === gameState.guessFour);
-        displayComparisonFour(userItem, productName);
-        guessNumber = 4;
-      }
-      if (gameState.guessFive !== "") {
-        const userItem = data.find(item => item.name === gameState.guessFive);
-        displayComparisonFive(userItem, productName);
-        guessNumber = 5;
-      }
-      if (gameState.guessSix !== "") {
-        const userItem = data.find(item => item.name === gameState.guessSix);
-        displayComparisonSix(userItem, productName);
-        guessNumber = 6;
-      }
-  })
-}
-}
-function checkEligible() {
-  if (isPracticeGame == false && gameState.gameNumber !== gameNumber) {
+  
+function initializeGame() {
+  if (gameState.gameNumber !== gameNumber) {
     if (gameState.hasWon === false) {
-       userStats.currentStreak = 0;
+      userStats.currentStreak = 0;
     }
     gameState.gameNumber = gameNumber;
     gameState.hasWon = false;
-    gameState.hasLost = false;
-    gameState.guessOne = "";
-    gameState.guessTwo = "";
-    gameState.guessThree = "";
-    gameState.guessFour = "";
-    gameState.guessFive = "";
-    gameState.guessSix = "";
-    return true;
-  }
-  else if (isPracticeGame == true){
-    return true;
-  }
-  else if (gameState.hasWon == true || gameState.hasLost == true) {
-    return false;
-  }
-  else {
-    return true;
-  }
-}
-
-
-function initializeGame() {
-  if(isPracticeGame == false && gameState.guessOne == ""){
     userStats.numGames++;
-  }
     console.log("omg hi");
     localStorage.setItem("stats", JSON.stringify(userStats));
     localStorage.setItem("state", JSON.stringify(gameState));
-    }
+  }
+}
 
 document.getElementById("submitButton").addEventListener("click", checkUserSelection);
 
@@ -210,10 +134,10 @@ function getIngredientMatch(userIngredients, mysteryIngredients) {
 
 function displayComparisonOne(userItem, mysteryItem) {
   const container = document.getElementById("comparison-1");
+console.log(JSON.stringify(userItem.yearOfRelease));
 function compareClass(val1, val2) {
   return val1 == val2 ? "match" : "no-match";
 }
-
 
 function compareIntClass(val1, val2) {
   if (val1 < val2) {
@@ -759,12 +683,7 @@ function checkUserSelection() {
         if ( guessNumber == 0 ) {
           guessNumber += 1;
           lastGuess = selectedName;
-          displayComparisonOne(userItem, productName);
-          if (isPracticeGame == false) {
-            gameState.guessOne = selectedName;
-            localStorage.setItem("state", JSON.stringify(gameState));
-          }
-          console.log(userItem.name);
+          displayComparisonOne(userItem, productName)
           if (userItem.name == productName) {
             openPopup();
             gameWon();
@@ -773,10 +692,6 @@ function checkUserSelection() {
         else if (guessNumber == 1) {
           if (lastGuess != selectedName) {
             displayComparisonTwo(userItem, productName)
-            if (isPracticeGame == false) {
-              gameState.guessTwo = selectedName;
-              localStorage.setItem("state", JSON.stringify(gameState));
-            }
             guessNumber += 1;
             lastGuess = selectedName;
             if (userItem.name == productName) {
@@ -788,10 +703,6 @@ function checkUserSelection() {
         else if (guessNumber == 2) {
           if (lastGuess != selectedName) {
             displayComparisonThree(userItem, productName)
-            if (isPracticeGame == false) {
-                gameState.guessThree = selectedName;
-                localStorage.setItem("state", JSON.stringify(gameState));
-              }
             guessNumber += 1;
             lastGuess = selectedName;
             if (userItem.name == productName) {
@@ -803,10 +714,6 @@ function checkUserSelection() {
         else if (guessNumber == 3) {
           if (lastGuess != selectedName) {
             displayComparisonFour(userItem, productName)
-            if (isPracticeGame == false) {
-              gameState.guessFour = selectedName;
-              localStorage.setItem("state", JSON.stringify(gameState));
-            }
             guessNumber += 1;
             lastGuess = selectedName;
             if (userItem.name == productName) {
@@ -818,10 +725,6 @@ function checkUserSelection() {
         else if (guessNumber == 4) {
           if (lastGuess != selectedName) {
             displayComparisonFive(userItem, productName)
-            if (isPracticeGame == false) {
-              gameState.guessFive = selectedName;
-              localStorage.setItem("state", JSON.stringify(gameState));
-            }
             guessNumber += 1;
             lastGuess = selectedName;
             if (userItem.name == productName) {
@@ -833,10 +736,6 @@ function checkUserSelection() {
         else if (guessNumber == 5) {
           if (lastGuess != selectedName) {
             displayComparisonSix(userItem, productName)
-            if (isPracticeGame == false) {
-              gameState.guessSix = selectedName;
-              localStorage.setItem("state", JSON.stringify(gameState));
-            }
             if (userItem.name == productName) {
               guessNumber += 1;
               openPopup();
@@ -857,7 +756,6 @@ function checkUserSelection() {
         console.log(guessNumber);
       }
       else {
-        console.log(productName);
         console.log("Item not found or mystery item not initialized.");
       }
     })
@@ -886,11 +784,6 @@ function gameWon() {
 }
 
 function gameLost() {
-  if (isPracticeGame == false) {
-  gameState.hasLost = true;
-  localStorage.setItem("state", JSON.stringify(gameState));
-  localStorage.setItem("stats", JSON.stringify(userStats));
-  }
   victoryheader.innerHTML += `<h2>You lost! </h2>`;
   victoryheader.innerHTML += `<p>The correct item was the ${productName} from ${productRestaurant}</p>`;
   victoryscreen.innerHTML += `<h2>Guess Distribution</h2>`;
