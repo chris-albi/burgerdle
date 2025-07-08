@@ -57,7 +57,6 @@ function fetchGameData(gameNumber) {
     .then((response) => response.json())
     .then((data) => {
       const filteredItems = data.filter(item => item.game === gameNumber);
-      console.log(gameNumber);
       filteredItems.forEach(item => {
         productName = item.name;
         productRestaurant = item.restaurant;
@@ -67,8 +66,6 @@ function fetchGameData(gameNumber) {
         productGF = item.glutenFree;
         productRelease = item.yearOfRelease;
         productIngredients = item.ingredients;
-        console.log(item.restaurant);
-        console.log(productRestaurant);
         initializeGame();
       });
     })
@@ -101,7 +98,6 @@ function playGame() {
   }
   else {
     fetchGameData(getGameNumber());
-    console.log("hi");
   }
 }
 
@@ -114,7 +110,6 @@ function initializeGame() {
     gameState.gameNumber = gameNumber;
     gameState.hasWon = false;
     userStats.numGames++;
-    console.log("omg hi");
     localStorage.setItem("stats", JSON.stringify(userStats));
     localStorage.setItem("state", JSON.stringify(gameState));
   }
@@ -133,7 +128,6 @@ function getIngredientMatch(userIngredients, mysteryIngredients) {
 
 function displayComparisonOne(userItem, mysteryItem) {
   const container = document.getElementById("comparison-1");
-console.log(JSON.stringify(userItem.yearOfRelease));
 function compareClass(val1, val2) {
   return val1 == val2 ? "match" : "no-match";
 }
@@ -163,9 +157,6 @@ function compareIngredientsClass(userIngredients, productIngredients) {
   const productSet = new Set(productIngredients.map(i => i.toLowerCase()));
 
   const matching = [...userSet].filter(ingredient => productSet.has(ingredient));
-    console.log("Here");
-    console.log(userSet.size);
-    console.log(productSet.size);
   if (matching.length === 0) {
     return "ingredients-none";
   } else if (matching.length === userSet.size) {
@@ -222,7 +213,6 @@ function compareIngredientsClass(userIngredients, productIngredients) {
 </div>
   </div>
 `;
-console.log(userItem.ingredients.join('').length);
 
   const offset = document.getElementById("comparisonbubbleone");
   if (userItem.ingredients.join('').length < 28 ) {
@@ -752,7 +742,6 @@ function checkUserSelection() {
         else {
           console.log("You broke the game!")
         }
-        console.log(guessNumber);
       }
       else {
         console.log("Item not found or mystery item not initialized.");
@@ -767,7 +756,6 @@ function gameWon() {
   userStats.numWins++;
   userStats.currentStreak++;
   userStats.winsInNum[guessNumber-1]++;
-  console.log(userStats.winsInNum);
   if (userStats.currentStreak > userStats.maxStreak) { 
     userStats.maxStreak = userStats.currentStreak;
   }
@@ -808,8 +796,6 @@ function renderStatistics() {
 
 function graphDistribution() {
       userStats.winsInNum.forEach((value, index) => {
-        console.log(index);
-        console.log(value);
         const graphElem = document.getElementById(`graph-${index+1}`);
         if (userStats.numWins === 0) {
           graphElem.style = `width: 5%`;
@@ -825,8 +811,6 @@ function graphDistribution() {
 function finalDistribution() {
       setTimeout(2000);
       userStats.winsInNum.forEach((value, index) => {
-        console.log(index);
-        console.log(value);
         const graphElem = document.getElementById(`finalgraph-${index+1}`);
         if (userStats.numWins === 0) {
           graphElem.style = `width: 5%`;
@@ -855,7 +839,6 @@ function darken() {
   document.getElementById("comparisonbubblefour").style.display = "none";
   document.getElementById("comparisonbubblefive").style.display = "none";
   document.getElementById("comparisonbubblesix").style.display = "none";
-  console.log(document.getElementById("reset"));
   document.getElementById("resetButton").style.display = "none";
   }
 
@@ -914,7 +897,6 @@ function showReset() {
     resetDiv.classList.remove("hidden"); 
     resetDiv.classList.add("visible"); 
   }
-   console.log("showReset function triggered!"); 
 }
 
 function resetGame () {
