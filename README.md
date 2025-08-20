@@ -17,9 +17,9 @@
     <br />
     <a href="https://burgerdle.com">Play the Game</a>
     ·
-    <a href="https://github.com/KermWasTaken/costcodle/issues">Report Bug</a>
+    <a href="https://github.com/KermWasTaken/burgerdle/issues">Report Bug</a>
     ·
-    <a href="https://github.com/KermWasTaken/costcodle/issues">Request Feature</a>
+    <a href="https://github.com/KermWasTaken/burgerdle/issues">Request Feature</a>
   </p>
 
 [![MIT License][license-shield]][license-url]
@@ -73,9 +73,9 @@ A new burgerdle is available every day!
 - [x] Develop burgerdle database
 - [x] Basic site layout
 - [x] Implement search feature
-- [ ] Gameplay loop
-- [ ] Statistic tracking, site info
-- [ ] Launch
+- [x] Gameplay loop
+- [x] Statistic tracking, site info
+- [x] Launch
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -91,7 +91,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Chris Madejczyk - chrismadejczyk7@gmail.com
 
-Project Link: [https://github.com/chris-albi/costcodle](https://github.com/chris-albi/costcodle)
+Project Link: [https://github.com/chris-albi/burgerdle](https://github.com/chris-albi/burgerdle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,7 +111,7 @@ This project would not have been possible without the following resources:
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [license-shield]: https://img.shields.io/github/license/KermWasTaken/costcodle.svg?style=for-the-badge
-[license-url]: https://github.com/chris-albi/costcodle/blob/main/LICENSE
+[license-url]: https://github.com/chris-albi/burgerdle/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/chris-madejczyk
 [product-screenshot]: assets/burger.png
