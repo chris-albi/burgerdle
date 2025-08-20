@@ -61,31 +61,29 @@ const gameState = Object.assign(
 openingScreen();
 
 
-
 function fetchGameData(gameNumber) {
-  fetch("./items.json")
+  return fetch("./items.json")
     .then((response) => response.json())
     .then((data) => {
       const filteredItems = data.filter(item => item.game === gameNumber);
-      console.log(gameNumber);
-      filteredItems.forEach(item => {
-        productName = item.name;
-        productRestaurant = item.restaurant;
-        productCalories = item.calories;
-        productType = item.type;
-        productVegan = item.vegan;
-        productGF = item.glutenFree;
-        productRelease = item.yearOfRelease;
-        productIngredients = item.ingredients;
-        console.log(item.restaurant);
-        console.log(productRestaurant);
-        initializeGame();
-      });
+      if (filteredItems.length === 0) {
+        throw new Error("No item found for game " + gameNumber);
+      }
+      const item = filteredItems[0];
+      productName = item.name;
+      productRestaurant = item.restaurant;
+      productCalories = item.calories;
+      productType = item.type;
+      productVegan = item.vegan;
+      productGF = item.glutenFree;
+      productRelease = item.yearOfRelease;
+      productIngredients = item.ingredients;
+      initializeGame();
     })
     .catch((error) => {
       console.error("Error fetching or parsing data:", error);
     });
-  }
+}
 
 
 function dailyGame () {
@@ -102,24 +100,25 @@ function practiceGame (){
 
 function playGame() {
   if (checkEligible()) {
-    if (isPracticeGame == true) {
-      fetchGameData(Math.floor(Math.random() * 318) + 1);
-      closeOpening();
-      closePopup();
+    if (isPracticeGame) {
+      fetchGameData(Math.floor(Math.random() * 318) + 1).then(() => {
+        closeOpening();
+        closePopup();
+      });
+    } else {
+      fetchGameData(getGameNumber()).then(() => {
+        console.log("Data loaded, now reloading guesses...");
+        reloadGame(); // now productName etc. are ready
+        closeOpening();
+        closePopup();
+      });
     }
-    else if (isPracticeGame == false) {
-      fetchGameData(getGameNumber()); 
-      console.log("hii");
+  } else {
+    fetchGameData(getGameNumber()).then(() => {
       reloadGame();
-      closeOpening();
-      closePopup(); 
-    }
-    }
-  else {
-    fetchGameData(getGameNumber());
-    reloadGame();
+    });
   }
-  }
+}
 
 function reloadGame() {
   if (gameState.guessOne !== ""){
