@@ -99,6 +99,7 @@ function practiceGame (){
 }
 
 function playGame() {
+  console.log("Live test!");
   if (checkEligible()) {
     if (isPracticeGame) {
       fetchGameData(Math.floor(Math.random() * 318) + 1).then(() => {
