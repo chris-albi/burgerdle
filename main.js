@@ -107,8 +107,7 @@ function playGame() {
       });
     } else {
       fetchGameData(getGameNumber()).then(() => {
-        console.log("Data loaded, now reloading guesses...");
-        reloadGame(); // now productName etc. are ready
+        reloadGame(); 
         closeOpening();
         closePopup();
       });
@@ -123,12 +122,10 @@ function playGame() {
 function reloadGame() {
   if (gameState.guessOne !== ""){
     guessNumber++;
-    console.log("jak");
     fetch("./items.json")
       .then((response) => response.json())
       .then((data) => {
         const userItem = data.find(item => item.name === gameState.guessOne);
-        console.log(userItem);
         displayComparisonOne(userItem, productName);
       if (gameState.guessTwo !== "") {
         const userItem = data.find(item => item.name === gameState.guessTwo);
@@ -190,7 +187,6 @@ function initializeGame() {
   if(isPracticeGame == false && gameState.guessOne == ""){
     userStats.numGames++;
   }
-    console.log("omg hi");
     localStorage.setItem("stats", JSON.stringify(userStats));
     localStorage.setItem("state", JSON.stringify(gameState));
     }
@@ -238,9 +234,6 @@ function compareIngredientsClass(userIngredients, productIngredients) {
   const productSet = new Set(productIngredients.map(i => i.toLowerCase()));
 
   const matching = [...userSet].filter(ingredient => productSet.has(ingredient));
-    console.log("Here");
-    console.log(userSet.size);
-    console.log(productSet.size);
   if (matching.length === 0) {
     return "ingredients-none";
   } else if (matching.length === userSet.size) {
@@ -297,7 +290,6 @@ function compareIngredientsClass(userIngredients, productIngredients) {
 </div>
   </div>
 `;
-console.log(userItem.ingredients.join('').length);
 
   const offset = document.getElementById("comparisonbubbleone");
   if (userItem.ingredients.join('').length < 28 ) {
@@ -762,7 +754,6 @@ function checkUserSelection() {
             gameState.guessOne = selectedName;
             localStorage.setItem("state", JSON.stringify(gameState));
           }
-          console.log(userItem.name);
           if (userItem.name == productName) {
             openPopup();
             gameWon();
@@ -852,11 +843,8 @@ function checkUserSelection() {
         else {
           console.log("You broke the game!")
         }
-        console.log(guessNumber);
       }
       else {
-        console.log(productName);
-        console.log("Item not found or mystery item not initialized.");
       }
     })
     .catch((error) => {
@@ -869,7 +857,6 @@ function gameWon() {
     userStats.numWins++;
     userStats.currentStreak++;
     userStats.winsInNum[guessNumber-1]++;
-    console.log(userStats.winsInNum);
     if (userStats.currentStreak > userStats.maxStreak) { 
       userStats.maxStreak = userStats.currentStreak;
     }
@@ -919,8 +906,6 @@ function renderStatistics() {
 
 function graphDistribution() {
       userStats.winsInNum.forEach((value, index) => {
-        console.log(index);
-        console.log(value);
         const graphElem = document.getElementById(`graph-${index+1}`);
         if (userStats.numWins === 0) {
           graphElem.style = `width: 5%`;
@@ -936,8 +921,6 @@ function graphDistribution() {
 function finalDistribution() {
       setTimeout(2000);
       userStats.winsInNum.forEach((value, index) => {
-        console.log(index);
-        console.log(value);
         const graphElem = document.getElementById(`finalgraph-${index+1}`);
         if (userStats.numWins === 0) {
           graphElem.style = `width: 5%`;
@@ -1025,7 +1008,6 @@ function showReset() {
     resetDiv.classList.remove("hidden"); 
     resetDiv.classList.add("visible"); 
   }
-   console.log("showReset function triggered!"); 
 }
 
 function resetGame () {
