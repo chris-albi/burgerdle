@@ -962,7 +962,7 @@
       "onions",
       "tortilla"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Beefy 5-Layer Burrito",
@@ -981,7 +981,7 @@
       "tortilla",
       "beans"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Burrito Supreme - Chicken",
@@ -1001,7 +1001,7 @@
       "taco sauce",
       "tortilla"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Burrito Supreme - Steak",
@@ -1021,7 +1021,7 @@
       "taco sauce",
       "tortilla"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Burrito Supreme – Beef",
@@ -1041,7 +1041,7 @@
       "taco sauce",
       "tortilla"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Cheesy Bean and Rice Burrito",
@@ -1059,7 +1059,7 @@
       "taco sauce",
       "tortilla"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Chicken Enchilada Burrito",
@@ -1077,7 +1077,7 @@
       "onions",
       "tortilla"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Green Burrito",
@@ -1096,7 +1096,7 @@
       "sour cream",
       "tortilla"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Grilled Cheese Burrito",
@@ -1115,7 +1115,7 @@
       "taco sauce",
       "tortilla"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Veggie Burrito Supreme",
@@ -1135,7 +1135,7 @@
       "taco sauce",
       "tortilla"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Black Bean Soft Taco",
@@ -1152,7 +1152,7 @@
       "taco sauce",
       "soft tortilla"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Crunchy Taco",
@@ -1169,7 +1169,7 @@
       "taco sauce",
       "taco shell"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Crunchy Taco Supreme",
@@ -1188,7 +1188,7 @@
       "taco sauce",
       "taco shell"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Nacho Cheese Doritos Locos Taco",
@@ -1205,7 +1205,7 @@
       "taco sauce",
       "taco shell"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Nacho Cheese Doritos Locos Taco Supreme",
@@ -1224,7 +1224,7 @@
       "taco sauce",
       "taco shell"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Soft Taco - Beef",
@@ -1241,7 +1241,7 @@
       "taco sauce",
       "tortilla"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Soft Taco Supreme – Beef",
@@ -1260,7 +1260,7 @@
       "taco sauce",
       "tortilla"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Spicy Potato Soft Taco",
@@ -1278,7 +1278,7 @@
       "taco sauce",
       "tortilla"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Breakfast California Crunchwrap",
@@ -1297,7 +1297,7 @@
       "sour cream",
       "tortilla"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Breakfast Crunchwrap - Bacon",
@@ -1315,7 +1315,7 @@
       "sour cream",
       "tortilla"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Breakfast Crunchwrap - Sausage",
@@ -1333,7 +1333,7 @@
       "sour cream",
       "tortilla"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Breakfast Crunchwrap - Steak",
@@ -1351,7 +1351,7 @@
       "sour cream",
       "tortilla"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Breakfast Quesadilla",
@@ -1367,7 +1367,7 @@
       "bacon",
       "tortilla"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Cheesy Toasted Breakfast Burrito",
@@ -1383,7 +1383,7 @@
       "bacon",
       "tortilla"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Cinnabon Delights",
@@ -1398,7 +1398,7 @@
       "cream cheese",
       "dough"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Grande Toasted Breakfast Burrito",
@@ -1415,7 +1415,7 @@
       "hash brown",
       "tortilla"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Hash Brown",
@@ -1430,7 +1430,7 @@
       "potatoes",
       "oil"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Caliente Cantina Chicken Bowl",
@@ -1449,7 +1449,7 @@
       "lettuce",
       "tortilla strips"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Caliente Cantina Chicken Burrito",
@@ -1467,7 +1467,7 @@
       "guacamole",
       "tortilla"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Caliente Cantina Chicken Crispy Taco",
@@ -1483,7 +1483,7 @@
       "lettuce",
       "taco shell"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Caliente Cantina Chicken Quesadilla",
@@ -1499,7 +1499,7 @@
       "flour tortilla",
       "sour cream"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Caliente Cantina Chicken Soft Taco",
@@ -1515,7 +1515,7 @@
       "lettuce",
       "soft taco shell"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Cantina Chicken Bowl",
@@ -1534,7 +1534,7 @@
       "lettuce",
       "tortilla strips"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Cantina Chicken Burrito",
@@ -1552,7 +1552,7 @@
       "guacamole",
       "tortilla"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Cantina Chicken Quesadilla",
@@ -1568,7 +1568,7 @@
       "flour tortilla",
       "sour cream"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Cantina Chicken Soft Taco",
@@ -1584,7 +1584,7 @@
       "lettuce",
       "soft taco shell"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Cantina Crispy Chicken Taco",
@@ -1600,7 +1600,7 @@
       "lettuce",
       "taco shell"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Black Bean Chalupa",
@@ -1618,7 +1618,7 @@
       "chalupa shell",
       "sour cream"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Chalupa Supreme - Chicken",
@@ -1636,7 +1636,7 @@
       "chalupa shell",
       "sour cream"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Chalupa Supreme - Steak",
@@ -1654,7 +1654,7 @@
       "chalupa shell",
       "sour cream"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Chalupa Supreme – Beef",
@@ -1672,7 +1672,7 @@
       "chalupa shell",
       "sour cream"
     ],
-    "icon": "assets/taco bell.png"
+    "icon": "assets/taco-bell.png"
   },
   {
     "name": "Chipotle Chicken and Cheese, 6 Inch",
@@ -2325,7 +2325,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "BK Bacon Cheeseburger",
@@ -2345,7 +2345,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Bacon Double Cheeseburger",
@@ -2365,7 +2365,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Bacon King",
@@ -2384,7 +2384,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Bacon Melt",
@@ -2402,7 +2402,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "BBQ Bacon Whopper Jr",
@@ -2422,7 +2422,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Big King",
@@ -2440,7 +2440,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "B.K. Cheeseburger",
@@ -2458,7 +2458,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Classic Melt",
@@ -2474,7 +2474,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Double BK Stacker",
@@ -2492,7 +2492,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "B.K. Double Cheeseburger",
@@ -2510,7 +2510,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Double Quarter Pound King",
@@ -2527,7 +2527,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Double Whopper",
@@ -2545,7 +2545,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "French Onion Melt",
@@ -2562,7 +2562,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Fried Pickle Ranch Whopper",
@@ -2581,7 +2581,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Game Day Pretzel Whopper",
@@ -2599,7 +2599,7 @@
       "tomato",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "B.K. Hamburger",
@@ -2617,7 +2617,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Impossible Whopper",
@@ -2637,7 +2637,7 @@
       "mayonnaise",
       "bread"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Maple Bourbon BBQ Whopper",
@@ -2657,7 +2657,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Mexican Street Corn Whopper",
@@ -2677,7 +2677,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Miami BK Stacker",
@@ -2694,7 +2694,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Philly BK Stacker",
@@ -2712,7 +2712,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Quad BK Stacker",
@@ -2729,7 +2729,7 @@
       "stacker sauce",
       "bread"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Quarter Pound King",
@@ -2748,7 +2748,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Rodeo Burger",
@@ -2765,7 +2765,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Shroom n' Swiss Melt",
@@ -2783,7 +2783,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Single Impossible King",
@@ -2802,7 +2802,7 @@
       "mustard",
       "bread"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Texas BK Stacker",
@@ -2820,7 +2820,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Texas Double Whopper",
@@ -2840,7 +2840,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Triple BK Stacker",
@@ -2857,7 +2857,7 @@
       "stacker sauce",
       "bread"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Triple Whopper",
@@ -2876,7 +2876,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Whopper",
@@ -2896,7 +2896,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Whopper Jr",
@@ -2916,7 +2916,7 @@
       "bread",
       "beef"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Crispy Taco",
@@ -2932,7 +2932,7 @@
       "cheese",
       "lettuce"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "BK French Fries, Large",
@@ -2946,7 +2946,7 @@
       "potatoes",
       "oil"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Motts' Applesauce",
@@ -2960,7 +2960,7 @@
     "ingredients": [
       "apple"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Mozzarella Fries",
@@ -2975,7 +2975,7 @@
       "breaded coating",
       "oil"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Onion Rings",
@@ -2990,7 +2990,7 @@
       "breading",
       "oil"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Pickle Fries",
@@ -3005,7 +3005,7 @@
       "breading",
       "oil"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Chocolate Chip Cookie",
@@ -3021,7 +3021,7 @@
       "eggs",
       "butter"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Chocolate Milk Shake",
@@ -3036,7 +3036,7 @@
       "milk",
       "ice cream"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Chocolate Oreo Shake",
@@ -3052,7 +3052,7 @@
       "milk",
       "ice cream"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Cookie Batter Shake",
@@ -3067,7 +3067,7 @@
       "milk",
       "ice cream"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Oreo Shake",
@@ -3082,7 +3082,7 @@
       "milk",
       "ice cream"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Soft Serve Ice Cream Cone",
@@ -3096,7 +3096,7 @@
       "ice cream",
       "cone"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Strawberry Milk Shake",
@@ -3111,7 +3111,7 @@
       "milk",
       "ice cream"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Vanilla Milk Shake",
@@ -3126,7 +3126,7 @@
       "milk",
       "ice cream"
     ],
-    "icon": "assets/burger king.png"
+    "icon": "assets/burger-king.png"
   },
   {
     "name": "Chick-n-Strips",
