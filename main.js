@@ -935,15 +935,16 @@ function finalDistribution() {
     }
 
 function darken() {
-  document.body.style.backgroundColor = "#3B3B3B";
+  document.body.style.backgroundColor = "#bdb4a5ff";
   document.getElementById("headercontainer").style.borderColor = "black";
-  document.getElementById("gameplay-section").style.backgroundColor = "#3B3B3B"
-  document.getElementById("site-footer").style.backgroundColor = "#3B3B3B"
-  document.getElementById("topnav").style.backgroundColor = "#3B3B3B"
+  document.getElementById("headercontainer").style.backgroundColor = "#8b8171ff";
+  document.getElementById("gameplay-section").style.backgroundColor = "#bdb4a5ff"
+  document.getElementById("site-footer").style.backgroundColor = "#bdb4a5ff"
+  document.getElementById("topnav").style.backgroundColor = "#bdb4a5ff"
   document.getElementById("site-footer").style.borderColor = "black";
-  document.getElementById("topheader").style.backgroundColor = "#3B3B3B"
-  document.getElementById("topheader").style.borderColor = "#3B3B3B";
-  document.getElementById("topheader").style.color = "#3B3B3B";
+  document.getElementById("topheader").style.backgroundColor = "#bdb4a5ff"
+  document.getElementById("topheader").style.borderColor = "#bdb4a5ff";
+  document.getElementById("topheader").style.color = "#bdb4a5ff";
   document.getElementById("comparisonbubbleone").style.display = "none";
   document.getElementById("comparisonbubbletwo").style.display = "none";
   document.getElementById("comparisonbubblethree").style.display = "none";
@@ -952,19 +953,19 @@ function darken() {
   document.getElementById("comparisonbubblesix").style.display = "none";
   console.log(document.getElementById("reset"));
   document.getElementById("resetButton").style.display = "none";
+  document.getElementById("dropdown").style.display = "none";
   }
 
 function brighten() {
-  document.body.style.backgroundColor = "#DCDCDC";
-
-  safelySetStyle("headercontainer", "borderColor", "gray");
-  safelySetStyle("gameplay-section", "backgroundColor", "#DCDCDC");
-  safelySetStyle("site-footer", "backgroundColor", "#DCDCDC");
-  safelySetStyle("site-footer", "borderColor", "gray");
-  safelySetStyle("topnav", "backgroundColor", "#DCDCDC");
-  safelySetStyle("topheader", "backgroundColor", "white");
-  safelySetStyle("topheader", "borderColor", "gray");
-
+  document.getElementById("headercontainer").style.backgroundColor = "#e6dfd2";
+  safelySetStyle("headercontainer", "borderColor", "#9c9081");
+  safelySetStyle("gameplay-section", "backgroundColor", "#F8F3F0");
+  safelySetStyle("site-footer", "backgroundColor", "#F8F3F0");
+  safelySetStyle("site-footer", "borderColor", "#9c9081");
+  safelySetStyle("topnav", "backgroundColor", "#F8F3F0");
+  safelySetStyle("topheader", "color", "#000000");
+  safelySetStyle("topheader", "backgroundColor", "#fffcf2ff");
+  safelySetStyle("topheader", "borderColor", "#d6d6d6ff");
   safelySetStyle("comparisonbubbleone", "display", "");
   safelySetStyle("comparisonbubbletwo", "display", "");
   safelySetStyle("comparisonbubblethree", "display", "");
@@ -972,6 +973,7 @@ function brighten() {
   safelySetStyle("comparisonbubblefive", "display", "");
   safelySetStyle("comparisonbubblesix", "display", "");
   document.getElementById("resetButton").style.visibility = "visible";
+  document.getElementById("dropdown").style.display = "visible";
 }
 
 function safelySetStyle(id, styleProp, value) {
@@ -1071,14 +1073,21 @@ function filterItems() {
   const dropdown = document.getElementById('dropdown');
   dropdown.innerHTML = '';  
 
-if (!input) return;
+  if (!input) {
+    dropdown.style.display = 'none'; // hide when no input
+    return;
+  }
 
   const filtered = items.filter(item => 
     item.name.toLowerCase().includes(input) ||
     (item.restaurant && item.restaurant.toLowerCase().includes(input))
   );
 
-  
+  if (filtered.length === 0) {
+    dropdown.style.display = 'none'; // hide if no matches
+    return;
+  }
+
   filtered.slice(0, 100).forEach(item => {
     const option = document.createElement('div');
     option.className = 'dropdown-item';
@@ -1086,14 +1095,21 @@ if (!input) return;
     const icon = document.createElement('img');
     icon.src = item.icon;
     icon.className = 'dropdown-icon';
+
     const label = document.createElement('span');
-    option.textContent = item.name;
+    label.textContent = item.name; // fixed so name shows properly
+
     option.onclick = () => {
       document.getElementById('searchInput').value = item.name;
       dropdown.innerHTML = '';
+      dropdown.style.display = 'none'; // hide after selection
     };
+
     option.appendChild(icon);
     option.appendChild(label);
     dropdown.appendChild(option);
   });
+
+  dropdown.style.display = 'block'; // show only when items exist
 }
+

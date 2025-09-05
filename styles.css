@@ -1,17 +1,16 @@
 
 h1 {
-    color: rgb(235, 181, 111);
+    color: rgb(207, 117, 0);
     font-weight: bold;
+      font-family: "Fredoka", monospace;
     font-size: 52px;
-    -webkit-text-stroke: 1px black;
 }
 
 body {
   font-family: "VT323", monospace;
   font-size: 30px;
   overflow: hidden;
-  background-color: gainsboro;
-
+  background-color: #F8F3F0;
 }
 
 .hidden{
@@ -26,7 +25,7 @@ body {
 #gameplay-section {
   display: row;
   flex-direction: column;
-  background-color: gainsboro;
+  background-color: #F8F3F0;
   gap: 0px;
   height: 1000px;
 }
@@ -40,24 +39,26 @@ body {
 }
 
 .submit {
-  color: rgb(235, 181, 111);
-  background-color: #353e6e;
+    color: rgb(207, 117, 0);
+  flex-shrink: 0; 
+  background-color: #e4dfde;
   padding: 8px 32px;
-  font-size: 16x;
+  font-weight: bold;
+  font-size: 20px;
   font-family: "VT323", monospace;
   border-radius: 8px;
 }
 
 .submit.dark {
   color: #353e6e;
-  background-color: #353e6e; 
+  background-color: #dee0ec; 
 }
 .dark {  
   color: #353e6e;
   background-color: #353e6e;   
 }
 .resetButton {
-  color: rgb(235, 181, 111);
+    color: rgb(207, 117, 0);
   background-color: #353e6e;
   padding: 8px 32px;
   font-size: 16x;
@@ -69,19 +70,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: gainsboro;
+    background-color: rgb(255, 224, 224);
   }
   
   #headercontainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1000px;
-    border-bottom: 4px solid gray;
-    margin-bottom: 40px;
+    width: 14000px;
+    background-color: #e6dfd2;
+    border-bottom: 4px solid #9c9081;
     width: 100%;
   }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
   #footer {
     position: fixed;
@@ -105,7 +110,7 @@ body {
     position: fixed;
     bottom: 0px;
     border-top: 2px solid gray;
-    background-color: gainsboro;
+    background-color: #F8F3F0;
     width: 99%;
   }
 
@@ -118,7 +123,9 @@ body {
   }
 
   h2{
-    color: rgb(235, 181, 111);
+    color: rgb(207, 117, 0);
+    font-weight: bold;
+      font-family: "Fredoka", monospace;
   }
 
 
@@ -176,11 +183,14 @@ body {
  .opening {
   width: 900px;
   height: 400px;
-  background: #aba9a9;
+  background: #e6dfd2;
   border-radius: 25px;
   position: absolute;
   top: 5%;
   left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
   transform: translate(-50%, 40%) scale(0.95);
   text-align: center;
   padding: 0 30px 30px;
@@ -199,29 +209,27 @@ body {
 
 .opening-header{
   display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-
+  align-items: center;
+  justify-content: center; 
 }
 
 .opening.visible {
   opacity: 1;
   visibility: visible;
-  transform: translate(-50%, 15%) scale(1);
+  transform: translate(-50%, 25%) scale(1);
 }
 
 .opening h2{
   color: 333;
   font-weight: bold;
-  -webkit-text-stroke: 2px black;
-  font-size: 64px;
+  font-size: 48;
 }
 
 
  .info {
   width: 900px;
   height: 800px;
-  background: #aba9a9;
+  background: #e6dfd2;
   border-radius: 25px;
   position: absolute;
   top: -10%;
@@ -259,7 +267,6 @@ body {
 .info h2{
   color: 333;
   font-weight: bold;
-  -webkit-text-stroke: 2px black;
   font-size: 64px;
 }
 
@@ -277,7 +284,7 @@ body {
  .stats {
   width: 600px;
   height: 800px;
-  background: #aba9a9;
+  background: #e6dfd2;
   border-radius: 25px;
   position: absolute;
   top: -10%;
@@ -317,22 +324,42 @@ body {
 .stats h2{
   color: 333;
   font-weight: bold;
-  -webkit-text-stroke: 2px black;
   font-size: 64px;
 }
 
 
+.search-wrapper {
+  position: relative;
+  display: inline-block;
+}
 
+#searchInput {
+  width: 250px;        
+  box-sizing: border-box;
+}
 
+#dropdown {
+  position: absolute;
+  top: 100%;      
+  left: 0;            
+  width: 100%;      
+  max-height: 200px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ccc;
+  z-index: 1000;
+  display: none;
+}
 
 /* search bar CSS */
 .topnav {
   display: flex;
+  padding-top: 40px;
   justify-content: center;
-  background-color: gainsboro;
+  background-color: #F8F3F0;
   align-content: center;
-  gap: 6px;
-  position: relative;
+  gap: 0.5rem;
+  align-items: flex-start;
 }
 
 
@@ -343,7 +370,7 @@ body {
   text-align: center;
   padding: 16px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
   
 }
 
@@ -360,11 +387,15 @@ body {
 }
 
 .topnav input[type=text] {
+  flex: 1;  
+  min-width: 200px;   
   padding: 6px;
-  border: none;
-  font-size: 17px;
-  font-family: "VT323", monospace;
+  border: 2px solid #cccccc; 
+  font-size: 20px;
+  font-family: "F", monospace;
   border-radius: 8px;
+  outline: none;   
+  transition: border-color 0.2s ease;
 }
 
 
@@ -382,9 +413,9 @@ body {
   }
 }
 
-.search-wrapper {
-  position: relative;
-  width: 200px; 
+#topheader {
+background-color: #fffcf2ff;
+border-color: #d6d6d6ff;
 }
 
 .dropdown-content {
@@ -401,14 +432,13 @@ body {
   z-index: 5;
 }
 
-
 .dropdown-content div:hover {
   background-color: #f0f0f0;
 }
 
 .dropdown-item {
   display: flex;
-  align-items: flex;
+  align-items: center;
   justify-content: flex-start;
   padding: 4px 4px;
   cursor: pointer;
@@ -425,8 +455,9 @@ body {
 .dropdown-icon {
   width: 25px;
   height: 25px;
-  margin-left: 8px;
+  margin-left: 2px;
   flex-shrink: 0;
+  margin-right: 4px;
 }
 
 .comparison-container {
@@ -434,6 +465,11 @@ body {
   gap: 20px;
   grid-template-columns: repeat(7, 1fr);
   margin-top: 20px;
+}
+
+#comparison-header {
+  color: #fffcf2ff;           
+  background-color: #fffcf2ff;
 }
 
 .comparison-card {
@@ -490,6 +526,19 @@ body {
   box-sizing: border-box;
 }
 
+.middle-box {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.box img {
+  filter: brightness(0) saturate(100%) invert(32%) sepia(90%) saturate(400%) hue-rotate(2deg) brightness(95%) contrast(89%);
+}
+
+.icon img {
+  transform: scalex(1.2); 
+}
 
 .bubble.match {
   background-color: #d4edda; 
@@ -567,19 +616,18 @@ body {
 }
 
 .bubble.ingredients-none {
-  background-color: #f8d7da; /* red */
-  color: #721c24;
+  background-color: #f8d7da; 
   border: 3px solid #721c24;
 }
 
 .bubble.ingredients-some {
-  background-color: #fff3cd; /* yellow */
+  background-color: #fff3cd; 
   color: #856404;
   border: 3px solid rgb(61, 52, 0); 
 }
 
 .bubble.ingredients-all {
-  background-color: #d4edda; /* green */
+  background-color: #d4edda;
   color: #155724;
   border: 3px solid #155724;
 
@@ -592,7 +640,7 @@ body {
  .popup {
   width: 900px;
   height: 800px;
-  background: #aba9a9;
+  background: #e6dfd2;
   border-radius: 25px;
   position: absolute;
   top: -10%;
@@ -673,7 +721,6 @@ body {
 .popup h2{
   color: 333;
   font-weight: bold;
-  -webkit-text-stroke: 2px black;
   font-size: 64px;
 }
 
@@ -683,7 +730,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: #aba9a9;
+  background: #e6dfd2;
 }
 
 #statistics-title {
@@ -735,7 +782,7 @@ body {
   padding-right: 4px;
 
   color: white;
-  background-color: #353e6e;
+  background-color: #8b8171ff;
 }
 
 .graph-row {
