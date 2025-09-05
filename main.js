@@ -957,6 +957,7 @@ function darken() {
   }
 
 function brighten() {
+  document.body.style.backgroundColor = "#F8F3F0";
   document.getElementById("headercontainer").style.backgroundColor = "#e6dfd2";
   safelySetStyle("headercontainer", "borderColor", "#9c9081");
   safelySetStyle("gameplay-section", "backgroundColor", "#F8F3F0");
