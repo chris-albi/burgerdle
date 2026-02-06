@@ -20,7 +20,7 @@ window.onload = async function () {
   items = await response.json();
 };
 
-const startDate = new Date("01/16/2025");
+const startDate = new Date("01/16/2026");
 const gameNumber = getGameNumber();
 
 //User stats object
